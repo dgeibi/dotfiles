@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/dgeibi/code/Dropbox'
+let g:netrw_dirhist_2='/usr/share/icons/default'
+let g:netrw_dirhist_3='/etc/X11/xorg.conf.d'
+let g:netrw_dirhist_4='/etc/shadowsocks'
+let g:netrw_dirhist_5='/etc'

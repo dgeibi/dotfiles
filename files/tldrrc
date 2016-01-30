@@ -1,0 +1,6 @@
+colors:
+  command: cyan
+  description: blue
+  usage: green
+platform: linux
+repo_directory: ${HOME}/code/tldr/

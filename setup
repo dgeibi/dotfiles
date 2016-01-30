@@ -1,0 +1,57 @@
+#!/bin/bash
+# copy from https://github.com/riobard/dotfiles/blob/master/setup
+
+set -e
+
+[ ! -e ~/code ] && mkdir -p ~/code
+
+export DOTFILES_DIR=${HOME}/code/dotfiles
+
+linkf() {
+
+	[ -e ~/.$1 ] && rm -f ~/.$1
+    ln -s $DOTFILES_DIR/files/$1  ~/.$1 
+    echo ~/.$1 linked
+    return 0
+}
+
+linkd() {
+    [ -e ~/.config/$1 ] && rm -rf ~/.config/$1
+    ln -s $DOTFILES_DIR/config/$1  ~/.config/$1 
+    echo ~/.config/$1 linked
+    return 0
+}
+
+linkfiles() {
+    for file in $DOTFILES_DIR/files/*; do
+        if [ -e $file ]; then
+            linkf `basename $file` 
+        fi
+    done
+    echo files linked
+    return 0
+}
+
+linkdirs() {
+	for dir in $DOTFILES_DIR/config/*;do
+		if [ -e $dir ]; then
+			linkd `basename $dir`
+		fi
+	done
+	echo dirs linked
+	return 0
+}
+
+clone() {
+    if ! [[ -d $DOTFILES_DIR ]]; then
+        git clone https://github.com/dgeibi/dotfiles.git $DOTFILES_DIR
+    else
+        cd $DOTFILES_DIR
+        git pull
+    fi
+    return 0
+}
+
+clone
+linkfiles
+linkdirs
