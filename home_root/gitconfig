@@ -3,3 +3,5 @@
 	name = dgeibi
 [push]
 	default = simple
+[core]
+	editor = nvim
