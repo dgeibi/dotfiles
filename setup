@@ -8,37 +8,38 @@ set -e
 export DOTFILES_DIR=${HOME}/code/dotfiles
 
 linkf() {
-
+	[ -h ~/.$1 ] && rm -rf ~/.$1
 	[ -e ~/.$1 ] && rm -rf ~/.$1
-    ln -s $DOTFILES_DIR/files/$1  ~/.$1 
+    ln -s $DOTFILES_DIR/home_root/$1  ~/.$1 
     echo ~/.$1 linked
     return 0
 }
 
 linkd() {
+    [ -h ~/.config/$1 ] && rm -rf ~/.config/$1
     [ -e ~/.config/$1 ] && rm -rf ~/.config/$1
     ln -s $DOTFILES_DIR/config/$1  ~/.config/$1 
     echo ~/.config/$1 linked
     return 0
 }
 
-linkfiles() {
-    for file in $DOTFILES_DIR/files/*; do
+linkroot() {
+    for file in $DOTFILES_DIR/home_root/*; do
         if [ -e $file ]; then
             linkf `basename $file` 
         fi
     done
-    echo files linked
+    echo files in home_root linked
     return 0
 }
 
-linkdirs() {
-	for dir in $DOTFILES_DIR/config/*;do
-		if [ -e $dir ]; then
-			linkd `basename $dir`
+linkconfig() {
+	for conf in $DOTFILES_DIR/config/*;do
+		if [ -e $conf ]; then
+			linkd `basename $conf`
 		fi
 	done
-	echo dirs linked
+	echo files in .config linked
 	return 0
 }
 
@@ -52,6 +53,10 @@ clone() {
     return 0
 }
 
-clone
-linkfiles
-linkdirs
+read -p "clone?[y/n]" yn
+if [ "${yn}" == "Y" ] || [ "${yn}" == "y" ]; then
+	clone
+fi
+
+linkroot
+linkconfig
