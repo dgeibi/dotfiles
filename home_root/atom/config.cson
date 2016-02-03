@@ -10,7 +10,7 @@
     ]
   editor:
     fontFamily: "Inziu Iosevka SC"
-    fontSize: 18
+    fontSize: 17
     invisibles: {}
   "exception-reporting":
     userId: "ce4311fa-4e2b-5d6c-c1e9-21d1e3274e0f"
