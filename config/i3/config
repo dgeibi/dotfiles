@@ -173,7 +173,7 @@ bindsym Mod1+n exec light -U 5
 bindsym Print exec xfce4-screenshooter
 
 # customized application
-bindsym Mod1+c exec google-chrome-stable
+bindsym Mod1+x exec google-chrome-stable
 bindsym Mod1+f exec nautilus
 bindsym Mod1+a exec atom
 
