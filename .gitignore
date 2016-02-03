@@ -1,4 +1,6 @@
-config/nvim/.netrwhist
-home_root/atom/
-!home_root/atom/*.cson
-!home_root/atom/*.less
+.netrwhist
+home_root/atom/*
+!config.cson
+!keymap.cson
+!snippets.cson
+!styles.less
