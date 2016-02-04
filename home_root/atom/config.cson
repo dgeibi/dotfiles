@@ -3,31 +3,24 @@
     _analyticsUserId: "f5d47d11-68c3-4459-bf68-0aa4fa32285f"
   "autocomplete-clang": {}
   "autocomplete-ctags": {}
-
   core:
     themes: [
       "one-light-ui"
       "one-light-syntax"
     ]
-
   editor:
     fontFamily: "Inziu Iosevka SC"
     fontSize: 18
     invisibles: {}
-
   "exception-reporting":
     userId: "ce4311fa-4e2b-5d6c-c1e9-21d1e3274e0f"
-
   "linter-clang": {}
-
   "one-light-ui":
     fontSize: 16
-
   "terminal-plus":
     core:
       mapTerminalsTo: "Folder"
       workingDirectory: "Active File"
     style: {}
-
   welcome:
     showOnStartup: false
