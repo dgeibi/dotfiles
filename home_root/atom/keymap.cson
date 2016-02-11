@@ -30,4 +30,4 @@
   'ctrl-o': 'advanced-open-file:toggle'
 
 'body':
-  'shift-p': 'application:add-project-folder'
+  'alt-shift-p': 'application:add-project-folder'

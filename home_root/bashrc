@@ -8,6 +8,7 @@
 HISTSIZE=1000
 PS1='[\u@\h \W]\$ '
 
+alias disk='df -hl'
 alias sudo='sudo '
 alias lm='ls -al'
 alias ls='ls --color=auto'
@@ -19,9 +20,10 @@ export HISTCONTROL=ignoreboth
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 PATH="/usr/local/heroku/bin:$PATH"
 
+export home=/home/dgeibi
 source /etc/profile.d/autojump.bash
-source ${HOME}/code/Dropbox/source/jieya.sh
-source ${HOME}/code/Dropbox/source/power.sh
+source $home/code/Dropbox/source/jieya.sh
+source $home/code/Dropbox/source/power.sh
 
 shopt -s autocd
 

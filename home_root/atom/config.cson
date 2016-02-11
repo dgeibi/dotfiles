@@ -4,6 +4,19 @@
   "autocomplete-clang": {}
   "autocomplete-ctags": {}
   core:
+    disabledPackages: [
+      "autocomplete-html"
+      "bookmarks"
+      "language-clojure"
+      "language-csharp"
+      "language-go"
+      "language-hyperlink"
+      "language-java"
+      "language-javascript"
+      "language-objective-c"
+      "language-perl"
+      "welcome"
+    ]
     themes: [
       "one-light-ui"
       "one-light-syntax"
@@ -12,9 +25,13 @@
     fontFamily: "Inziu Iosevka SC"
     fontSize: 18
     invisibles: {}
+    tabType: "soft"
   "exception-reporting":
     userId: "ce4311fa-4e2b-5d6c-c1e9-21d1e3274e0f"
+  linter:
+    errorPanelHeight: 250
   "linter-clang": {}
+  "linter-shellcheck": {}
   "one-light-ui":
     fontSize: 16
   "terminal-plus":
