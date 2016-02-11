@@ -8,25 +8,13 @@
 HISTSIZE=1000
 PS1='[\u@\h \W]\$ '
 
-alias disk='df -hl'
-alias sudo='sudo '
-alias lm='ls -al'
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-
-eval $(thefuck --alias)
+export home=/home/dgeibi
 export HISTCONTROL=ignoreboth
 
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
-PATH="/usr/local/heroku/bin:$PATH"
-
-export home=/home/dgeibi
-source /etc/profile.d/autojump.bash
-source $home/code/Dropbox/source/jieya.sh
-source $home/code/Dropbox/source/power.sh
-
+# autocd
 shopt -s autocd
 
+# fzf
 [ -f $home/.fzf.bash ] && source $home/.fzf.bash
 
 export FZF_DEFAULT_OPTS='
@@ -34,15 +22,31 @@ export FZF_DEFAULT_OPTS='
   --color=light,fg:232,bg:255,bg+:116,info:27
 '
 
-#if [ -e /usr/share/terminfo/x/xterm-256color ] && [ "$COLORTERM" == "xfce4-terminal" ]; then
-#    export TERM=xterm-256color
-#fi
+#PATH
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+PATH="/usr/local/heroku/bin:$PATH"
 
-# [[ -n "$DISPLAY" && "$TERM" = "xterm" ]] && export TERM=xterm-256color
+#thefuck
+eval $(thefuck --alias)
 
 
-#nvim
+#alias
+alias disk='df -hl'
+alias sudo='sudo '
+alias lm='ls -al'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 alias vi=nvim
+alias vim=nvim
+
+#source
+source /etc/profile.d/autojump.bash
+source $home/code/Dropbox/source/jieya.sh
+source $home/code/Dropbox/source/power.sh
+
+restart() {
+	. ~/.bashrc
+}
 
 ### mount ntfs
 ntfs() {
@@ -54,9 +58,3 @@ ntfs() {
 		*) echo "ntfs {c,d,uc,ud}"
 	esac
 }
-
-restart() {
-	. ~/.bashrc
-}
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
