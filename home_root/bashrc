@@ -34,6 +34,7 @@ eval $(thefuck --alias)
 alias disk='df -hl'
 alias sudo='sudo '
 alias lm='ls -al'
+alias code='visual-studio-code'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias vi=nvim

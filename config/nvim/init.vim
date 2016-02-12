@@ -18,6 +18,8 @@ set cindent
 set tabstop=4
 set shiftwidth=4
 
+set expandtab
+
 let g:vim_markdown_folding_disabled = 1
 
 call plug#begin()
