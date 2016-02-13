@@ -1,0 +1,36 @@
+{
+    "include <>": {
+		"prefix": "include",
+		"body": "#include <${0}>"
+	}
+
+    "foobar": {
+		"prefix": "22",
+		"body": "ff ${0}"
+	}
+    
+    
+    "include \"": {
+		"prefix": "include",
+		"body": "#include \"${0}\""
+	}
+    
+	"#define": {
+		"prefix": "define",
+		"body": [
+            "#ifndef ${1}"
+            "#define ${1} ${0}"
+            "#endif"
+		]
+	}
+    
+	"printf": {
+		"prefix": "print",
+		"body": "printf(\"${1}\",${0});"
+	}
+	
+	"scanf": {
+		"prefix": "scanf",
+		"body": "scanf(\"${1}\",${0});"
+	}
+}
