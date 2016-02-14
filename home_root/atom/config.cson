@@ -18,8 +18,8 @@
       "welcome"
     ]
     themes: [
-      "one-light-ui"
-      "one-light-syntax"
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
     ]
   editor:
     fontFamily: "Inziu Iosevka SC"
@@ -32,7 +32,7 @@
     errorPanelHeight: 250
   "linter-clang": {}
   "linter-shellcheck": {}
-  "one-light-ui":
+  "one-dark-ui":
     fontSize: 16
   "terminal-plus":
     core:

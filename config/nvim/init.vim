@@ -1,9 +1,9 @@
 syntax on
 colorscheme Tomorrow
 
-"set background=Tomorrow
-set clipboard+=unnamedplus
 set nobackup
+"set background=dark
+set clipboard+=unnamedplus
 set fileencodings=utf8,cp936,gb18030,big5
 set number
 set relativenumber " 显示相对行号
@@ -36,3 +36,10 @@ call plug#end()
 "let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme = "light"
+
+nnoremap <A-j> :m .+1<CR>==
+nnoremap <A-k> :m .-2<CR>==
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+inoremap <A-k> <Esc>:m .-2<CR>==gi
+vnoremap <A-j> :m '>+1<CR>gv=gv
+vnoremap <A-k> :m '<-2<CR>gv=gv
