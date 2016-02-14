@@ -1,8 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "monospace",
+    "editor.fontFamily": "Iosevka Slab",
     
-    "editor.fontSize": 19,
+    "editor.fontSize": 20,
     
     "editor.wordWrapBreakBeforeCharacters": "[{(+‘“（「『",
     

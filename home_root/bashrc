@@ -51,8 +51,9 @@ restart() {
 
 #vscode
 code() {
-  visual-studio-code $1 &> /dev/null &
-  disown
+  visual-studio-code $1 &> /dev/null
+ # visual-studio-code $1 &> /dev/null &
+ # disown
 }
 
 ### mount ntfs

@@ -1,5 +1,5 @@
 syntax on
-colorscheme Tomorrow
+colorscheme Tomorrow-Night-Eighties
 
 set nobackup
 "set background=dark
@@ -35,7 +35,7 @@ call plug#end()
 "airline
 "let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
-let g:airline_theme = "light"
+let g:airline_theme = "dark"
 
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
