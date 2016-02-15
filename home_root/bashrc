@@ -41,9 +41,10 @@ alias vim=nvim
 alias uusbc='udisksctl unmount -b /dev/sdc1 && udisksctl power-off -b /dev/sdc'
 
 #source
+export Src="$home/code/dotfiles/src"
 source /etc/profile.d/autojump.bash
-source $home/code/dotfiles/src/jieya.sh
-source $home/code/dotfiles/src/power.sh
+source $Src/jieya.sh
+source $Src/power.sh
 
 restart() {
 	. ~/.bashrc
@@ -51,9 +52,9 @@ restart() {
 
 #vscode
 code() {
-  visual-studio-code $1 &> /dev/null
- # visual-studio-code $1 &> /dev/null &
- # disown
+ # visual-studio-code $1 &> /dev/null
+  visual-studio-code $1 &> /dev/null &
+  disown
 }
 
 ### mount ntfs
