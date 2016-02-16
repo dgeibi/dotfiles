@@ -1,3 +1,5 @@
+#!/bin/bash
+
 power() {
 case "$1" in
     lock)

@@ -45,6 +45,7 @@ export Src="$home/code/dotfiles/src"
 source /etc/profile.d/autojump.bash
 source $Src/jieya.sh
 source $Src/power.sh
+source $Src/install-fonts.sh
 
 restart() {
 	. ~/.bashrc
