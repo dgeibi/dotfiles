@@ -70,3 +70,5 @@ ntfs() {
 		*) echo "ntfs {c,d,uc,ud}"
 	esac
 }
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
