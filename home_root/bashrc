@@ -9,6 +9,7 @@ HISTSIZE=1000
 PS1='[\u@\h \W]\$ '
 
 export home=/home/dgeibi
+export Code_Dir=$home/code
 export HISTCONTROL=ignoreboth
 
 # autocd
@@ -39,6 +40,7 @@ alias grep='grep --color=auto'
 alias vi=nvim
 alias vim=nvim
 alias uusbc='udisksctl unmount -b /dev/sdc1 && udisksctl power-off -b /dev/sdc'
+alias note="cd $home/code/Dropbox/Note && tree"
 
 #source
 export Src="$home/code/dotfiles/src"

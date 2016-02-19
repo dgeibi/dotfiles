@@ -5,3 +5,8 @@ home_root/atom/*
 !keymap.cson
 !snippets.cson
 !styles.less
+config/*
+!config/
+Code/*
+!Code/
+!Code/User/
