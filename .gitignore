@@ -6,4 +6,4 @@ home_root/atom/*
 !snippets.cson
 !styles.less
 config/Code/*
-!Code/User/
+!config/Code/User/
