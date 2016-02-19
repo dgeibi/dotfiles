@@ -50,7 +50,7 @@ source $Src/power.sh
 source $Src/install-fonts.sh
 
 restart() {
-	. ~/.bashrc
+    . ~/.bashrc
 }
 
 #vscode
@@ -62,13 +62,13 @@ code() {
 
 ### mount ntfs
 ntfs() {
-	case $1 in
-		c) [ ! -e /media/c/ ] && sudo mkdir -p /media/c; sudo ntfs-3g /dev/sda3 /media/c ;;
-		d) [ ! -e /media/d/ ] && sudo mkdir -p /media/d; sudo ntfs-3g /dev/sdb1 /media/d ;;
-		uc) sudo umount /media/c ;;
-		ud) sudo umount /media/d ;;
-		*) echo "ntfs {c,d,uc,ud}"
-	esac
+    case $1 in
+        c) [ ! -e /media/c/ ] && sudo mkdir -p /media/c; sudo ntfs-3g /dev/sda3 /media/c ;;
+        d) [ ! -e /media/d/ ] && sudo mkdir -p /media/d; sudo ntfs-3g /dev/sdb1 /media/d ;;
+        uc) sudo umount /media/c ;;
+        ud) sudo umount /media/d ;;
+        *) echo "Usage: ntfs {c,d,uc,ud}"
+    esac
 }
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
