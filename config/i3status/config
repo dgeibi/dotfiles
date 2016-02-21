@@ -16,7 +16,7 @@ general {
 #order += "run_watch DHCP"
 #order += "run_watch VPN"
 order += "wireless _first_"
-order += "ethernet _first_"
+#order += "ethernet _first_"
 order += "battery 0"
 order += "load"
 order += "tztime local"
@@ -36,22 +36,22 @@ battery 0 {
         format = "%status %percentage %remaining"
 }
 
-#run_watch DHCP {
-#        pidfile = "/var/run/dhclient*.pid"
-#}
+run_watch DHCP {
+        pidfile = "/var/run/dhclient*.pid"
+}
 
-#run_watch VPN {
-#        pidfile = "/var/run/vpnc/pid"
-#}
+run_watch VPN {
+        pidfile = "/var/run/vpnc/pid"
+}
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+        format = "%m/%d %a %H:%M"
 }
 
 load {
         format = "%1min"
 }
 
-#disk "/" {
-#        format = "%avail"
-#}
+disk "/" {
+        format = "%avail"
+}
