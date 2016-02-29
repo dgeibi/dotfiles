@@ -71,4 +71,13 @@ ntfs() {
     esac
 }
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+checknet() {
+    ping -c 4 114.114.114.114
+    echo -e "\n"
+    tcping www.google.com 443
+}
+
+update() {
+    yaourt -Syua
+    nvim +PlugUpgrade +PlugUpdate
+}
