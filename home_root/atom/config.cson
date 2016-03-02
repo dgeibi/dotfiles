@@ -1,6 +1,8 @@
 "*":
   "atom-beautify":
     _analyticsUserId: "f5d47d11-68c3-4459-bf68-0aa4fa32285f"
+    language_xml_beautify_on_save: true
+    language_xml_default_beautifier: "JS Beautify"
   "autocomplete-clang": {}
   "autocomplete-ctags": {}
   core:

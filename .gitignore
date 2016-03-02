@@ -8,3 +8,6 @@ home_root/atom/*
 !styles.less
 config/Code/*
 !config/Code/User/
+config/fcitx/*
+!config/fcitx/conf/
+!config/fcitx/config

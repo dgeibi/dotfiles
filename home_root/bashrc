@@ -11,6 +11,7 @@ PS1='[\u@\h \W]\$ '
 export home=/home/dgeibi
 export Code_Dir=$home/code
 export HISTCONTROL=ignoreboth
+export XDG_CONFIG_HOME=$home/.config
 
 # autocd
 shopt -s autocd
