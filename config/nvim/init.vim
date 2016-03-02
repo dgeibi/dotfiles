@@ -31,6 +31,9 @@ Plug 'plasticboy/vim-markdown'
 " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --key-bindings --completion --no-update-rc' }
 Plug 'junegunn/fzf.vim'
+Plug 'benekastah/neomake'
+Plug 'Raimondi/delimitMate'
+Plug 'Shougo/deoplete.nvim'
 call plug#end()
 
 "airline
@@ -44,3 +47,7 @@ inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
+
+autocmd! BufWritePost * Neomake
+
+let g:deoplete#enable_at_startup=1
