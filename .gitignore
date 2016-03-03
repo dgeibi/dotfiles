@@ -11,3 +11,5 @@ config/Code/*
 config/fcitx/*
 !config/fcitx/conf/
 !config/fcitx/config
+config/xfce4/*
+!config/xfce4/terminal/
