@@ -86,3 +86,9 @@ update() {
     yaourt -Syua
     nvim +PlugUpgrade +PlugUpdate
 }
+
+startupcheck() {
+    systemd-analyze
+    echo -e "\nJournal Errors"
+    journalctl -p 3 -xb
+}
