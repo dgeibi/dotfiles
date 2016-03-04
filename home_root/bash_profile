@@ -4,4 +4,4 @@
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && command -v i3 >/dev/null 2>&1 && exec startx
+[[ -z $DISPLAY ]] && command -v i3 >/dev/null 2>&1 && xinit -- :1 -nolisten tcp vt$XDG_VTNR
