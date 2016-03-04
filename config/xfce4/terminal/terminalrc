@@ -24,4 +24,5 @@ TitleMode=TERMINAL_TITLE_PREPEND
 TitleInitial=
 ColorBoldUseDefault=FALSE
 ColorBold=#9973d0c5ed2b
+ScrollingOnOutput=FALSE
 
