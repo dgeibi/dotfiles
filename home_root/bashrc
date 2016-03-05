@@ -69,10 +69,10 @@ code() {
 ntfs() {
     case $1 in
         c) [ ! -e /media/c/ ] && sudo mkdir -p /media/c; sudo ntfs-3g /dev/sda3 /media/c ;;
-        d) [ ! -e /media/d/ ] && sudo mkdir -p /media/d; sudo ntfs-3g /dev/sdb1 /media/d ;;
+        #d) [ ! -e /media/d/ ] && sudo mkdir -p /media/d; sudo ntfs-3g /dev/sdb1 /media/d ;;
         uc) sudo umount /media/c ;;
-        ud) sudo umount /media/d ;;
-        *) echo "Usage: ntfs {c,d,uc,ud}"
+        #ud) sudo umount /media/d ;;
+        *) echo "Usage: ntfs {c,uc}"
     esac
 }
 
@@ -87,8 +87,10 @@ update() {
     nvim +PlugUpgrade +PlugUpdate
 }
 
-startupcheck() {
+syscheck() {
     systemd-analyze
     echo -e "\nJournal Errors"
     journalctl -p 3 -xb
+    echo -e "\nsytemd failed"
+    systemctl --failed
 }
