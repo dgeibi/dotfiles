@@ -1,7 +1,7 @@
 [Configuration]
 ColorCursor=#7f8b7f8b7f8b
 ColorForeground=#ffffffffffff
-ColorPalette=#000000;#fb0120;#a1c659;#fda331;#6fb3d2;#d381c3;#76c7b7;#e0e0e0;#b0b0b0;#fb0120;#a1c659;#fda331;#6fb3d2;#d381c3;#76c7b7;#ffffff
+ColorPalette=#000000000000;#fbfb01012020;#a1a1c6c65959;#fdfda3a33131;#0000672e9638;#d3d38181c3c3;#7676c7c7b7b7;#e0e0e0e0e0e0;#b0b0b0b0b0b0;#fbfb01012020;#a1a1c6c65959;#fdfda3a33131;#6f6fb3b3d2d2;#d3d38181c3c3;#7676c7c7b7b7;#ffffffffffff
 FontName=Iosevka Slab 15
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE

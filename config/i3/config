@@ -10,7 +10,6 @@
 exec fcitx
 exec numlockx
 exec dropbox
-exe feh --recursive --randomize --bg-fill /usr/share/backgrounds/
 #exec syndaemon -i 2 -d
 
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
