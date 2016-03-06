@@ -106,3 +106,8 @@ connect 1C:52:16:09:FF:C9
 EOF
     sleep 1
 }
+
+alon() {
+kill $(pidof xautolock)
+xset s off -dpms
+}

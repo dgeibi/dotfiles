@@ -8,6 +8,9 @@ fontin () {
             sudo rm -f /usr/share/fonts/inziu/*
             7z x "$1" -oinziu
             sudo install -m644 -t/usr/share/fonts/inziu/ inziu/* && rm -rf inziu
+            cd /usr/share/fonts/inziu/
+            sudo mkfontscale
+            sudo mkfontdir
             echo "Updating fonts cache ..."
             sudo fc-cache -f -v
           ;;
