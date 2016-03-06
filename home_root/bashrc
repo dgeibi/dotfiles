@@ -5,7 +5,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-HISTSIZE=1000
+HISTSIZE=2000
+export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
 PS1='[\u@\h \W]\$ '
 
 export home=/home/dgeibi
