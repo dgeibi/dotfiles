@@ -54,7 +54,7 @@ alias note="cd $home/code/Dropbox/Note && tree"
 export Src="$home/code/dotfiles/src"
 source /etc/profile.d/autojump.bash
 source $Src/jieya.sh
-source $Src/power.sh
+source $Src/hardware.sh
 source $Src/install-fonts.sh
 
 restart() {
@@ -98,16 +98,3 @@ syscheck() {
     systemctl --failed
 }
 
-cqt7() {
-    sudo systemctl start bluetooth
-    bluetoothctl << EOF
-power on
-connect 1C:52:16:09:FF:C9
-EOF
-    sleep 1
-}
-
-alon() {
-kill $(pidof xautolock)
-xset s off -dpms
-}

@@ -15,7 +15,7 @@ exec dropbox
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
-
+set $nmod Mod1
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:Iosevka Slab 14
@@ -129,7 +129,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -160,22 +160,32 @@ bindsym $mod+r mode "resize"
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
-#bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Sreen brightness controls
-bindsym Mod1+b exec light -A 5
-bindsym Mod1+n exec light -U 5
+bindsym $nmod+b exec light -A 5
+bindsym $nmod+n exec light -U 5
 
 # Screenshot
-#bindsym Print exec scrot -e 'mv $f /home/dgeibi/Pictures/'
-#bindsym Mod1+Print --release exec scrot -s -e 'mv $f /home/dgeibi/Pictures/'
 bindsym Print exec xfce4-screenshooter
 
 # customized application
-bindsym Mod1+x exec google-chrome-stable
-bindsym Mod1+f exec nautilus
-#bindsym Mod1+a exec atom
-bindsym Mod1+v exec visual-studio-code
+bindsym $nmod+x exec google-chrome-stable
+bindsym $nmod+f exec nautilus
+bindsym $nmod+v exec visual-studio-code
+bindsym $nmod+l exec i3lock -c 000000 && xset dpms force off
+# Create Log out, Reboot, Poweroff bindings
+# copy from https://gist.github.com/athmane/6200074
+mode "(L)ogout, (R)eboot, (P)oweroff" {
+        bindsym $mod+r exec systemctl reboot
+        bindsym $mod+l exit
+        bindsym $mod+p exec systemctl poweroff
+
+        # back to normal: Enter or Escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+Shift+e mode "(L)ogout, (R)eboot, (P)oweroff"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
