@@ -96,3 +96,12 @@ syscheck() {
     echo -e "\nsytemd failed"
     systemctl --failed
 }
+
+cqt7() {
+    sudo systemctl start bluetooth
+    bluetoothctl << EOF
+power on
+connect 1C:52:16:09:FF:C9
+EOF
+    sleep 1
+}
