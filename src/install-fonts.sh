@@ -11,7 +11,7 @@ fontin () {
                 ;;
             *)
                 echo "useage: $0 <Inziu/Iosevka Fonts Archive>"
-                exit
+                exit 1
                 ;;
         esac
             Fonts_Dir=/usr/share/fonts/$f_dir
@@ -21,6 +21,7 @@ fontin () {
             sudo -E install -m644 -t$Fonts_Dir $f_dir/* && rm -rf $f_dir
             echo "Updating fonts cache ..."
             sudo fc-cache -f -v
+            exit 0
     else
         echo "useage: $0 <Inziu/Iosevka Fonts Archive>"
     fi
