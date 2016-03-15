@@ -41,6 +41,8 @@ xautolock -time 10 -locker "i3lock -c 000000" &
 xset dpms $DPMS_StandbyTime $DPMS_SuspendTime $DPMS_OffTime
 xset s $X11ScreenSaver_Timeout
 
+[[ -n "$(/usr/bin/xrandr | grep 'eDP-1' )" ]] && xrandr --output eDP-1 --primary
+
 feh --recursive --randomize --bg-fill /usr/share/backgrounds/
 export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN:en_US
