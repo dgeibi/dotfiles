@@ -179,9 +179,9 @@ bindsym $nmod+l exec i3lock -c 000000 && xset dpms force off
 # Create Log out, Reboot, Poweroff bindings
 # copy from https://gist.github.com/athmane/6200074
 mode "(L)ogout, (R)eboot, (P)oweroff" {
-        bindsym $mod+r exec systemctl reboot
-        bindsym $mod+l exit
-        bindsym $mod+p exec systemctl poweroff
+        bindsym $mod+Shift+r exec systemctl reboot
+        bindsym $mod+Shift+l exit
+        bindsym $mod+Shift+p exec systemctl poweroff
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
