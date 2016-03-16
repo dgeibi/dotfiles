@@ -1,13 +1,14 @@
 {
     "include <>": {
 		"prefix": "include<",
-		"body": "#include <${0}>"
+		"body": "#include <${1}>"
 	},
     
-    "include \"\"": {
-		"prefix": "include\"",
-		"body": "#include \"${0}\""
-	},
+    "define": {
+      "prefix": "def",
+      "body": "#define ${1} (${2})",
+      "description": "Code snippet for define"
+    },
     
 	"printf": {
 		"prefix": "print",
@@ -21,7 +22,7 @@
 	"for": {
 		"prefix": "for",
 		"body": [
-			"for (${size_t} ${i} = ${1:0}, ${i} < ${length}, ${i}++)",
+			"for (${size_t} ${i} = ${1:0}; ${i} < ${length}; ${i}++)",
 			"{",
 			"	$2",
 			"}"
@@ -31,7 +32,7 @@
 	"forr": {
 		"prefix": "forr",
 		"body": [
-			"for (int ${i} = ${length} - 1, ${i} >= 0, ${i}--)",
+			"for (int ${i} = ${length} - 1; ${i} >= 0; ${i}--)",
 			"{",
 			"	$1",
 			"}"
@@ -79,7 +80,7 @@
 		"description": "Code snippet for enum"
 	},
 	"#ifdef": {
-		"prefix": "#ifdef",
+		"prefix": "ifdef",
 		"body": [
 			"#ifdef ${DEBUG}",
 			"$1",
@@ -88,22 +89,13 @@
 		"description": "Code snippet for #ifdef"
 	},
 	"#ifndef": {
-		"prefix": "#ifndef",
+		"prefix": "ifndef",
 		"body": [
 			"#ifdef ${1:1}",
 			"$2",
 			"#endif // !$1"
 		],
 		"description": "Code snippet for #ifndef"
-	},
-	"#if": {
-		"prefix": "#if",
-		"body": [
-			"#ifdef ${1:0}",
-			"$2",
-			"#endif // $1"
-		],
-		"description": "Code snippet for #if"
 	},
 	"struct": {
 		"prefix": "struct",
