@@ -8,16 +8,32 @@ set -e
 export DOTFILES_DIR=${HOME}/code/dotfiles
 
 linkf() {
-    [ -h ~/.$1 ] && rm -rf ~/.$1
-    [ -e ~/.$1 ] && rm -rf ~/.$1
+    if [ -h ~/.$1 ]; then
+        if [ "$(readlink ~/.$1)" !=  "$DOTFILES_DIR/home_root/$1" ]; then
+            mv ~/.$1 ~/.${1}.old
+        else
+            return 0
+        fi
+    elif [ -e ~/.$1 ]; then
+        mv ~/.$1 ~/.${1}.old
+    fi
+
     ln -s $DOTFILES_DIR/home_root/$1  ~/.$1
     echo ~/.$1 linked
     return 0
 }
 
 linkd() {
-    [ -h ~/.config/$1 ] && rm -rf ~/.config/$1
-    [ -e ~/.config/$1 ] && rm -rf ~/.config/$1
+    if [ -h ~/.config/$1 ]; then
+        if [ "$(readlink ~/.config/$1)" !=  "$DOTFILES_DIR/config/$1" ]; then
+            mv ~/.config/$1 ~/.config/${1}.old
+        else
+            return 0
+        fi
+    elif [ -e ~/.config/$1 ]; then
+        mv ~/.config/$1 ~/.config/${1}.old
+    fi
+
     ln -s $DOTFILES_DIR/config/$1  ~/.config/$1
     echo ~/.config/$1 linked
     return 0
