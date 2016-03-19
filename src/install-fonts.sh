@@ -83,9 +83,12 @@ fontdown () {
                 echo "Usage: $0 {inziu|term|both} [version]"
                 ;;
         esac
-    elif [ "$LocalV" == "$Ver" ]; then
-        echo "$Ver has been installed."
-    else
-        echo "Usage: $0 {inziu|term|both} [version]"
+        else
+            if [ -z "$1" ] ; then
+                echo "Usage: $0 {inziu|term|both} [version]"
+            fi
+            if [ "$LocalV" == "$Ver" ]; then
+                echo "$Ver has been installed."
+            fi
     fi
 }
