@@ -30,9 +30,9 @@ fontin () {
 fontdown () {
     RemV=$(git ls-remote --tags https://github.com/be5invis/Iosevka.git |  awk '{print $2}' | cut -d '/' -f 3 | cut -d '^' -f 1  | sort -b -t . -k 1,1nr -k 2,2nr -k 3,3r -k 4,4r -k 5,5r | uniq | sed '2,$d' | sed "s/^v//")
     LocalV=1.8.3
-    if [ -z "$2" ]; then
+    if [ -z "$1" ]; then
         Ver=${RemV}
-    else Ver=$2
+    else Ver=$1
     fi
     forinziu() {
 
@@ -63,32 +63,40 @@ fontdown () {
                 echo "Network Error."
         fi
     }
-    if [ "$1" != "" ] && [ "$LocalV" != "$Ver" ]; then
-        case $1 in
-            inziu)
-                forinziu
-                downfont
-                ;;
-            term)
-                forterm
-                downfont
-                ;;
-            both)
-                forinziu
-                downfont
-                forterm
-                downfont
-                ;;
-            *)
-                echo "Usage: $0 {inziu|term|both} [version]"
-                ;;
-        esac
-        else
-            if [ -z "$1" ] ; then
-                echo "Usage: $0 {inziu|term|both} [version]"
-            fi
-            if [ "$LocalV" == "$Ver" ]; then
-                echo "$Ver has been installed."
-            fi
+    if [ "$LocalV" == "$Ver" ]; then
+        echo "$Ver has been installed."
+    else
+        forinziu
+        downfont
+        forterm
+        downfont
     fi
+    # if [ "$1" != "" ] && [ "$LocalV" != "$Ver" ]; then
+    #     case $1 in
+    #         inziu)
+    #             forinziu
+    #             downfont
+    #             ;;
+    #         term)
+    #             forterm
+    #             downfont
+    #             ;;
+    #         both)
+    #             forinziu
+    #             downfont
+    #             forterm
+    #             downfont
+    #             ;;
+    #         *)
+    #             echo "Usage: $0 {inziu|term|both} [version]"
+    #             ;;
+    #     esac
+    #     else
+    #         if [ -z "$1" ] ; then
+    #             echo "Usage: $0 {inziu|term|both} [version]"
+    #         fi
+    #         if [ "$LocalV" == "$Ver" ]; then
+    #             echo "$Ver has been installed."
+    #         fi
+    # fi
 }
