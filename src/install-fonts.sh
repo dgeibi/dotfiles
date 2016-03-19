@@ -28,15 +28,22 @@ fontin () {
     fi
 }
 fontdown () {
+    RemV=$(git ls-remote --tags https://github.com/be5invis/Iosevka.git |  awk '{print $2}' | cut -d '/' -f 3 | cut -d '^' -f 1  | sort -b -t . -k 1,1nr -k 2,2nr -k 3,3r -k 4,4r -k 5,5r | uniq | sed '2,$d' | sed "s/^v//")
+    LocalV=1.8.3
+    if [ -z "$2" ]; then
+        Ver=${RemV}
+    else Ver=$2
+    fi
     forinziu() {
-        fontname="Inziu Iosevka ${2}"
-        churl="http://7xpdnl.dl1.z0.glb.clouddn.com/inziu-iosevka-${2}.7z"
+
+        fontname="Inziu Iosevka ${Ver}"
+        churl="http://7xpdnl.dl1.z0.glb.clouddn.com/inziu-iosevka-${Ver}.7z"
         furl=${churl}
     }
     forterm() {
-        fontname="Iosevka Slab Term ${2}"
-        churl="https://github.com/be5invis/Iosevka/releases/tag/v${2}"
-        furl="https://github.com/be5invis/Iosevka/releases/download/v${2}/05.iosevka-term-slab-${2}.7z"
+        fontname="Iosevka Slab Term ${Ver}"
+        churl="https://github.com/be5invis/Iosevka/releases/tag/v${Ver}"
+        furl="https://github.com/be5invis/Iosevka/releases/download/v${Ver}/05.iosevka-term-slab-${Ver}.7z"
     }
 
     downfont () {
@@ -44,34 +51,41 @@ fontdown () {
         if [  "${stat}" == '200' ] ; then
             echo "find ${fontname}"
             cd ~/Downloads || exit
-            [[ $(wget "${furl}") == '0' ]] && echo "${fontname} downloaded" || echo "failed to download ${fontname}"
+            if [ "$(wget "${furl}")" -eq 0 ]; then
+                echo "${fontname} downloaded"
+                sed -i "s/\(    LocalV=\).*/\1$Ver/" ~/code/dotfiles/src/install-fonts.sh
+            else
+                echo "failed to download ${fontname}"
+            fi
         elif [ "${stat}" == '404' ] ; then
                 echo "${fontname} not found"
             else
                 echo "Network Error."
         fi
     }
-    if [ "$1" != "" ] && [ "$2" != "" ] ; then
+    if [ "$1" != "" ] && [ "$LocalV" != "$Ver" ]; then
         case $1 in
             inziu)
-                forinziu "$@"
+                forinziu
                 downfont
                 ;;
             term)
-                forterm "$@"
+                forterm
                 downfont
                 ;;
             both)
-                forinziu "$@"
+                forinziu
                 downfont
-                forterm "$@"
+                forterm
                 downfont
                 ;;
             *)
-                echo "Usage: $0 {inziu|term|both} <version>"
+                echo "Usage: $0 {inziu|term|both} [version]"
                 ;;
         esac
+    elif [ "$LocalV" == "$Ver" ]; then
+        echo "$Ver has been installed."
     else
-        echo "Usage: $0 {inziu|term|both} <version>"
+        echo "Usage: $0 {inziu|term|both} [version]"
     fi
 }
