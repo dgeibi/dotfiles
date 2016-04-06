@@ -98,3 +98,6 @@ syscheck() {
     systemctl --failed
 }
 
+format() {
+    sed -i -e 's/[ \t]*$//' -e 's/\t/    /g' "$1"
+}

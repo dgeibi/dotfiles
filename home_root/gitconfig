@@ -1,8 +1,11 @@
 [user]
 	email = pnginside@gmail.com
 	name = dgeibi
+	signingkey = A2FE63FAED4E2697
 [push]
 	default = simple
 [core]
 	editor = nvim
 
+[commit]
+	gpgsign = true
