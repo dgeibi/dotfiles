@@ -3,4 +3,4 @@ colors:
   description: blue
   usage: green
 platform: linux
-repo_directory: ${HOME}/code/tldr/
+repo_directory: /home/dgeibi/code/tldr/
