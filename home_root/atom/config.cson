@@ -31,6 +31,8 @@
   linter:
     errorPanelHeight: 250
   "linter-clang": {}
+  "linter-js-standard":
+    style: "semi-standard"
   "linter-shellcheck": {}
   "one-dark-ui":
     fontSize: 16
