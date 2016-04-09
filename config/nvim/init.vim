@@ -51,3 +51,6 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 autocmd! BufWritePost * Neomake
 
 let g:deoplete#enable_at_startup=1
+
+map <C-a> <esc>ggVG<CR>
+map <C-s> <esc>:w<CR>
