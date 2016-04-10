@@ -17,6 +17,7 @@
       "language-perl"
       "welcome"
     ]
+    projectHome: "/home/dgeibi/code/"
     themes: [
       "one-dark-ui"
       "base16-tomorrow-dark-theme"
@@ -25,12 +26,16 @@
     fontFamily: "Inziu Iosevka SC"
     fontSize: 18
     invisibles: {}
+    tabLength: 4
     tabType: "soft"
   "exception-reporting":
     userId: "ce4311fa-4e2b-5d6c-c1e9-21d1e3274e0f"
   linter:
     errorPanelHeight: 250
   "linter-clang": {}
+  "linter-eslint":
+    disableWhenNoEslintConfig: false
+    eslintrcPath: "~/.eslintrc"
   "linter-js-standard":
     style: "semi-standard"
   "linter-shellcheck": {}
