@@ -175,6 +175,7 @@ bindsym Print exec xfce4-screenshooter
 bindsym $nmod+x exec google-chrome-stable
 bindsym $nmod+f exec nautilus
 bindsym $nmod+v exec visual-studio-code
+bindsym $nmod+a exec atom
 bindsym $nmod+l exec i3lock -c 000000 && xset dpms force off
 # Create Log out, Reboot, Poweroff bindings
 # copy from https://gist.github.com/athmane/6200074
