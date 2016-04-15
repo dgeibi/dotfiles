@@ -16,6 +16,8 @@
       "language-objective-c"
       "language-perl"
       "welcome"
+      "atom-beautify"
+      "terminal-plus"
     ]
     projectHome: "/home/dgeibi/code/"
     themes: [
