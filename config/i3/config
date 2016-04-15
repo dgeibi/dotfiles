@@ -177,6 +177,8 @@ bindsym $nmod+f exec nautilus
 bindsym $nmod+v exec visual-studio-code
 bindsym $nmod+a exec atom
 bindsym $nmod+l exec i3lock -c 000000 && xset dpms force off
+bindsym $nmod+w exec VirtualBox -startvm "Windows 10" &
+
 # Create Log out, Reboot, Poweroff bindings
 # copy from https://gist.github.com/athmane/6200074
 mode "(L)ogout, (R)eboot, (P)oweroff" {
