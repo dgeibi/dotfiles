@@ -36,6 +36,7 @@
     errorPanelHeight: 250
   "linter-clang": {}
   "linter-eslint":
+    disableWhenNoEslintConfig: false
     eslintrcPath: "~/.eslintrc"
   "linter-js-standard":
     style: "semi-standard"
