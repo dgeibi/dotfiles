@@ -4,9 +4,9 @@
 
     "editor.fontSize": 18,
 
-    "git.enabled": false,
+    "git.enabled": true,
 
-    "git.autofetch": false,
+    "git.autofetch": true,
 
     "eslint.enable": true,
 
