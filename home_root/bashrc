@@ -66,7 +66,7 @@ restart() {
 #vscode
 code() {
  # visual-studio-code $1 &> /dev/null
-  visual-studio-code $1 &> /dev/null &
+  visual-studio-code "$@" &> /dev/null &
   disown
 }
 
