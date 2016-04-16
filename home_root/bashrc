@@ -50,6 +50,8 @@ alias vim=nvim
 alias uusbc='udisksctl unmount -b /dev/sdc1 && udisksctl power-off -b /dev/sdc'
 alias note="cd $home/code/Dropbox/Note && tree"
 
+export PROMPT_COMMAND="history -a"
+
 #source
 export Src="$home/code/dotfiles/src"
 source /etc/profile.d/autojump.bash
