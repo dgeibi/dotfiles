@@ -2,7 +2,7 @@
 {
     "editor.fontFamily": "Iosevka Slab",
 
-    "editor.fontSize": 20,
+    "editor.fontSize": 18,
 
     "git.enabled": false,
 
@@ -13,6 +13,12 @@
     "files.associations": {
         "*.pac": "javascript"
     },
+
+    "window.zoomLevel": 0.8,
+
+    "editor.cursorStyle": "block",
+
+    "files.trimTrailingWhitespace": true,
 
     "editor.wordWrapBreakBeforeCharacters": "[{(+‘“（「『",
 
