@@ -1,0 +1,7 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+    { "key": "ctrl+k ctrl+v",          "command": "workbench.action.markdown.togglePreview" },
+    { "key": "ctrl+shift+v",           "command": "editor.action.clipboardPasteAction" }
+
+
+]
