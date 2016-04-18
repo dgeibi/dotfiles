@@ -101,8 +101,11 @@ syscheck() {
 }
 
 format() {
-    sed -i -e 's/[ \t]*$//' -e 's/\t/    /g' "$1"
-    if [[ "$1" = *.c ]]; then
-        astyle --style=kr -n "$1"
-    fi
+    sed -i -e 's/[ \t]*$//' -e 's/\t/    /g' "$@"
+    for each in "$@"
+    do
+        if [[ "$each" = *.c ]]; then
+            astyle --style=kr -n "$each"
+        fi
+    done
 }
