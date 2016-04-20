@@ -13,6 +13,7 @@ export home=/home/dgeibi
 export Code_Dir=$home/code
 export HISTCONTROL=ignoreboth
 export XDG_CONFIG_HOME=$home/.config
+export VISUAL="nvim"
 
 # autocd
 shopt -s autocd
