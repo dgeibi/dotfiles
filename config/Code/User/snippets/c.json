@@ -1,20 +1,20 @@
 {
     "include <>": {
 		"prefix": "include<",
-		"body": "#include <${1}>"
+		"body": "#include <${stdio.h}>"
 	},
-    
+
     "define": {
       "prefix": "def",
       "body": "#define ${1} (${2})",
       "description": "Code snippet for define"
     },
-    
+
 	"printf": {
 		"prefix": "print",
 		"body": "printf(\"${1}\",${0});"
 	},
-	
+
 	"scanf": {
 		"prefix": "scanf",
 		"body": "scanf(\"${1}\",${0});"
