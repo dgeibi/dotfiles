@@ -54,11 +54,10 @@ alias note="cd $home/code/Dropbox/Note && tree"
 export PROMPT_COMMAND="history -a"
 
 #source
-export Src="$home/code/dotfiles/src"
 source /etc/profile.d/autojump.bash
-source $Src/jieya.sh
-source $Src/hardware.sh
-source $Src/install-fonts.sh
+for SCRIPTS in $home/code/dotfiles/src/*; do
+    source $SCRIPTS
+done
 
 restart() {
     . ~/.bashrc
@@ -114,6 +113,6 @@ format() {
 take() {
     if [ -n "$1" ]; then
         mkdir -p "$1"
-        cd "$1"
+        cd "$1" || exit
     fi
 }
