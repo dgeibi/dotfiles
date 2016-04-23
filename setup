@@ -70,15 +70,15 @@ clone() {
 }
 
 vim-plug() {
-    nvim +PlugInstall
+    if ! [[ -e  ~/.config/nvim/autoload/plug.vim ]]; then
+        curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    fi
+    nvim +PlugInstall +qa
     return 0
 }
 
-read -p "clone & install nvim plug? [y/n]" yn
-if [ "${yn}" == "Y" ] || [ "${yn}" == "y" ]; then
-    clone
-    vim-plug
-fi
-
+clone
 linkroot
 linkconfig
+vim-plug
