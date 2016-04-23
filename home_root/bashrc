@@ -88,8 +88,8 @@ checknet() {
 }
 
 update() {
-    yaourt -Syua
     uwechat
+    pacaur -Syu
     nvim +PlugUpgrade +PlugUpdate
 }
 
