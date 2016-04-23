@@ -90,7 +90,7 @@ checknet() {
 update() {
     uwechat
     pacaur -Syu
-    nvim +PlugUpgrade +PlugUpdate
+    nvim +PlugUpgrade +PlugUpdate +qa
 }
 
 syscheck() {
