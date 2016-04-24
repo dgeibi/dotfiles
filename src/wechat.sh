@@ -19,7 +19,7 @@ uwechat(){
         cd "$HOME" || exit 1
         rm -rf "$buildroot"
     else
-        echo "electronic-wechat 已经是最新版"
+        echo " electronic-wechat 已经是最新版本"
     fi
 }
 
