@@ -5,7 +5,7 @@
 	},
 
     "define": {
-      "prefix": "def",
+      "prefix": "xdef",
       "body": "#define ${1} (${2})",
       "description": "Code snippet for define"
     },
@@ -20,9 +20,9 @@
 		"body": "scanf(\"${1}\",${0});"
 	},
 	"for": {
-		"prefix": "for",
+		"prefix": "forplus",
 		"body": [
-			"for (${size_t} ${i} = ${1:0}; ${i} < ${length}; ${i}++)",
+			"for (${int} ${i} = ${1:0}; ${i} < ${length}; ${i}+=1)",
 			"{",
 			"	$2",
 			"}"
@@ -30,9 +30,9 @@
 		"description": "Code snippet for 'for' loop"
 	},
 	"forr": {
-		"prefix": "forr",
+		"prefix": "forminus",
 		"body": [
-			"for (int ${i} = ${length} - 1; ${i} >= 0; ${i}--)",
+			"for (int ${i} = ${length} - 1; ${i} >= 0; ${i}-=1)",
 			"{",
 			"	$1",
 			"}"
