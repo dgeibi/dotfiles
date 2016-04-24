@@ -43,7 +43,7 @@ xset s $X11ScreenSaver_Timeout
 
 [[ -n "$(/usr/bin/xrandr | grep 'eDP-1' )" ]] && xrandr --output eDP-1 --primary
 
-feh --recursive --randomize --bg-fill /usr/share/backgrounds/
+feh --recursive --randomize --bg-fill /home/dgeibi/Pictures/bg/
 export LANG=zh_CN.UTF-8
 export LANGUAGE=zh_CN:en_US
 export LC_CTYPE=en_US.UTF-8
