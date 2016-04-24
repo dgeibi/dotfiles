@@ -41,6 +41,7 @@ video/x-ms-wmv=mpv.desktop;
 inode/directory=exo-file-manager.desktop;
 application/octet-stream=atom.desktop;
 x-scheme-handler/trash=exo-file-manager.desktop;
+video/mp4=gnome-mplayer.desktop;mplayer.desktop;vlc.desktop;
 
 [Default Applications]
 image/png=gpicview.desktop
@@ -48,3 +49,4 @@ inode/directory=org.gnome.Nautilus.desktop
 audio/mpeg=vlc.desktop
 x-scheme-handler/mailto=kde4-kmailservice.desktop
 text/plain=visual-studio-code.desktop
+video/mp4=vlc.desktop

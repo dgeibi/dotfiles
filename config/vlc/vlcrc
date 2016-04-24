@@ -6,6 +6,11 @@
 ### lines beginning with a '#' character are comments
 ###
 
+[lirc] # Infrared remote control interface
+
+# Change the lirc configuration file (string)
+#lirc-file=
+
 [gestures] # Mouse gestures control interface
 
 # Motion threshold (10-100) (integer)
@@ -2722,7 +2727,7 @@ subsdec-encoding=UTF-8
 #qt-fs-opacity=0.800000
 
 # Resize interface to the native video size (boolean)
-#qt-video-autoresize=1
+qt-video-autoresize=0
 
 # Show playing item name in window title (boolean)
 #qt-name-in-title=1
@@ -2770,10 +2775,10 @@ qt-privacy-ask=0
 #qt-icon-change=1
 
 # Maximum Volume displayed (integer)
-#qt-max-volume=125
+qt-max-volume=200
 
 # Fullscreen controller mouse sensitivity (integer)
-#qt-fs-sensitivity=3
+qt-fs-sensitivity=7
 
 [skins2] # Skinnable Interface
 
@@ -3746,7 +3751,7 @@ aout=any
 #custom-aspect-ratios=
 
 # Fix HDTV height (boolean)
-#hdtv-fix=1
+hdtv-fix=0
 
 # Window decorations (boolean)
 #video-deco=1
@@ -3761,13 +3766,13 @@ aout=any
 #zoom=1.000000
 
 # Deinterlace (integer)
-#deinterlace=0
+deinterlace=-1
 
 # Deinterlace mode (string)
 #deinterlace-mode=blend
 
 # Video output module (string)
-vout=gl
+vout=xcb_x11
 
 # Video filter module (string)
 #video-filter=
@@ -4040,7 +4045,7 @@ vout=gl
 #packetizer=
 
 # VoD server module (string)
-#vod-server=
+vod-server=any
 
 # Use a plugins cache (boolean)
 #plugins-cache=1
