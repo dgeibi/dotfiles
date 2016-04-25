@@ -22,6 +22,7 @@ order += "load"
 #order += "run_watch VPN"
 #order += "ethernet _first_"
 order += "battery 0"
+order += "volume master"
 order += "tztime local"
 
 wireless _first_ {
@@ -74,4 +75,12 @@ cpu_usage {
 cpu_temperature 0 {
         format = "%degrees °C"
         max_threshold = "70"
+}
+
+volume master {
+        format = "♪: %volume"
+        format_muted = "♪: muted (%volume)"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
 }
