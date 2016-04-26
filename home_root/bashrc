@@ -117,3 +117,11 @@ take() {
         cd "$1" || exit
     fi
 }
+
+gdiff() {
+    if [ -n "$1" ] && [ -n "$2" ]; then
+        git diff --no-index --word-diff $1 $2
+    else
+        echo "Usage: gdiff <old_file> <new_file>"
+    fi
+}
