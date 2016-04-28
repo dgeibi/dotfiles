@@ -9,10 +9,9 @@ HISTSIZE=2000
 export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
 PS1='[\u@\h \W]\$ '
 
-export home=/home/dgeibi
-export Code_Dir=$home/code
+export Code_Dir=${HOME}/code
 export HISTCONTROL=ignoreboth
-export XDG_CONFIG_HOME=$home/.config
+export XDG_CONFIG_HOME=${HOME}/.config
 export VISUAL="nvim"
 
 # autocd
@@ -25,7 +24,7 @@ if [ -e /usr/share/terminfo/x/xterm-256color ] && [ "$COLORTERM" == "xfce4-termi
 fi
 
 # fzf
-[ -f $home/.fzf.bash ] && source $home/.fzf.bash
+[ -f ${HOME}/.fzf.bash ] && source ${HOME}/.fzf.bash
 
 export FZF_DEFAULT_OPTS='
   --bind ctrl-f:page-down,ctrl-b:page-up
@@ -49,13 +48,13 @@ alias grep='grep --color=auto'
 alias vi=nvim
 alias vim=nvim
 alias uusbc='udisksctl unmount -b /dev/sdc1 && udisksctl power-off -b /dev/sdc'
-alias note="cd $home/code/Dropbox/Note && tree"
+alias note="cd ${HOME}/code/Dropbox/Note"
 
 export PROMPT_COMMAND="history -a"
 
 #source
 source /etc/profile.d/autojump.bash
-for SCRIPTS in $home/code/dotfiles/src/*; do
+for SCRIPTS in ${HOME}/code/dotfiles/src/*; do
     source $SCRIPTS
 done
 
@@ -88,6 +87,7 @@ checknet() {
 }
 
 update() {
+    sudo -v
     uwechat
     pacaur -Syu
     nvim +PlugUpgrade +PlugUpdate +qa
