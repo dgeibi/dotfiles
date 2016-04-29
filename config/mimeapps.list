@@ -39,7 +39,7 @@ application/x-ruby=visual-studio-code.desktop;mousepad.desktop;
 application/javascript=visual-studio-code.desktop;atom.desktop;
 video/x-ms-wmv=mpv.desktop;
 inode/directory=exo-file-manager.desktop;
-application/octet-stream=atom.desktop;
+application/octet-stream=evince.desktop;atom.desktop;mousepad.desktop;
 x-scheme-handler/trash=exo-file-manager.desktop;
 video/mp4=gnome-mplayer.desktop;mplayer.desktop;vlc.desktop;
 
@@ -52,3 +52,4 @@ text/plain=visual-studio-code.desktop
 video/mp4=vlc.desktop
 image/jpeg=gpicview.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
+application/octet-stream=mousepad.desktop
