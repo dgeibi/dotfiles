@@ -13,7 +13,8 @@ export Code_Dir=${HOME}/code
 export HISTCONTROL=ignoreboth
 export XDG_CONFIG_HOME=${HOME}/.config
 export VISUAL="nvim"
-
+export NVM_DIR="${HOME}/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 # autocd
 shopt -s autocd
 
@@ -24,7 +25,7 @@ if [ -e /usr/share/terminfo/x/xterm-256color ] && [ "$COLORTERM" == "xfce4-termi
 fi
 
 # fzf
-[ -f ${HOME}/.fzf.bash ] && source ${HOME}/.fzf.bash
+[ -f "${HOME}/.fzf.bash" ] && source "${HOME}/.fzf.bash"
 
 export FZF_DEFAULT_OPTS='
   --bind ctrl-f:page-down,ctrl-b:page-up
@@ -91,6 +92,7 @@ update() {
     uwechat
     pacaur -Syu
     nvim +PlugUpgrade +PlugUpdate +qa
+    cd "$NVM_DIR" && git fetch origin && git checkout `git describe --abbrev=0 --tags` && cd -
 }
 
 syscheck() {
@@ -120,7 +122,7 @@ take() {
 
 gdiff() {
     if [ -n "$1" ] && [ -n "$2" ]; then
-        git diff --no-index --word-diff $1 $2
+        git diff --no-index --word-diff "$1" "$2"
     else
         echo "Usage: gdiff <old_file> <new_file>"
     fi
