@@ -8,41 +8,41 @@ set -e
 export DOTFILES_DIR=${HOME}/code/dotfiles
 
 linkf() {
-    if [ -h ~/.$1 ]; then
+    if [ -h ~/."$1" ]; then
         if [ "$(readlink ~/.$1)" !=  "$DOTFILES_DIR/home_root/$1" ]; then
-            mv ~/.$1 ~/.${1}.old
+            mv ~/."$1" ~/."$1".old
         else
             return 0
         fi
-    elif [ -e ~/.$1 ]; then
-        mv ~/.$1 ~/.${1}.old
+    elif [ -e ~/."$1" ]; then
+        mv ~/."$1" ~/."${1}".old
     fi
 
-    ln -s $DOTFILES_DIR/home_root/$1  ~/.$1
-    echo ~/.$1 linked
+    ln -s "$DOTFILES_DIR"/home_root/"$1"  ~/."$1"
+    echo ~/."$1" linked
     return 0
 }
 
 linkd() {
-    if [ -h ~/.config/$1 ]; then
+    if [ -h ~/.config/"$1" ]; then
         if [ "$(readlink ~/.config/$1)" !=  "$DOTFILES_DIR/config/$1" ]; then
-            mv ~/.config/$1 ~/.config/${1}.old
+            mv ~/.config/"$1" ~/.config/"$1".old
         else
             return 0
         fi
-    elif [ -e ~/.config/$1 ]; then
-        mv ~/.config/$1 ~/.config/${1}.old
+    elif [ -e ~/.config/"$1" ]; then
+        mv ~/.config/"$1" ~/.config/"$1".old
     fi
 
-    ln -s $DOTFILES_DIR/config/$1  ~/.config/$1
-    echo ~/.config/$1 linked
+    ln -s "$DOTFILES_DIR"/config/"$1"  ~/.config/
+    echo ~/.config/"$1" linked
     return 0
 }
 
 linkroot() {
-    for file in $DOTFILES_DIR/home_root/*; do
-        if [ -e $file ]; then
-            linkf `basename $file`
+    for file in "$DOTFILES_DIR"/home_root/*; do
+        if [ -e "$file" ]; then
+            linkf $(basename "$file")
         fi
     done
     echo "files in home_root linked"
@@ -51,8 +51,8 @@ linkroot() {
 
 linkconfig() {
     for conf in $DOTFILES_DIR/config/*;do
-        if [ -e $conf ]; then
-            linkd `basename $conf`
+        if [ -e "$conf" ]; then
+            linkd $(basename "$conf")
         fi
     done
     echo "files in .config linked"
@@ -60,10 +60,10 @@ linkconfig() {
 }
 
 clone() {
-    if ! [[ -d $DOTFILES_DIR ]]; then
-        git clone git@github.com:dgeibi/dotfiles.git $DOTFILES_DIR
+    if ! [[ -d "$DOTFILES_DIR" ]]; then
+        git clone git@github.com:dgeibi/dotfiles.git "$DOTFILES_DIR"
     else
-        cd $DOTFILES_DIR
+        cd "$DOTFILES_DIR"
         git pull
     fi
     return 0
@@ -78,7 +78,16 @@ vim-plug() {
     return 0
 }
 
+installnvm() {
+    if ! [[ -e ~/.nvm ]]; then
+        git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
+        cd -
+    fi
+    return 0
+}
+
 clone
 linkroot
 linkconfig
 vim-plug
+installnvm
