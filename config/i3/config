@@ -194,7 +194,6 @@ mode "(L)ogout, (R)eboot, (P)oweroff" {
 bindsym $mod+Shift+e mode "(L)ogout, (R)eboot, (P)oweroff"
 
 for_window [title="VLC media player"] floating enable
-for_window [window_role="popup"] no_focus
 for_window [title="- Chromium$"] border pixel 2
 
 # Start i3bar to display a workspace bar (plus the system information i3status
