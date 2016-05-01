@@ -14,7 +14,9 @@ export HISTCONTROL=ignoreboth
 export XDG_CONFIG_HOME=${HOME}/.config
 export VISUAL="nvim"
 export NVM_DIR="${HOME}/.nvm"
+
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
 # autocd
 shopt -s autocd
 
@@ -89,8 +91,9 @@ checknet() {
 
 update() {
     sudo -v
+    pacaur -u
     uwechat
-    pacaur -Syu
+    sudo pacman -Syu
     nvim +PlugUpgrade +PlugUpdate +qa
     cd "$NVM_DIR" && git fetch origin && git checkout `git describe --abbrev=0 --tags` && cd -
 }
