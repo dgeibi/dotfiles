@@ -1,14 +1,14 @@
 [Added Associations]
 x-scheme-handler/http=exo-web-browser.desktop;
 x-scheme-handler/https=exo-web-browser.desktop;
-text/plain=visual-studio-code.desktop;atom.desktop;mousepad.desktop;
+text/plain=mousepad.desktop;visual-studio-code.desktop;atom.desktop;
 text/x-matlab=visual-studio-code.desktop;mousepad.desktop;
 image/png=gpicview.desktop;ristretto.desktop;pinta.desktop;
 application/xml=visual-studio-code.desktop;mousepad.desktop;
-text/markdown=visual-studio-code.desktop;atom.desktop;mousepad.desktop;
+text/markdown=google-chrome-unstable.desktop;visual-studio-code.desktop;atom.desktop;mousepad.desktop;
 application/x-theme=visual-studio-code.desktop;atom.desktop;panel-desktop-handler.desktop;
 application/x-tar=squeeze.desktop;
-text/html=visual-studio-code.desktop;mousepad.desktop;google-chrome.desktop;
+text/html=mousepad.desktop;visual-studio-code.desktop;google-chrome.desktop;
 text/css=visual-studio-code.desktop;mousepad.desktop;
 image/jpeg=pinta.desktop;ristretto.desktop;gpicview.desktop;
 application/x-compressed-tar=org.gnome.FileRoller.desktop;xarchiver.desktop;squeeze.desktop;
