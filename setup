@@ -86,8 +86,25 @@ installnvm() {
     return 0
 }
 
+installsbp() {
+    sbpbase="$HOME/code/sbp"
+    if ! [[ -d "$sbpbase" ]]; then
+        git clone https://github.com/brujoand/sbp.git "$sbpbase"
+    else
+        cd $sbpbase
+        git pull
+    fi
+    if [[ ! -f "$HOME"/.sbp ]]; then
+        echo "SBP: Adding default config to $HOME/.sbp"
+        cp "$sbpbase"/settings.default "$HOME/.sbp"
+    else
+        echo "SBP: Found config at $HOME/.sbp"
+    fi
+}
+
 clone
 linkroot
 linkconfig
 vim-plug
 installnvm
+installsbp
