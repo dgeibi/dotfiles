@@ -8,9 +8,7 @@
 
 # startup
 exec fcitx
-exec numlockx
 exec dropbox
-#exec syndaemon -i 2 -d
 
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
