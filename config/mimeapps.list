@@ -21,7 +21,6 @@ application/x-xz-compressed-tar=org.gnome.FileRoller.desktop;
 text/x-makefile=visual-studio-code.desktop;mousepad.desktop;
 application/zip=org.gnome.FileRoller.desktop;
 text/x-python=visual-studio-code.desktop;mousepad.desktop;
-application/pdf=evince.desktop;
 application/msword=libreoffice-writer.desktop;
 application/vnd.ms-excel=libreoffice-calc.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
@@ -42,6 +41,7 @@ inode/directory=exo-file-manager.desktop;
 application/octet-stream=evince.desktop;atom.desktop;mousepad.desktop;
 x-scheme-handler/trash=exo-file-manager.desktop;
 video/mp4=gnome-mplayer.desktop;mplayer.desktop;vlc.desktop;
+application/pdf=google-chrome-unstable.desktop;evince.desktop;
 
 [Default Applications]
 image/png=gpicview.desktop
@@ -53,3 +53,4 @@ video/mp4=vlc.desktop
 image/jpeg=gpicview.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
 application/octet-stream=mousepad.desktop
+application/pdf=evince.desktop
