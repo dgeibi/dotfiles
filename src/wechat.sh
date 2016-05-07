@@ -5,7 +5,8 @@ uwechat(){
     buildroot="$(mktemp -d)"
     Verfile="$HOME/.wechatver"
     AURlink="https://aur.archlinux.org/electronic-wechat-git.git"
-    remotever=$(git ls-remote -h -q $AURlink | awk '{print $1}')
+    Git="https://github.com/geeeeeeeeek/electronic-wechat.git"
+    remotever=$(git ls-remote -h -q $Git | grep master | awk '{print $1}')
     if [ ! -e "$Verfile" ]; then
         echo "4d82cf19340846a8140a9a19d5ee8063ab811517" > "$Verfile"
     fi
