@@ -27,7 +27,6 @@ checknet() {
 update() {
     sudo -v
     pacaur -u
-    uwechat
     sudo pacman -Syu
     nvim +PlugUpgrade +PlugUpdate +qa
     cd "$NVM_DIR" && git fetch origin && git checkout `git describe --abbrev=0 --tags` && cd -
