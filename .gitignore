@@ -17,3 +17,9 @@ config/fcitx/*
 config/xfce4/*
 !config/xfce4/terminal/
 config/nvim/autoload/*
+config/copyq/*
+!config/copyq/copyq.conf
+!config/copyq/copyq-bak.conf
+!config/copyq/copyq-filter.ini
+!config/copyq/copyq_tabs.ini
+!config/copyq/copyq_geometry.ini
