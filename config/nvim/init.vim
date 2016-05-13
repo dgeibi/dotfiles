@@ -32,7 +32,6 @@ Plug 'plasticboy/vim-markdown'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --key-bindings --completion --no-update-rc' }
 Plug 'junegunn/fzf.vim'
 Plug 'benekastah/neomake'
-Plug 'Raimondi/delimitMate'
 Plug 'Shougo/deoplete.nvim'
 call plug#end()
 
