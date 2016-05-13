@@ -27,7 +27,7 @@ checknet() {
 update() {
     sudo -v
     pacaur -u
-    cd ~/code/ctpkg/ && ./install.sh && cd -
+    cd ~/code/ctpkg/ && ./install.sh ; cd -
     sudo pacman -Syu
     nvim +PlugUpgrade +PlugUpdate +qa
     cd "$NVM_DIR" && git fetch origin && git checkout `git describe --abbrev=0 --tags` && cd -
