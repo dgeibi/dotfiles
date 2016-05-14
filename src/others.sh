@@ -26,11 +26,11 @@ checknet() {
 
 update() {
     sudo -v
-    pacaur -u
-    cd ~/code/ctpkg/ && ./install.sh ; cd -
+    pacaur -u --noconfirm
+    cd ~/code/ctpkg/ || exit && ./install.sh && cd - || exit
     sudo pacman -Syu
     nvim +PlugUpgrade +PlugUpdate +qa
-    cd "$NVM_DIR" && git fetch origin && git checkout `git describe --abbrev=0 --tags` && cd -
+    cd "$NVM_DIR" || exit && git fetch origin && git checkout "$(git describe --abbrev=0 --tags)" && cd - || exit
 }
 
 syscheck() {
