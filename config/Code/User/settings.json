@@ -18,6 +18,8 @@
 
     "editor.cursorStyle": "line",
 
+    "externalTerminal.linuxExec": "gnome-terminal",
+
     "files.trimTrailingWhitespace": true
 
 }
