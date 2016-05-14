@@ -27,11 +27,12 @@ checknet() {
 update() {
     sudo -v
     pacaur -u --noconfirm
-    cd ~/code/ctpkg/ || exit && ./install.sh && cd - || exit
     sudo pacman -Syu
     nvim +PlugUpgrade +PlugUpdate +qa
     cd "$NVM_DIR" || exit && git fetch origin && git checkout "$(git describe --abbrev=0 --tags)" && cd - || exit
 }
+
+alias uctpkg='cd ~/code/ctpkg/ || exit && ./install.sh && cd - || exit'
 
 syscheck() {
     systemd-analyze
