@@ -3,7 +3,9 @@
 
 set -e
 
-[ ! -e ~/code ] && mkdir -p ~/code
+if [ ! -e ~/code ]; then
+    mkdir -p ~/code
+fi
 
 export DOTFILES_DIR=${HOME}/code/dotfiles
 
@@ -19,7 +21,7 @@ linkf() {
     fi
 
     ln -s "$DOTFILES_DIR"/home_root/"$1"  ~/."$1"
-    echo ~/."$1" linked
+    echo home_root/"$1" linked
     return 0
 }
 
@@ -35,14 +37,14 @@ linkd() {
     fi
 
     ln -s "$DOTFILES_DIR"/config/"$1"  ~/.config/
-    echo ~/.config/"$1" linked
+    echo config/"$1" linked
     return 0
 }
 
 linkroot() {
-    for file in "$DOTFILES_DIR"/home_root/*; do
-        if [ -e "$file" ]; then
-            linkf "$(basename "$file")"
+    for i in "$DOTFILES_DIR"/home_root/*; do
+        if [ -e "$i" ]; then
+            linkf "$(basename "$i")"
         fi
     done
     echo "files in home_root linked"
@@ -50,12 +52,15 @@ linkroot() {
 }
 
 linkconfig() {
-    for conf in $DOTFILES_DIR/config/*;do
-        if [ -e "$conf" ]; then
-            linkd "$(basename "$conf")"
+    for i in $DOTFILES_DIR/config/*; do
+        if [ "$(basename "$i")" == "mimeapps.list" ]; then
+            continue;
+        fi
+        if [ -e "$i" ]; then
+            linkd "$(basename "$i")"
         fi
     done
-    echo "files in .config linked"
+    echo "files in config linked"
     return 0
 }
 
