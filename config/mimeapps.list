@@ -42,6 +42,7 @@ application/octet-stream=evince.desktop;atom.desktop;mousepad.desktop;
 x-scheme-handler/trash=exo-file-manager.desktop;
 video/mp4=gnome-mplayer.desktop;mplayer.desktop;vlc.desktop;
 application/pdf=google-chrome-unstable.desktop;evince.desktop;
+application/x-wine-extension-ini=mousepad.desktop;
 
 [Default Applications]
 image/png=gpicview.desktop
