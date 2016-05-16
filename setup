@@ -9,7 +9,7 @@ export DOTFILES_DIR=${HOME}/code/dotfiles
 
 linkf() {
     if [ -h ~/."$1" ]; then
-        if [ "$(readlink ~/.$1)" !=  "$DOTFILES_DIR/home_root/$1" ]; then
+        if [ "$(readlink ~/."$1")" !=  "$DOTFILES_DIR"/home_root/"$1" ]; then
             mv ~/."$1" ~/."$1".old
         else
             return 0
@@ -25,7 +25,7 @@ linkf() {
 
 linkd() {
     if [ -h ~/.config/"$1" ]; then
-        if [ "$(readlink ~/.config/$1)" !=  "$DOTFILES_DIR/config/$1" ]; then
+        if [ "$(readlink ~/.config/"$1")" !=  "$DOTFILES_DIR"/config/"$1" ]; then
             mv ~/.config/"$1" ~/.config/"$1".old
         else
             return 0
@@ -42,7 +42,7 @@ linkd() {
 linkroot() {
     for file in "$DOTFILES_DIR"/home_root/*; do
         if [ -e "$file" ]; then
-            linkf $(basename "$file")
+            linkf "$(basename "$file")"
         fi
     done
     echo "files in home_root linked"
@@ -52,7 +52,7 @@ linkroot() {
 linkconfig() {
     for conf in $DOTFILES_DIR/config/*;do
         if [ -e "$conf" ]; then
-            linkd $(basename "$conf")
+            linkd "$(basename "$conf")"
         fi
     done
     echo "files in .config linked"
@@ -80,7 +80,7 @@ vim-plug() {
 
 installnvm() {
     if ! [[ -e ~/.nvm ]]; then
-        git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`
+        git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout "$(git describe --abbrev=0 --tags)"
         cd -
     fi
     return 0
@@ -91,7 +91,7 @@ installsbp() {
     if ! [[ -d "$sbpbase" ]]; then
         git clone https://github.com/brujoand/sbp.git "$sbpbase"
     else
-        cd $sbpbase
+        cd "$sbpbase"
         git pull
     fi
     if [[ ! -f "$HOME"/.sbp ]]; then
