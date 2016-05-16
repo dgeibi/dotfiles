@@ -46,12 +46,10 @@ eval $(thefuck --alias)
 alias disk='df -hl'
 alias sudo='sudo '
 alias lm='ls -al'
-alias ls='ls --color=auto'
+alias ls='ls --color=auto -h --group-directories-first'
 alias grep='grep --color=auto'
 alias vi=nvim
 alias vim=nvim
-alias uusbc='udisksctl unmount -b /dev/sdc1 && udisksctl power-off -b /dev/sdc'
-alias note="cd ${HOME}/code/Dropbox/Note"
 
 export PROMPT_COMMAND="history -a"
 
