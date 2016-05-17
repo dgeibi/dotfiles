@@ -32,7 +32,7 @@ update() {
     cd "$NVM_DIR" || exit && git fetch origin && git checkout "$(git describe --abbrev=0 --tags)" && cd - || exit
 }
 
-alias uctpkg='cd ~/code/ctpkg/ || exit && ./install.sh && cd - || exit'
+alias uctpkg='cd ~/code/ctpkg/ || exit && ./install.sh && cd - >/dev/null || exit'
 
 syscheck() {
     systemd-analyze
