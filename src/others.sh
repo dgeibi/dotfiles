@@ -2,9 +2,9 @@
 
 #vscode
 code() {
- # visual-studio-code $1 &> /dev/null
-  visual-studio-code "$@" &> /dev/null &
-  disown
+    # visual-studio-code $1 &> /dev/null
+    visual-studio-code "$@" &> /dev/null &
+    disown
 }
 
 ### mount ntfs
@@ -43,12 +43,18 @@ syscheck() {
 }
 
 format() {
-    sed -i -e 's/[ \t]*$//' -e 's/\t/    /g' "$@"
-    for each in "$@"
+    for i in "$@"
     do
-        if [[ "$each" = *.c ]]; then
-            astyle --style=kr -n "$each"
-        fi
+        case "$i" in
+            *.c)
+                astyle --style=kr -n "$i"
+            ;;
+            *.sh)
+                bashbeautify "$i"
+                echo "$i" formatted
+            ;;
+        esac
+        sed -i -e 's/[ \t]*$//' -e 's/\t/    /g' "$i"
     done
 }
 
@@ -68,5 +74,5 @@ gdiff() {
 }
 
 roll() {
-    echo $(head -n1 /var/log/pacman.log | cut -d " " -f 1,2) 以来一共滚了 $(grep -c "full system upgrade" /var/log/pacman.log) 次
+    echo "$(head -n1 /var/log/pacman.log | cut -d " " -f 1,2)" 以来一共滚了 "$(grep -c "full system upgrade" /var/log/pacman.log)" 次
 }
