@@ -31,16 +31,17 @@ fi
 [ -f "${HOME}/.fzf.bash" ] && source "${HOME}/.fzf.bash"
 
 export FZF_DEFAULT_OPTS='
-  --bind ctrl-f:page-down,ctrl-b:page-up
-  --color=light,fg:232,bg:255,bg+:116,info:27
+--bind ctrl-f:page-down,ctrl-b:page-up
+--color=light,fg:232,bg:255,bg+:116,info:27
 '
 
 #PATH
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 PATH="/usr/local/heroku/bin:$PATH"
+PATH="$HOME/code/Dropbox/localhost/bin:$PATH"
 
 #thefuck
-eval $(thefuck --alias)
+eval "$(thefuck --alias)"
 
 #alias
 alias disk='df -hl'
