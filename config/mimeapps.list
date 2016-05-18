@@ -45,7 +45,7 @@ application/pdf=google-chrome-unstable.desktop;evince.desktop;
 application/x-wine-extension-ini=mousepad.desktop;
 
 [Default Applications]
-image/png=gpicview.desktop
+image/png=pinta.desktop
 inode/directory=org.gnome.Nautilus.desktop
 audio/mpeg=vlc.desktop
 x-scheme-handler/mailto=kde4-kmailservice.desktop
