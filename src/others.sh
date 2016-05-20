@@ -29,7 +29,7 @@ update() {
     pacaur -u --noconfirm
     sudo pacman -Syu
     nvim +PlugUpgrade +PlugUpdate +qa
-    cd "$NVM_DIR" || exit && git fetch origin && git checkout "$(git describe --abbrev=0 --tags)" && cd - || exit
+    cd "$NVM_DIR" || exit && git fetch origin && git checkout "$(git describe --abbrev=0 --tags)" && cd - > /dev/null || exit
 }
 
 alias uctpkg='cd ~/code/ctpkg/ || exit && ./install.sh && cd - >/dev/null || exit'
