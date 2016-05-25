@@ -174,24 +174,24 @@ bindsym Print exec xfce4-screenshooter
 bindsym $nmod+x exec google-chrome-unstable
 bindsym $nmod+f exec nautilus
 bindsym $nmod+v exec visual-studio-code
-bindsym $nmod+a exec atom
-bindsym $nmod+l exec i3lock -c 000000 && xset dpms force off
 bindsym $nmod+w exec VirtualBox -startvm "Windows 10" &
-bindsym $nmod+d exec drracket
 
 # Create Log out, Reboot, Poweroff bindings
-# copy from https://gist.github.com/athmane/6200074
-mode "(L)ogout, (R)eboot, (P)oweroff" {
-        bindsym $mod+Shift+r exec systemctl reboot
-        bindsym $mod+Shift+l exit
-        bindsym $mod+Shift+p exec systemctl poweroff
+# copy from https://faq.i3wm.org/question/239/how-do-i-suspendlockscreen-and-logout.1.html
+mode "(L)ock, (E)xit, (R)eboot, (P)oweroff, (S)uspend, (H)ibernate" {
+        bindsym $mod+Shift+l exec --no-startup-id i3exit lock, mode "default"
+        bindsym $mod+Shift+e exit
+        bindsym $mod+Shift+p exec --no-startup-id i3exit poweroff, mode "default"
+        bindsym $mod+Shift+h exec --no-startup-id i3exit hibernate, mode "default"
+        bindsym $mod+Shift+s exec --no-startup-id i3exit suspend, mode "default"
+        bindsym $mod+Shift+r exec --no-startup-id i3exit reboot, mode "default"
 
         # back to normal: Enter or Escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
 
-bindsym $mod+Shift+e mode "(L)ogout, (R)eboot, (P)oweroff"
+bindsym $mod+Shift+e mode "(L)ock, (E)xit, (R)eboot, (P)oweroff, (S)uspend, (H)ibernate"
 
 for_window [title="VLC media player"] floating enable
 #for_window [title="- Chromium$"] border pixel 2
