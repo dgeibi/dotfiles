@@ -37,9 +37,9 @@ alias uctpkg='cd ~/code/ctpkg/ || exit && ./install.sh && cd - >/dev/null || exi
 syscheck() {
     systemd-analyze
     echo -e "\nJournal Errors"
-    journalctl -p 3 -xb
+    journalctl -p 3 -xbl
     echo -e "\nsytemd failed"
-    systemctl --failed
+    systemctl --failed -l
 }
 
 format() {

@@ -37,7 +37,7 @@ export FZF_DEFAULT_OPTS='
 #PATH
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 PATH="/usr/local/heroku/bin:$PATH"
-PATH="$HOME/code/Dropbox/localhost/bin:$PATH"
+PATH="$HOME/Dropbox/localhost/bin:$PATH"
 
 #thefuck
 eval "$(thefuck --alias)"
