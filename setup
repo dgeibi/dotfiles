@@ -66,7 +66,7 @@ linkconfig() {
 
 clone() {
     if ! [[ -d "$DOTFILES_DIR" ]]; then
-        git clone git@github.com:dgeibi/dotfiles.git "$DOTFILES_DIR"
+        git clone https://github.com/dgeibi/dotfiles.git "$DOTFILES_DIR"
     else
         cd "$DOTFILES_DIR"
         git pull
@@ -79,13 +79,15 @@ vim-plug() {
         curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     fi
-    nvim +PlugInstall +qa
+    nvim +PlugInstall +UpdateRemotePlugins +qa
     return 0
 }
 
 installnvm() {
     if ! [[ -e ~/.nvm ]]; then
         git clone https://github.com/creationix/nvm.git ~/.nvm && cd ~/.nvm && git checkout "$(git describe --abbrev=0 --tags)"
+        . "$HOME"/.nvm/nvm.sh
+        nvm install "$(nvm ls-remote | tail -1 | tr -d ' ')"
         cd -
     fi
     return 0
