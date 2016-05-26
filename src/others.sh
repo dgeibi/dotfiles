@@ -7,17 +7,6 @@ code() {
     disown
 }
 
-### mount ntfs
-ntfs() {
-    case $1 in
-        c) [ ! -e /media/c/ ] && sudo mkdir -p /media/c; sudo ntfs-3g /dev/sda3 /media/c ;;
-        #d) [ ! -e /media/d/ ] && sudo mkdir -p /media/d; sudo ntfs-3g /dev/sdb1 /media/d ;;
-        uc) sudo umount /media/c ;;
-        #ud) sudo umount /media/d ;;
-        *) echo "Usage: ntfs {c,uc}"
-    esac
-}
-
 checknet() {
     ping -c 4 114.114.114.114
     echo -e "\n"
@@ -30,6 +19,15 @@ update() {
     sudo pacman -Syu
     nvim +PlugUpgrade +PlugUpdate +qa
     cd "$NVM_DIR" || exit && git fetch origin && git checkout "$(git describe --abbrev=0 --tags)" && cd - > /dev/null || exit
+}
+
+nodeupdate() {
+    lastline="$(nvm ls-remote | tail -1)"
+    if ! echo "$lastline" | grep -e '->' > /dev/null; then
+        nvm install "$(echo "$lastline" | tr -d ' ')"
+    else
+        echo "${lastline/->       /}" is latest version.
+    fi
 }
 
 alias uctpkg='cd ~/code/ctpkg/ || exit && ./install.sh && cd - >/dev/null || exit'
