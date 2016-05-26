@@ -176,22 +176,21 @@ bindsym $nmod+f exec nautilus
 bindsym $nmod+v exec visual-studio-code
 bindsym $nmod+w exec VirtualBox -startvm "Windows 10" &
 
-# Create Log out, Reboot, Poweroff bindings
-# copy from https://faq.i3wm.org/question/239/how-do-i-suspendlockscreen-and-logout.1.html
-mode "(L)ock, (E)xit, (R)eboot, (P)oweroff, (S)uspend, (H)ibernate" {
-        bindsym $mod+Shift+l exec --no-startup-id i3exit lock, mode "default"
+# copy from https://wiki.archlinux.org/index.php/i3#Shutdown.2C_reboot.2C_lock_screen
+set $Locker i3lock -c 000000 && sleep 1
+set $mode_system (L)ock, (E)xit, (R)eboot, (P)oweroff, (S)uspend, (H)ibernate
+mode "$mode_system" {
+        bindsym $mod+Shift+l exec --no-startup-id $Locker && xset dpms force off, mode "default"
         bindsym $mod+Shift+e exit
-        bindsym $mod+Shift+p exec --no-startup-id i3exit poweroff, mode "default"
-        bindsym $mod+Shift+h exec --no-startup-id i3exit hibernate, mode "default"
-        bindsym $mod+Shift+s exec --no-startup-id i3exit suspend, mode "default"
-        bindsym $mod+Shift+r exec --no-startup-id i3exit reboot, mode "default"
-
-        # back to normal: Enter or Escape
+        bindsym $mod+Shift+p exec --no-startup-id systemctl poweroff -i, mode "default"
+        bindsym $mod+Shift+r exec --no-startup-id systemctl reboot, mode "default"
+        bindsym $mod+Shift+h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+        bindsym $mod+Shift+s exec --no-startup-id $Locker && systemctl suspend, mode "default"
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
 
-bindsym $mod+Shift+e mode "(L)ock, (E)xit, (R)eboot, (P)oweroff, (S)uspend, (H)ibernate"
+bindsym $mod+Shift+e mode "$mode_system"
 
 for_window [title="VLC media player"] floating enable
 #for_window [title="- Chromium$"] border pixel 2
