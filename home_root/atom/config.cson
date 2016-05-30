@@ -11,13 +11,12 @@
       "language-objective-c"
       "language-perl"
       "atom-beautify"
-      "terminal-plus"
       "language-clojure"
     ]
     projectHome: "/home/dgeibi/code/"
     themes: [
-      "one-light-ui"
-      "chester-atom-syntax"
+      "one-dark-ui"
+      "atom-dark-syntax"
     ]
   editor:
     fontFamily: "Iosevka Slab"
@@ -32,6 +31,7 @@
   "linter-eslint":
     disableWhenNoEslintConfig: false
     eslintrcPath: "~/.eslintrc"
+    globalNodePath: "/home/dgeibi/.nvm/versions/node/v6.2.0"
   "linter-js-standard":
     style: "semi-standard"
   "linter-shellcheck": {}
