@@ -2998,7 +2998,7 @@ sout-x264-tune=film
 #avcodec-codec=
 
 # Hardware decoding (string)
-avcodec-hw=vaapi_x11
+avcodec-hw=none
 
 # Threads (integer)
 #avcodec-threads=0
@@ -3772,7 +3772,7 @@ deinterlace=-1
 #deinterlace-mode=blend
 
 # Video output module (string)
-vout=xcb_x11
+vout=any
 
 # Video filter module (string)
 #video-filter=
