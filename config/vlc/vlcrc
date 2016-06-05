@@ -2998,7 +2998,7 @@ sout-x264-tune=film
 #avcodec-codec=
 
 # Hardware decoding (string)
-avcodec-hw=none
+#avcodec-hw=any
 
 # Threads (integer)
 #avcodec-threads=0
@@ -4069,7 +4069,7 @@ vod-server=any
 #repeat=0
 
 # Play and exit (boolean)
-#play-and-exit=0
+play-and-exit=1
 
 # Play and stop (boolean)
 #play-and-stop=0
