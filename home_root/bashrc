@@ -53,6 +53,7 @@ alias vim=nvim
 export PROMPT_COMMAND="history -a"
 
 #source
+[ -f ~/.git-completion.bash ] && . ~/.git-completion.bash
 source /etc/profile.d/autojump.bash
 for SCRIPTS in ${HOME}/code/dotfiles/src/*; do
     source $SCRIPTS

@@ -107,6 +107,14 @@ installsbp() {
     else
         echo "SBP: Found config at $HOME/.sbp"
     fi
+    return 0
+}
+
+installgitcompletion() {
+    if [ ! -f ~/.git-completion.bash ]; then
+        curl -L http://git.io/vfhol > ~/.git-completion.bash
+    fi
+    return 0
 }
 
 clone
@@ -115,3 +123,4 @@ linkconfig
 vim-plug
 installnvm
 installsbp
+installgitcompletion
