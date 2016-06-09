@@ -39,17 +39,19 @@ video/x-ms-wmv=mpv.desktop;
 inode/directory=exo-file-manager.desktop;
 application/octet-stream=evince.desktop;atom.desktop;mousepad.desktop;
 x-scheme-handler/trash=exo-file-manager.desktop;
-video/mp4=mplayer.desktop;gnome-mplayer.desktop;vlc.desktop;
+video/mp4=vlc.desktop;mpv.desktop;gnome-mplayer.desktop;mplayer.desktop;io.github.GnomeMpv.desktop;
 application/pdf=google-chrome-unstable.desktop;evince.desktop;
 application/x-wine-extension-ini=mousepad.desktop;
 image/png=pinta.desktop;gpicview.desktop;
+video/x-msvideo=vlc.desktop;
+application/wps-office.docx=wps-office-wps.desktop;
 
 [Default Applications]
 inode/directory=org.gnome.Nautilus.desktop
 audio/mpeg=vlc.desktop
 x-scheme-handler/mailto=kde4-kmailservice.desktop
 text/plain=visual-studio-code.desktop
-video/mp4=vlc.desktop
+video/mp4=io.github.GnomeMpv.desktop
 image/jpeg=gpicview.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
 application/octet-stream=mousepad.desktop
