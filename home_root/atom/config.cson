@@ -12,6 +12,7 @@
       "language-perl"
       "atom-beautify"
       "language-clojure"
+      "markdown-preview"
     ]
     projectHome: "/home/dgeibi/code/"
     themes: [
@@ -35,6 +36,8 @@
   "linter-js-standard":
     style: "semi-standard"
   "linter-shellcheck": {}
+  "markdown-preview-plus":
+    enableLatexRenderingByDefault: true
   "one-dark-ui":
     fontSize: 16
   "one-light-ui":
