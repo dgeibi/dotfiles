@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "Iosevka Slab",
+    "editor.fontFamily": "Iosevka Slab, monospace",
 
     "editor.fontSize": 18,
 
@@ -18,8 +18,8 @@
 
     "editor.cursorStyle": "line",
 
-    "externalTerminal.linuxExec": "gnome-terminal",
+    "editor.wrappingColumn": 0,
 
-    "files.trimTrailingWhitespace": true
+    "externalTerminal.linuxExec": "gnome-terminal"
 
 }
