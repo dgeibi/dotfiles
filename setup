@@ -117,9 +117,17 @@ installgitcompletion() {
     return 0
 }
 
+installmimeappslist() {
+    if [ ! -f ~/.config/mimeapps.list ]; then
+        install -Dm644 "$DOTFILES_DIR"/config/mimeapps.list ~/.config/mimeapps.list
+    fi
+    return 0
+}
+
 clone
 linkroot
 linkconfig
+installmimeappslist
 vim-plug
 installnvm
 installsbp
