@@ -171,8 +171,8 @@ bindsym $nmod+n exec light -U 5
 bindsym Print exec xfce4-screenshooter
 
 # customized application
-#bindsym $nmod+x exec google-chrome-unstable
-bindsym $nmod+x exec chrome
+bindsym $nmod+x exec google-chrome-unstable
+#bindsym $nmod+x exec chrome
 bindsym $nmod+f exec nautilus
 bindsym $nmod+v exec visual-studio-code
 bindsym $nmod+w exec VirtualBox -startvm "Windows 10" &
