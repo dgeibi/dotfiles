@@ -69,6 +69,12 @@ if type fcitx > /dev/null; then
     export XMODIFIERS="@im=fcitx"
 fi
 
+# launch xflux
+
+if type xflux > /dev/dull; then
+    xflux -l 23.1 -g 113.4 > /dev/null
+fi
+
 # configurate QT
 
 export GTK2_RC_FILES="$HOME"/.gtkrc-2.0
