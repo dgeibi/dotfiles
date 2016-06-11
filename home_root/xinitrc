@@ -88,6 +88,12 @@ if type copyq > /dev/null; then
     copyq &
 fi
 
+# launch dropbox
+
+if type dropbox > /dev/null; then
+    dropbox &
+fi
+
 # execute i3wm
 
 if type i3 > /dev/null; then
