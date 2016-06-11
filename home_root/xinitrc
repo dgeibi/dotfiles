@@ -48,6 +48,12 @@ fi
 
 xrandr --output "$(xrandr | grep -m 1 "\bconnected" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/")" --primary
 
+# configurate QT
+
+export GTK2_RC_FILES="$HOME"/.gtkrc-2.0
+export QT_SELECT=5
+export QT_STYLE_OVERRIDE=GTK+
+
 # set background
 
 bgdir="$HOME"/Pictures/bg/
@@ -67,6 +73,7 @@ if type fcitx > /dev/null; then
     export GTK_IM_MODULE=fcitx
     export QT_IM_MODULE=fcitx
     export XMODIFIERS="@im=fcitx"
+    fcitx
 fi
 
 # launch xflux
@@ -75,11 +82,11 @@ if type xflux > /dev/null; then
     xflux -l 23.1 -g 113.4 > /dev/null
 fi
 
-# configurate QT
+# launch copyq
 
-export GTK2_RC_FILES="$HOME"/.gtkrc-2.0
-export QT_SELECT=5
-export QT_STYLE_OVERRIDE=GTK+
+if type copyq > /dev/null; then
+    copyq &
+fi
 
 # execute i3wm
 
