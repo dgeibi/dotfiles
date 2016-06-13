@@ -45,7 +45,7 @@ format() {
     do
         case "$i" in
             *.c)
-                astyle --style=kr -n "$i"
+                astyle --style=allman --add-brackets --break-blocks=all -n "$i"
             ;;
             *.sh)
                 bashbeautify "$i"
