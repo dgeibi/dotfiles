@@ -3,6 +3,7 @@ vlc-qt-interface.conf
 bookmarks
 .netrwhist
 config/nvim/plugged/*
+home_root/goldendict/index/*
 home_root/atom/*
 !config.cson
 !keymap.cson
