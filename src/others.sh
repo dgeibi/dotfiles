@@ -7,6 +7,11 @@ code() {
     disown
 }
 
+open() {
+    xdg-open "$@" &> /dev/null &
+    disown
+}
+
 checknet() {
     ping -c 4 114.114.114.114
     echo -e "\n"
