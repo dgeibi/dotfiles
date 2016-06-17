@@ -94,6 +94,12 @@ if type dropbox > /dev/null; then
     dropbox &
 fi
 
+# launch goldendict
+
+if type goldendict > /dev/null; then
+    goldendict &
+fi
+
 # execute i3wm
 
 if type i3 > /dev/null; then
