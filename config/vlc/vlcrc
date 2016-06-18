@@ -3322,7 +3322,7 @@ subsdec-encoding=UTF-8
 #qt-start-minimized=0
 
 # Pause the video playback when minimized (boolean)
-#qt-pause-minimized=0
+qt-pause-minimized=1
 
 # Windows opacity between 0.1 and 1 (float)
 #qt-opacity=1.000000
@@ -3379,7 +3379,7 @@ qt-privacy-ask=0
 #qt-icon-change=1
 
 # Maximum Volume displayed (integer)
-qt-max-volume=200
+qt-max-volume=250
 
 # Fullscreen controller mouse sensitivity (integer)
 qt-fs-sensitivity=7
@@ -3616,7 +3616,7 @@ qt-fs-sensitivity=7
 #audio-desync=0
 
 # Audio resampler (string)
-#audio-resampler=
+audio-resampler=any
 
 # Replay gain mode (string)
 #audio-replay-gain-mode=none
@@ -4042,7 +4042,7 @@ vout=any
 #dscp=0
 
 # Preferred packetizer list (string)
-#packetizer=
+packetizer=any
 
 # VoD server module (string)
 vod-server=any
