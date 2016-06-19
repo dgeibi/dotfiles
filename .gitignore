@@ -4,6 +4,7 @@ vlc-qt-interface.conf
 bookmarks
 .netrwhist
 config/nvim/plugged/*
+home_root/vim/plugged/*
 home_root/goldendict/index/*
 home_root/goldendict/history
 home_root/atom/*
@@ -20,6 +21,7 @@ config/fcitx/*
 config/xfce4/*
 !config/xfce4/terminal/
 config/nvim/autoload/*
+home_root/vim/autoload/*
 config/copyq/*
 !config/copyq/copyq.conf
 !config/copyq/copyq-bak.conf

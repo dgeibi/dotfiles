@@ -5,7 +5,7 @@
 [push]
 	default = simple
 [core]
-	editor = nvim
+	editor = vim
 
 [commit]
 	gpgsign = true

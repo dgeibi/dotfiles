@@ -12,6 +12,7 @@ PS1='[\u@\h \W]\$ '
 export HISTCONTROL=ignoreboth
 export XDG_CONFIG_HOME=${HOME}/.config
 export VISUAL="nvim"
+stty -ixon
 
 #nvm
 export NVM_DIR="${HOME}/.nvm"
@@ -47,8 +48,7 @@ alias sudo='sudo '
 alias lm='ls -al'
 alias ls='ls --color=auto -h --group-directories-first'
 alias grep='grep --color=auto'
-alias vi=nvim
-alias vim=nvim
+alias vi=vim
 
 export PROMPT_COMMAND="history -a"
 
