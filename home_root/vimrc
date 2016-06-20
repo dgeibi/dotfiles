@@ -6,21 +6,17 @@ set nobackup
 set fileencodings=utf8,cp936,gb18030,big5
 set number
 set relativenumber " 显示相对行号
+set laststatus=2
+set mouse=a
+set hlsearch
 
-" 自动缩进
 set autoindent
 set smartindent
 set smarttab
 set cindent
-" 缩进宽度
 set tabstop=4
 set shiftwidth=4
-
 set expandtab
-
-set laststatus=2
-set mouse=a
-
 
 call plug#begin()
 Plug 'vim-airline/vim-airline'
@@ -40,6 +36,8 @@ let g:airline_theme = "dark"
 let g:vim_markdown_folding_disabled = 1
 let g:neocomplete#enable_at_startup = 1
 
+autocmd! BufWritePost * Neomake
+
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi
@@ -47,10 +45,10 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
-autocmd! BufWritePost * Neomake
-
+" select all
 inoremap <C-a> <esc>ggVG<cr>
 nnoremap <C-a> ggVG<cr>
 
+" save
 inoremap <C-s> <esc>:w<cr>a
 nnoremap <C-s> :w<cr>

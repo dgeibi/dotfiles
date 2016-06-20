@@ -22,7 +22,7 @@ update() {
     sudo -v
     pacaur -u --noconfirm
     sudo pacman -Syu
-    nvim +PlugUpgrade +PlugUpdate +qa
+    vim +PlugUpgrade +PlugUpdate +qa
     cd "$NVM_DIR" || exit && git fetch origin && git checkout "$(git describe --abbrev=0 --tags)" && cd - > /dev/null || exit
 }
 
