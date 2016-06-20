@@ -98,7 +98,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1: chrome
+bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
@@ -110,7 +110,7 @@ bindsym $mod+9 workspace 9: vbox
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1: chrome
+bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
@@ -164,7 +164,7 @@ bindsym $nmod+b exec light -A 5
 bindsym $nmod+n exec light -U 5
 
 # Screenshot
-bindsym Print exec xfce4-screenshooter
+bindsym Shift+Print exec xfce4-screenshooter
 
 # customized application
 bindsym $nmod+x exec google-chrome-unstable
@@ -194,7 +194,7 @@ for_window [class="netease-cloud-music"] floating enable
 
 # Assign
 
-assign [class="google-chrome-unstable"] → 1: chrome
+assign [class="google-chrome-unstable"] → 1
 assign [class="Atom"] → 7: atom
 assign [class="VirtualBox"] → 9: vbox
 assign [class="Code"] → 8: vscode
