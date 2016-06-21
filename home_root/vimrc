@@ -5,7 +5,7 @@ set nobackup
 "set clipboard=unnamedplus
 set fileencodings=utf8,cp936,gb18030,big5
 set number
-set relativenumber " 显示相对行号
+set relativenumber
 set laststatus=2
 set mouse=a
 set hlsearch
@@ -38,6 +38,7 @@ let g:neocomplete#enable_at_startup = 1
 
 autocmd! BufWritePost * Neomake
 
+" Move lines up or down
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==
 inoremap <C-j> <Esc>:m .+1<CR>==gi
