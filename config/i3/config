@@ -167,10 +167,11 @@ bindsym $nmod+n exec light -U 5
 bindsym Shift+Print exec xfce4-screenshooter
 
 # customized application
-bindsym $nmod+x exec google-chrome-unstable
+bindsym $nmod+x exec google-chrome-unstable, workspace 1
 bindsym $nmod+f exec nautilus
-bindsym $nmod+v exec visual-studio-code
-bindsym $nmod+w exec VirtualBox -startvm "Windows 10" &
+bindsym $nmod+v exec visual-studio-code, workspace 8: vscode
+bindsym $nmod+a exec atom, workspace 7: atom
+bindsym $nmod+w exec VirtualBox -startvm "Windows 10" &, workspace 9: vbox
 
 # copy from https://wiki.archlinux.org/index.php/i3#Shutdown.2C_reboot.2C_lock_screen
 set $Locker i3lock -c 000000 && sleep 1
@@ -189,7 +190,7 @@ mode "$mode_system" {
 bindsym $mod+Shift+e mode "$mode_system"
 
 for_window [class="Vlc"] floating enable
-for_window [title="- Google Chrome$"] border pixel 2
+for_window [class="google-chrome-unstable"] border pixel 2
 for_window [class="netease-cloud-music"] floating enable
 
 # Assign
