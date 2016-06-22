@@ -166,12 +166,12 @@ bindsym $nmod+n exec light -U 5
 # Screenshot
 bindsym Shift+Print exec xfce4-screenshooter
 
-# customized application
-bindsym $nmod+x exec google-chrome-unstable, workspace 1
+# etc
+bindsym $nmod+x workspace 1, exec google-chrome-unstable
 bindsym $nmod+f exec nautilus
-bindsym $nmod+v exec visual-studio-code, workspace 8: vscode
-bindsym $nmod+a exec atom, workspace 7: atom
-bindsym $nmod+w exec VirtualBox -startvm "Windows 10" &, workspace 9: vbox
+bindsym $nmod+v workspace 8: vscode, exec visual-studio-code
+bindsym $nmod+a workspace 7: atom, exec atom
+bindsym $nmod+w workspace 9: vbox, exec VirtualBox -startvm "Windows 10" &
 bindsym $nmod+m workspace vlc, exec vlc
 
 # copy from https://wiki.archlinux.org/index.php/i3#Shutdown.2C_reboot.2C_lock_screen
