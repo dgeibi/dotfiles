@@ -4087,7 +4087,7 @@ play-and-exit=1
 #one-instance=0
 
 # Use only one instance when started from file manager (boolean)
-#one-instance-when-started-from-file=1
+one-instance-when-started-from-file=0
 
 # Enqueue items into playlist in one instance mode (boolean)
 #playlist-enqueue=0
