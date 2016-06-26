@@ -27,6 +27,9 @@ font pango:Iosevka Slab 14
 
 #focus_follows_mouse no
 
+# Automatic back-and-forth when switching to the current workspace
+workspace_auto_back_and_forth yes
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -104,10 +107,14 @@ bindsym $mod+3 workspace 3
 bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7: atom
-bindsym $mod+8 workspace 8: vscode
-bindsym $mod+9 workspace 9: vbox
-bindsym $mod+0 workspace vlc
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# switch to previous/next workspace
+bindsym $mod+o workspace prev
+bindsym $mod+p workspace next
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -116,10 +123,10 @@ bindsym $mod+Shift+3 move container to workspace 3
 bindsym $mod+Shift+4 move container to workspace 4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7: atom
-bindsym $mod+Shift+8 move container to workspace 8: vscode
-bindsym $mod+Shift+9 move container to workspace 9: vbox
-bindsym $mod+Shift+0 move container to workspace vlc
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -167,11 +174,11 @@ bindsym $nmod+n exec light -U 5
 bindsym Shift+Print exec xfce4-screenshooter
 
 # etc
-bindsym $nmod+x workspace 1, exec google-chrome-unstable
+bindsym $nmod+x workspace 2, layout tabbed, exec google-chrome-unstable
 bindsym $nmod+f exec nautilus
-bindsym $nmod+v workspace 8: vscode, exec visual-studio-code
-bindsym $nmod+a workspace 7: atom, exec atom
-bindsym $nmod+w workspace 9: vbox, exec VirtualBox -startvm "Windows 10" &
+bindsym $nmod+v workspace vscode, exec visual-studio-code
+bindsym $nmod+a workspace atom, exec atom
+bindsym $nmod+w workspace vbox, exec VirtualBox -startvm "Windows 10" &
 bindsym $nmod+m workspace vlc, exec vlc
 
 # copy from https://wiki.archlinux.org/index.php/i3#Shutdown.2C_reboot.2C_lock_screen
@@ -196,10 +203,10 @@ for_window [class="netease-cloud-music"] floating enable
 
 # Assign
 
-assign [class="google-chrome-unstable"] → 1
-assign [class="Atom"] → 7: atom
-assign [class="VirtualBox"] → 9: vbox
-assign [class="Code"] → 8: vscode
+assign [class="google-chrome-unstable"] → 2
+assign [class="Atom"] → atom
+assign [class="VirtualBox"] → vbox
+assign [class="Code"] → vscode
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
