@@ -37,23 +37,23 @@
   <languageCodes></languageCodes>
  </forvo>
  <mediawikis>
-  <mediawiki name="English Wikipedia" enabled="0" icon="" url="https://en.wikipedia.org/w" id="ae6f89aac7151829681b85f035d54e48"/>
-  <mediawiki name="English Wiktionary" enabled="0" icon="" url="https://en.wiktionary.org/w" id="affcf9678e7bfe701c9b071f97eccba3"/>
-  <mediawiki name="Russian Wikipedia" enabled="0" icon="" url="https://ru.wikipedia.org/w" id="8e0c1c2b6821dab8bdba8eb869ca7176"/>
-  <mediawiki name="Russian Wiktionary" enabled="0" icon="" url="https://ru.wiktionary.org/w" id="b09947600ae3902654f8ad4567ae8567"/>
-  <mediawiki name="German Wikipedia" enabled="0" icon="" url="https://de.wikipedia.org/w" id="a8a66331a1242ca2aeb0b4aed361c41d"/>
-  <mediawiki name="German Wiktionary" enabled="0" icon="" url="https://de.wiktionary.org/w" id="21c64bca5ec10ba17ff19f3066bc962a"/>
-  <mediawiki name="Portuguese Wikipedia" enabled="0" icon="" url="https://pt.wikipedia.org/w" id="96957cb2ad73a20c7a1d561fc83c253a"/>
-  <mediawiki name="Portuguese Wiktionary" enabled="0" icon="" url="https://pt.wiktionary.org/w" id="ed4c3929196afdd93cc08b9a903aad6a"/>
-  <mediawiki name="Greek Wikipedia" enabled="0" icon="" url="https://el.wikipedia.org/w" id="f3b4ec8531e52ddf5b10d21e4577a7a2"/>
-  <mediawiki name="Greek Wiktionary" enabled="0" icon="" url="https://el.wiktionary.org/w" id="5d45232075d06e002dea72fe3e137da1"/>
+  <mediawiki url="https://en.wikipedia.org/w" enabled="0" name="English Wikipedia" icon="" id="ae6f89aac7151829681b85f035d54e48"/>
+  <mediawiki url="https://en.wiktionary.org/w" enabled="0" name="English Wiktionary" icon="" id="affcf9678e7bfe701c9b071f97eccba3"/>
+  <mediawiki url="https://ru.wikipedia.org/w" enabled="0" name="Russian Wikipedia" icon="" id="8e0c1c2b6821dab8bdba8eb869ca7176"/>
+  <mediawiki url="https://ru.wiktionary.org/w" enabled="0" name="Russian Wiktionary" icon="" id="b09947600ae3902654f8ad4567ae8567"/>
+  <mediawiki url="https://de.wikipedia.org/w" enabled="0" name="German Wikipedia" icon="" id="a8a66331a1242ca2aeb0b4aed361c41d"/>
+  <mediawiki url="https://de.wiktionary.org/w" enabled="0" name="German Wiktionary" icon="" id="21c64bca5ec10ba17ff19f3066bc962a"/>
+  <mediawiki url="https://pt.wikipedia.org/w" enabled="0" name="Portuguese Wikipedia" icon="" id="96957cb2ad73a20c7a1d561fc83c253a"/>
+  <mediawiki url="https://pt.wiktionary.org/w" enabled="0" name="Portuguese Wiktionary" icon="" id="ed4c3929196afdd93cc08b9a903aad6a"/>
+  <mediawiki url="https://el.wikipedia.org/w" enabled="0" name="Greek Wikipedia" icon="" id="f3b4ec8531e52ddf5b10d21e4577a7a2"/>
+  <mediawiki url="https://el.wiktionary.org/w" enabled="0" name="Greek Wiktionary" icon="" id="5d45232075d06e002dea72fe3e137da1"/>
  </mediawikis>
  <websites>
-  <website name="Google En-En (Oxford)" enabled="0" icon="" url="https://www.google.com/dictionary?aq=f&amp;langpair=en|en&amp;q=%GDWORD%&amp;hl=en" id="b88cb2898e634c6638df618528284c2d"/>
-  <website name="Urban Dictionary" enabled="0" icon="" url="https://www.urbandictionary.com/define.php?term=%GDWORD%" id="f376365a0de651fd7505e7e5e683aa45"/>
-  <website name="Multitran (En)" enabled="0" icon="" url="https://multitran.ru/c/m.exe?CL=1&amp;l1=1&amp;s=%GD1251%" id="324ca0306187df7511b26d3847f4b07c"/>
-  <website name="Lingvo (En-Ru)" enabled="0" icon="" url="http://lingvopro.abbyyonline.com/en/Search/en-ru/%GDWORD%" id="924db471b105299c82892067c0f10787"/>
-  <website name="Michaelis (Pt-En)" enabled="0" icon="" url="http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=portugues-ingles&amp;palavra=%GDISO1%" id="087a6d65615fb047f4c80eef0a9465db"/>
+  <website url="https://www.google.com/dictionary?aq=f&amp;langpair=en|en&amp;q=%GDWORD%&amp;hl=en" enabled="0" name="Google En-En (Oxford)" icon="" id="b88cb2898e634c6638df618528284c2d"/>
+  <website url="https://www.urbandictionary.com/define.php?term=%GDWORD%" enabled="0" name="Urban Dictionary" icon="" id="f376365a0de651fd7505e7e5e683aa45"/>
+  <website url="https://multitran.ru/c/m.exe?CL=1&amp;l1=1&amp;s=%GD1251%" enabled="0" name="Multitran (En)" icon="" id="324ca0306187df7511b26d3847f4b07c"/>
+  <website url="http://lingvopro.abbyyonline.com/en/Search/en-ru/%GDWORD%" enabled="0" name="Lingvo (En-Ru)" icon="" id="924db471b105299c82892067c0f10787"/>
+  <website url="http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=portugues-ingles&amp;palavra=%GDISO1%" enabled="0" name="Michaelis (Pt-En)" icon="" id="087a6d65615fb047f4c80eef0a9465db"/>
  </websites>
  <dictservers/>
  <programs/>
@@ -86,7 +86,7 @@
   <enableScanPopup>1</enableScanPopup>
   <startWithScanPopupOn>1</startWithScanPopupOn>
   <enableScanPopupModifiers>1</enableScanPopupModifiers>
-  <scanPopupModifiers>4</scanPopupModifiers>
+  <scanPopupModifiers>9</scanPopupModifiers>
   <scanPopupAltMode>1</scanPopupAltMode>
   <scanPopupAltModeSecs>3</scanPopupAltModeSecs>
   <scanToMainWindow>0</scanToMainWindow>
@@ -138,7 +138,7 @@
  <lastMainGroupId>0</lastMainGroupId>
  <lastPopupGroupId>0</lastPopupGroupId>
  <popupWindowState>AAAA/wAAAAH9AAAAAAAAAg8AAAGTAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAQAAAAEAAAAaAGQAaQBjAHQAaQBvAG4AYQByAHkAQgBhAHIDAAAAAP////8AAAAAAAAAAA==</popupWindowState>
- <popupWindowGeometry>AdnQywACAAAAAAE3AAAAQAAAA2MAAAHSAAABNwAAAEAAAANjAAAB0gAAAAAAAAAAB4A=</popupWindowGeometry>
+ <popupWindowGeometry>AdnQywACAAAAAAS5AAACTQAABuUAAAPfAAAEuQAAAk0AAAblAAAD3wAAAAAAAAAAB4A=</popupWindowGeometry>
  <pinPopupWindow>0</pinPopupWindow>
  <mainWindowState>AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACeAP///wAAAAEAAAC4AAADuPwCAAAAAvsAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAEUAAAHZAAAAbgD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAACJAAAAdkAAABuAP///wAABr4AAAO4AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAJQ/////wAAAAAAAAAA</mainWindowState>
  <mainWindowGeometry>AdnQywACAAAAAAAAAAAAHAAAB38AAAQaAAAAAgAAABwAAAd9AAAEGAAAAAAAAAAAB4A=</mainWindowGeometry>
@@ -146,7 +146,7 @@
  <helpSplitterState>AAAA/wAAAAEAAAACAAABBAAABAAB/////wEAAAABAA==</helpSplitterState>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry></inspectorGeometry>
- <timeForNewReleaseCheck>2016-06-26T21:52:47</timeForNewReleaseCheck>
+ <timeForNewReleaseCheck>2016-06-29T16:00:08</timeForNewReleaseCheck>
  <skippedRelease></skippedRelease>
  <showingDictBarNames>0</showingDictBarNames>
  <usingSmallIconsInToolbars>0</usingSmallIconsInToolbars>
