@@ -113,8 +113,8 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # switch to previous/next workspace
-bindsym $mod+o workspace prev
-bindsym $mod+p workspace next
+bindsym $mod+comma workspace prev
+bindsym $mod+period workspace next
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
