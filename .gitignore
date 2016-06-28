@@ -1,4 +1,5 @@
 *~
+*.swp
 *.old
 vlc-qt-interface.conf
 bookmarks
