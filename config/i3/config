@@ -174,12 +174,12 @@ bindsym $nmod+n exec light -U 5
 bindsym Shift+Print exec xfce4-screenshooter
 
 # etc
-bindsym $nmod+x workspace 2, layout tabbed, exec google-chrome-unstable
+bindsym $nmod+x workspace --no-auto-back-and-forth 2, layout tabbed, exec google-chrome-unstable
 bindsym $nmod+f exec nautilus
-bindsym $nmod+v workspace vscode, exec visual-studio-code
-bindsym $nmod+a workspace atom, exec atom
-bindsym $nmod+w workspace vbox, exec VirtualBox -startvm "Windows 10" &
-bindsym $nmod+m workspace vlc, exec vlc
+bindsym $nmod+v workspace --no-auto-back-and-forth vscode, exec visual-studio-code
+bindsym $nmod+a workspace --no-auto-back-and-forth atom, exec atom
+bindsym $nmod+w workspace --no-auto-back-and-forth vbox, exec VirtualBox -startvm "Windows 10" &
+bindsym $nmod+m workspace --no-auto-back-and-forth vlc, exec vlc
 
 # copy from https://wiki.archlinux.org/index.php/i3#Shutdown.2C_reboot.2C_lock_screen
 set $Locker i3lock -c 000000 && sleep 1
