@@ -12,6 +12,7 @@ PS1='[\u@\h \W]\$ '
 export HISTCONTROL=ignoreboth
 export XDG_CONFIG_HOME=${HOME}/.config
 export VISUAL="nvim"
+export FT2_SUBPIXEL_HINTING=1
 stty -ixon
 
 #nvm
