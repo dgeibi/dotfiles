@@ -113,8 +113,11 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # switch to previous/next workspace
-bindsym $mod+comma workspace prev
-bindsym $mod+period workspace next
+#bindsym $nmod+comma workspace prev
+#bindsym $nmod+period workspace next
+
+bindsym $nmod+Left workspace prev
+bindsym $nmod+Right workspace next
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -174,7 +177,7 @@ bindsym $nmod+n exec light -U 5
 bindsym Shift+Print exec xfce4-screenshooter
 
 # etc
-bindsym $nmod+x workspace --no-auto-back-and-forth 2, layout tabbed, exec google-chrome-unstable
+bindsym $nmod+x workspace --no-auto-back-and-forth 2, exec google-chrome-unstable
 bindsym $nmod+f exec nautilus
 bindsym $nmod+v workspace --no-auto-back-and-forth vscode, exec visual-studio-code
 bindsym $nmod+a workspace --no-auto-back-and-forth atom, exec atom
