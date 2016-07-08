@@ -13,9 +13,9 @@ general {
 
 order += "wireless _first_"
 #order += "ipv6"
-#order += "disk /"
+order += "disk /"
 order += "cpu_temperature 0"
-order += "disk /home"
+#order += "disk /home"
 #order += "run_watch DHCP"
 #order += "cpu_usage"
 order += "load"
