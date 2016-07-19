@@ -41,7 +41,7 @@ syscheck() {
     systemd-analyze
     echo -e "\nJournal Errors"
     journalctl -p 3 -xb -l
-    echo -e "\nsytemd failed"
+    echo -e "\nsystemd failed"
     systemctl --failed -l
 }
 
