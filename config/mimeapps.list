@@ -46,6 +46,9 @@ video/x-msvideo=vlc.desktop;
 application/wps-office.docx=wps-office-wps.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 text/x-scheme=visual-studio-code.desktop;atom.desktop;mousepad.desktop;gvim.desktop;
+video/x-matroska=io.github.GnomeMpv.desktop;vlc.desktop;
+application/x-subrip=atom.desktop;
+application/x-ms-dos-executable=org.gnome.FileRoller.desktop;
 
 [Default Applications]
 inode/directory=org.gnome.Nautilus.desktop
