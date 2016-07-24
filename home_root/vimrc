@@ -2,7 +2,7 @@ syntax on
 colorscheme Tomorrow-Night-Eighties
 
 set nobackup
-"set clipboard=unnamedplus
+set clipboard=unnamedplus
 set fileencodings=utf8,cp936,gb18030,big5
 set number
 set relativenumber
@@ -13,7 +13,7 @@ set hlsearch
 set autoindent
 set smartindent
 set smarttab
-set cindent
+"set cindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
