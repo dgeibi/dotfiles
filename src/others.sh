@@ -45,22 +45,6 @@ syscheck() {
     systemctl --failed -l
 }
 
-format() {
-    for i in "$@"
-    do
-        case "$i" in
-            *.c)
-                astyle --style=allman --add-brackets --break-blocks=all -n "$i"
-            ;;
-            *.sh)
-                bashbeautify "$i"
-                echo "$i" formatted
-            ;;
-        esac
-        sed -i -e 's/[ \t]*$//' -e 's/\t/    /g' "$i"
-    done
-}
-
 take() {
     if [ -n "$1" ]; then
         mkdir -p "$1"
