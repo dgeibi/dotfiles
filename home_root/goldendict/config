@@ -3,7 +3,7 @@
   <path recursive="0">/home/dgeibi/code/.content</path>
  </paths>
  <sounddirs/>
- <dictionaryOrder id="0" name="">
+ <dictionaryOrder name="" id="0">
   <dictionary name="牛津高阶英汉双解7th (测试)">e878336c488c953f737a080dd6a541a3</dictionary>
   <dictionary name="Longman DOCE 5th Ed. (En-En)">2add51a8616a995e98bfa38598f4bba2</dictionary>
   <dictionary name="Longman Activator 2nd Ed. (En-En)">32dd0bc6a03eaf31312496a3f44149ad</dictionary>
@@ -12,7 +12,7 @@
   <dictionary name="English Wikipedia">ae6f89aac7151829681b85f035d54e48</dictionary>
   <mutedDictionaries/>
  </dictionaryOrder>
- <inactiveDictionaries id="0" name="">
+ <inactiveDictionaries name="" id="0">
   <mutedDictionaries/>
  </inactiveDictionaries>
  <groups nextId="1"/>
@@ -37,23 +37,23 @@
   <languageCodes></languageCodes>
  </forvo>
  <mediawikis>
-  <mediawiki url="https://en.wikipedia.org/w" id="ae6f89aac7151829681b85f035d54e48" icon="" name="English Wikipedia" enabled="0"/>
-  <mediawiki url="https://en.wiktionary.org/w" id="affcf9678e7bfe701c9b071f97eccba3" icon="" name="English Wiktionary" enabled="0"/>
-  <mediawiki url="https://ru.wikipedia.org/w" id="8e0c1c2b6821dab8bdba8eb869ca7176" icon="" name="Russian Wikipedia" enabled="0"/>
-  <mediawiki url="https://ru.wiktionary.org/w" id="b09947600ae3902654f8ad4567ae8567" icon="" name="Russian Wiktionary" enabled="0"/>
-  <mediawiki url="https://de.wikipedia.org/w" id="a8a66331a1242ca2aeb0b4aed361c41d" icon="" name="German Wikipedia" enabled="0"/>
-  <mediawiki url="https://de.wiktionary.org/w" id="21c64bca5ec10ba17ff19f3066bc962a" icon="" name="German Wiktionary" enabled="0"/>
-  <mediawiki url="https://pt.wikipedia.org/w" id="96957cb2ad73a20c7a1d561fc83c253a" icon="" name="Portuguese Wikipedia" enabled="0"/>
-  <mediawiki url="https://pt.wiktionary.org/w" id="ed4c3929196afdd93cc08b9a903aad6a" icon="" name="Portuguese Wiktionary" enabled="0"/>
-  <mediawiki url="https://el.wikipedia.org/w" id="f3b4ec8531e52ddf5b10d21e4577a7a2" icon="" name="Greek Wikipedia" enabled="0"/>
-  <mediawiki url="https://el.wiktionary.org/w" id="5d45232075d06e002dea72fe3e137da1" icon="" name="Greek Wiktionary" enabled="0"/>
+  <mediawiki name="English Wikipedia" icon="" id="ae6f89aac7151829681b85f035d54e48" url="https://en.wikipedia.org/w" enabled="0"/>
+  <mediawiki name="English Wiktionary" icon="" id="affcf9678e7bfe701c9b071f97eccba3" url="https://en.wiktionary.org/w" enabled="0"/>
+  <mediawiki name="Russian Wikipedia" icon="" id="8e0c1c2b6821dab8bdba8eb869ca7176" url="https://ru.wikipedia.org/w" enabled="0"/>
+  <mediawiki name="Russian Wiktionary" icon="" id="b09947600ae3902654f8ad4567ae8567" url="https://ru.wiktionary.org/w" enabled="0"/>
+  <mediawiki name="German Wikipedia" icon="" id="a8a66331a1242ca2aeb0b4aed361c41d" url="https://de.wikipedia.org/w" enabled="0"/>
+  <mediawiki name="German Wiktionary" icon="" id="21c64bca5ec10ba17ff19f3066bc962a" url="https://de.wiktionary.org/w" enabled="0"/>
+  <mediawiki name="Portuguese Wikipedia" icon="" id="96957cb2ad73a20c7a1d561fc83c253a" url="https://pt.wikipedia.org/w" enabled="0"/>
+  <mediawiki name="Portuguese Wiktionary" icon="" id="ed4c3929196afdd93cc08b9a903aad6a" url="https://pt.wiktionary.org/w" enabled="0"/>
+  <mediawiki name="Greek Wikipedia" icon="" id="f3b4ec8531e52ddf5b10d21e4577a7a2" url="https://el.wikipedia.org/w" enabled="0"/>
+  <mediawiki name="Greek Wiktionary" icon="" id="5d45232075d06e002dea72fe3e137da1" url="https://el.wiktionary.org/w" enabled="0"/>
  </mediawikis>
  <websites>
-  <website url="https://www.google.com/dictionary?aq=f&amp;langpair=en|en&amp;q=%GDWORD%&amp;hl=en" id="b88cb2898e634c6638df618528284c2d" icon="" name="Google En-En (Oxford)" enabled="0"/>
-  <website url="https://www.urbandictionary.com/define.php?term=%GDWORD%" id="f376365a0de651fd7505e7e5e683aa45" icon="" name="Urban Dictionary" enabled="0"/>
-  <website url="https://multitran.ru/c/m.exe?CL=1&amp;l1=1&amp;s=%GD1251%" id="324ca0306187df7511b26d3847f4b07c" icon="" name="Multitran (En)" enabled="0"/>
-  <website url="http://lingvopro.abbyyonline.com/en/Search/en-ru/%GDWORD%" id="924db471b105299c82892067c0f10787" icon="" name="Lingvo (En-Ru)" enabled="0"/>
-  <website url="http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=portugues-ingles&amp;palavra=%GDISO1%" id="087a6d65615fb047f4c80eef0a9465db" icon="" name="Michaelis (Pt-En)" enabled="0"/>
+  <website name="Google En-En (Oxford)" icon="" id="b88cb2898e634c6638df618528284c2d" url="https://www.google.com/dictionary?aq=f&amp;langpair=en|en&amp;q=%GDWORD%&amp;hl=en" enabled="0"/>
+  <website name="Urban Dictionary" icon="" id="f376365a0de651fd7505e7e5e683aa45" url="https://www.urbandictionary.com/define.php?term=%GDWORD%" enabled="0"/>
+  <website name="Multitran (En)" icon="" id="324ca0306187df7511b26d3847f4b07c" url="https://multitran.ru/c/m.exe?CL=1&amp;l1=1&amp;s=%GD1251%" enabled="0"/>
+  <website name="Lingvo (En-Ru)" icon="" id="924db471b105299c82892067c0f10787" url="http://lingvopro.abbyyonline.com/en/Search/en-ru/%GDWORD%" enabled="0"/>
+  <website name="Michaelis (Pt-En)" icon="" id="087a6d65615fb047f4c80eef0a9465db" url="http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=portugues-ingles&amp;palavra=%GDISO1%" enabled="0"/>
  </websites>
  <dictservers/>
  <programs/>
@@ -146,7 +146,7 @@
  <helpSplitterState>AAAA/wAAAAEAAAACAAABBAAABAAB/////wEAAAABAA==</helpSplitterState>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry></inspectorGeometry>
- <timeForNewReleaseCheck>2016-07-26T09:37:22</timeForNewReleaseCheck>
+ <timeForNewReleaseCheck>2016-07-28T15:06:31</timeForNewReleaseCheck>
  <skippedRelease></skippedRelease>
  <showingDictBarNames>0</showingDictBarNames>
  <usingSmallIconsInToolbars>0</usingSmallIconsInToolbars>
