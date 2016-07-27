@@ -49,6 +49,7 @@ text/x-scheme=visual-studio-code.desktop;atom.desktop;mousepad.desktop;gvim.desk
 video/x-matroska=io.github.GnomeMpv.desktop;vlc.desktop;
 application/x-subrip=atom.desktop;
 application/x-ms-dos-executable=org.gnome.FileRoller.desktop;
+text/csv=libreoffice-calc.desktop;atom.desktop;visual-studio-code.desktop;
 
 [Default Applications]
 inode/directory=org.gnome.Nautilus.desktop
