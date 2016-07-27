@@ -15,6 +15,7 @@ home_root/atom/*
 !styles.less
 config/Code/*
 !config/Code/User/
+config/Code/User/workspaceStorage/
 config/fcitx/*
 !config/fcitx/conf/
 !config/fcitx/config
