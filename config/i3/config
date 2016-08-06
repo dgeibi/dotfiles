@@ -198,16 +198,16 @@ bindsym $mod+Shift+e mode "$mode_system"
 # window
 
 for_window [class="Vlc"] floating enable, focus
-for_window [class="google-chrome-unstable"] border pixel 2, focus
+for_window [class="Google-chrome-unstable"] border pixel 2, focus
 for_window [class="netease-cloud-music"] floating enable
 for_window [class="Code"] focus
 for_window [class="Atom"] focus
 for_window [class="Nautilus"] border pixel 2, focus
 for_window [class="Evince"] border pixel 2
-
+#for_window [class="VirtualBox"] floating enable
 # Assign
 
-assign [class="google-chrome-unstable"] → 2
+assign [class="Google-chrome-unstable"] → 2
 assign [class="Atom"] → atom
 assign [class="Code"] → vscode
 assign [title="^Windows 10"] → win10
