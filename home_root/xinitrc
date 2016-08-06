@@ -54,13 +54,6 @@ export GTK2_RC_FILES="$HOME"/.gtkrc-2.0
 export QT_SELECT=5
 export QT_STYLE_OVERRIDE='gtk2'
 
-# set background
-
-bgdir="$HOME"/Pictures/bg/
-if type feh > /dev/null && [ -d "$bgdir" ]; then
-    feh --recursive --randomize --bg-fill "$bgdir"
-fi
-
 # set language
 
 #export LANG=zh_CN.UTF-8
@@ -69,39 +62,52 @@ fi
 
 # set fcitx as default input method
 
-if type fcitx > /dev/null; then
-    export GTK_IM_MODULE=fcitx
-    export QT_IM_MODULE=fcitx
-    export XMODIFIERS="@im=fcitx"
-    fcitx
-fi
-
 # launch xflux
 
 if type xflux > /dev/null; then
     xflux -l 23.1 -g 113.4 > /dev/null
 fi
 
-# launch copyq
+extra() {
+    # set background
 
-if type copyq > /dev/null; then
-    copyq &
-fi
+    bgdir="$HOME"/Pictures/bg/
+    if type feh > /dev/null && [ -d "$bgdir" ]; then
+        feh --recursive --randomize --bg-fill "$bgdir"
+    fi
 
-# launch dropbox
+    # launch copyq
 
-if type dropbox > /dev/null; then
-    dropbox &
-fi
+    if type copyq > /dev/null; then
+        copyq &
+    fi
 
-# launch goldendict
+    # launch dropbox
 
-if type goldendict > /dev/null; then
-    goldendict &
-fi
+    if type dropbox > /dev/null; then
+        dropbox &
+    fi
+
+    # launch goldendict
+
+    if type goldendict > /dev/null; then
+        goldendict &
+    fi
+
+    if type fcitx > /dev/null; then
+        export GTK_IM_MODULE=fcitx
+        export QT_IM_MODULE=fcitx
+        export XMODIFIERS="@im=fcitx"
+        fcitx
+    fi
+}
 
 # execute i3wm
 
-if type i3 > /dev/null; then
-    exec i3
-fi
+session=${1:-i3}
+case $session in
+    i3|i3wm           ) extra; exec i3;;
+    xp                ) exec VirtualBox -startvm "xp-1";;
+    win10             ) exec VirtualBox -startvm "Windows 10";;
+    *) exec $1;;
+esac
