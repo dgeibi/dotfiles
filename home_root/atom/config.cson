@@ -12,8 +12,8 @@
       "language-perl"
       "atom-beautify"
       "language-clojure"
-      "markdown-preview"
       "spell-check"
+      "markdown-preview"
     ]
     projectHome: "/home/dgeibi/code/"
     themes: [
@@ -38,6 +38,8 @@
   "linter-shellcheck": {}
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
+    enablePandoc: true
+    useLazyHeaders: false
   "one-dark-ui":
     fontSize: 16
   "one-light-ui":
