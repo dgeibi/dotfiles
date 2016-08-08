@@ -21,6 +21,10 @@
 
     "editor.wrappingColumn": 0,
 
-    "externalTerminal.linuxExec": "gnome-terminal"
+    "externalTerminal.linuxExec": "xfce4-terminal",
+
+    "editor.tabCompletion": true,
+
+    "editor.quickSuggestions": false
 
 }
