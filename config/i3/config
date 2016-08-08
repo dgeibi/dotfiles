@@ -174,7 +174,7 @@ bindsym Shift+Print exec xfce4-screenshooter
 # etc
 bindsym $nmod+x exec google-chrome-unstable
 bindsym $nmod+f exec nautilus
-bindsym $nmod+v exec visual-studio-code
+bindsym $nmod+v exec code
 bindsym $nmod+a exec atom
 bindsym $nmod+m exec vlc
 
