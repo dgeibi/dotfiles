@@ -32,22 +32,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
     unset f
 fi
 
-# lock and turn off monitor when idle
-
-if type xautolock > /dev/null && type i3lock > /dev/null; then
-    DPMS_StandbyTime=600
-    DPMS_SuspendTime=600
-    DPMS_OffTime=600
-    X11ScreenSaver_Timeout=600
-    xautolock -time 10 -locker "i3lock -c 000000" &
-    xset dpms $DPMS_StandbyTime $DPMS_SuspendTime $DPMS_OffTime
-    xset s $X11ScreenSaver_Timeout
-fi
-
-# set primary monitor
-
-xrandr --output "$(xrandr | grep -m 1 "\bconnected" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/")" --primary
-
 # configurate QT
 
 export GTK2_RC_FILES="$HOME"/.gtkrc-2.0
@@ -60,49 +44,57 @@ export QT_STYLE_OVERRIDE='gtk2'
 #export LANGUAGE=zh_CN:en_US
 #export LC_CTYPE=en_US.UTF-8
 
-# set fcitx as default input method
 
-# launch xflux
-
-if type xflux > /dev/null; then
-    xflux -l 23.1 -g 113.4 > /dev/null
-fi
 
 extra() {
     # set background
-
     bgdir="$HOME"/Pictures/bg/
     if type feh > /dev/null && [ -d "$bgdir" ]; then
         feh --recursive --randomize --bg-fill "$bgdir"
     fi
 
     # launch copyq
-
     if type copyq > /dev/null; then
         copyq &
     fi
 
     # launch dropbox
-
     if type dropbox > /dev/null; then
         dropbox &
     fi
 
     # launch goldendict
-
     if type goldendict > /dev/null; then
         goldendict &
     fi
 
+    # set fcitx as default input method
     if type fcitx > /dev/null; then
         export GTK_IM_MODULE=fcitx
         export QT_IM_MODULE=fcitx
         export XMODIFIERS="@im=fcitx"
         fcitx
     fi
-}
 
-# execute i3wm
+    # lock and turn off monitor when idle
+    if type xautolock > /dev/null && type i3lock > /dev/null; then
+        DPMS_StandbyTime=600
+        DPMS_SuspendTime=600
+        DPMS_OffTime=600
+        X11ScreenSaver_Timeout=600
+        xautolock -time 10 -locker "i3lock -c 000000" &
+        xset dpms $DPMS_StandbyTime $DPMS_SuspendTime $DPMS_OffTime
+        xset s $X11ScreenSaver_Timeout
+    fi
+
+    # set primary monitor
+    xrandr --output "$(xrandr | grep -m 1 "\bconnected" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/")" --primary
+
+    # launch xflux
+    if type xflux > /dev/null; then
+        xflux -l 23.1 -g 113.4 > /dev/null
+    fi
+}
 
 session=${1:-i3}
 case $session in
@@ -110,5 +102,5 @@ case $session in
     xp                ) exec VirtualBox -startvm "xp-1";;
     win1032           ) exec VirtualBox -startvm "Windows 10";;
     win10             ) exec VirtualBox -startvm "win10-0";;
-    *) exec $1;;
+    *) exec "$1";;
 esac
