@@ -17,8 +17,8 @@
     ]
     projectHome: "/home/dgeibi/code/"
     themes: [
-      "one-dark-ui"
-      "atom-dark-syntax"
+      "one-light-ui"
+      "atom-light-syntax"
     ]
   editor:
     fontFamily: "Iosevka Slab"
