@@ -99,7 +99,9 @@ extra() {
 session=${1:-i3}
 case $session in
     i3|i3wm           ) extra; exec i3;;
-    xp                ) exec VirtualBox -startvm "xp-1";;
+    xp1                ) exec VirtualBox -startvm "xp-1";;
+    xp2                ) exec VirtualBox -startvm "xp-2";;
+    xp0                ) exec VirtualBox -startvm "xp-0";;
     win1032           ) exec VirtualBox -startvm "Windows 10";;
     win10             ) exec VirtualBox -startvm "win10-0";;
     *) exec "$1";;
