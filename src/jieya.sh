@@ -11,7 +11,7 @@ jieya () {
             *.tar) tar xf "$1" ;;
             *.tbz2) tar xjf "$1" ;;
             *.tgz) tar xzf "$1" ;;
-            *.zip) unar "$1" ;;
+            *.zip) 7z x "$1" ;;
             *.Z) uncompress "$1" ;;
             *.7z) 7z x "$1" ;;
             *.tar.xz) tar xf "$1" ;;
