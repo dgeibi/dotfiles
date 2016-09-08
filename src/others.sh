@@ -11,7 +11,7 @@ update() {
     pacaur -u --noconfirm
     sudo pacman -Syu
     vim +PlugUpgrade +PlugUpdate +qa
-    cd "$NVM_DIR" || exit && git fetch origin && git checkout "$(git describe --abbrev=0 --tags)" && cd - > /dev/null || exit
+    cd "$NVM_DIR" || return && git fetch origin && git checkout "$(git describe --abbrev=0 --tags)" && cd - > /dev/null || return
     uctpkg
 }
 
@@ -35,7 +35,7 @@ syscheck() {
 take() {
     if [ -n "$1" ]; then
         mkdir -p "$1"
-        cd "$1" || exit
+        cd "$1" || return
     fi
 }
 
