@@ -12,6 +12,7 @@ update() {
     sudo pacman -Syu
     vim +PlugUpgrade +PlugUpdate +qa
     cd "$NVM_DIR" || exit && git fetch origin && git checkout "$(git describe --abbrev=0 --tags)" && cd - > /dev/null || exit
+    uctpkg
 }
 
 nodeupdate() {
@@ -22,8 +23,6 @@ nodeupdate() {
         echo "${lastline/->       /}" is latest version.
     fi
 }
-
-alias uctpkg='cd ~/code/ctpkg/ || exit && ./install.sh && cd - >/dev/null || exit'
 
 syscheck() {
     systemd-analyze
