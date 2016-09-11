@@ -36,25 +36,8 @@
   <apiKey></apiKey>
   <languageCodes></languageCodes>
  </forvo>
- <mediawikis>
-  <mediawiki enabled="0" id="ae6f89aac7151829681b85f035d54e48" icon="" name="English Wikipedia" url="https://en.wikipedia.org/w"/>
-  <mediawiki enabled="0" id="affcf9678e7bfe701c9b071f97eccba3" icon="" name="English Wiktionary" url="https://en.wiktionary.org/w"/>
-  <mediawiki enabled="0" id="8e0c1c2b6821dab8bdba8eb869ca7176" icon="" name="Russian Wikipedia" url="https://ru.wikipedia.org/w"/>
-  <mediawiki enabled="0" id="b09947600ae3902654f8ad4567ae8567" icon="" name="Russian Wiktionary" url="https://ru.wiktionary.org/w"/>
-  <mediawiki enabled="0" id="a8a66331a1242ca2aeb0b4aed361c41d" icon="" name="German Wikipedia" url="https://de.wikipedia.org/w"/>
-  <mediawiki enabled="0" id="21c64bca5ec10ba17ff19f3066bc962a" icon="" name="German Wiktionary" url="https://de.wiktionary.org/w"/>
-  <mediawiki enabled="0" id="96957cb2ad73a20c7a1d561fc83c253a" icon="" name="Portuguese Wikipedia" url="https://pt.wikipedia.org/w"/>
-  <mediawiki enabled="0" id="ed4c3929196afdd93cc08b9a903aad6a" icon="" name="Portuguese Wiktionary" url="https://pt.wiktionary.org/w"/>
-  <mediawiki enabled="0" id="f3b4ec8531e52ddf5b10d21e4577a7a2" icon="" name="Greek Wikipedia" url="https://el.wikipedia.org/w"/>
-  <mediawiki enabled="0" id="5d45232075d06e002dea72fe3e137da1" icon="" name="Greek Wiktionary" url="https://el.wiktionary.org/w"/>
- </mediawikis>
- <websites>
-  <website enabled="0" id="b88cb2898e634c6638df618528284c2d" icon="" name="Google En-En (Oxford)" url="https://www.google.com/dictionary?aq=f&amp;langpair=en|en&amp;q=%GDWORD%&amp;hl=en"/>
-  <website enabled="0" id="f376365a0de651fd7505e7e5e683aa45" icon="" name="Urban Dictionary" url="https://www.urbandictionary.com/define.php?term=%GDWORD%"/>
-  <website enabled="0" id="324ca0306187df7511b26d3847f4b07c" icon="" name="Multitran (En)" url="https://multitran.ru/c/m.exe?CL=1&amp;l1=1&amp;s=%GD1251%"/>
-  <website enabled="0" id="924db471b105299c82892067c0f10787" icon="" name="Lingvo (En-Ru)" url="http://lingvopro.abbyyonline.com/en/Search/en-ru/%GDWORD%"/>
-  <website enabled="0" id="087a6d65615fb047f4c80eef0a9465db" icon="" name="Michaelis (Pt-En)" url="http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=portugues-ingles&amp;palavra=%GDISO1%"/>
- </websites>
+ <mediawikis/>
+ <websites/>
  <dictservers/>
  <programs/>
  <voiceEngines/>
@@ -101,7 +84,7 @@
   <alwaysOnTop>0</alwaysOnTop>
   <searchInDock>0</searchInDock>
   <historyStoreInterval>0</historyStoreInterval>
-  <proxyserver enabled="0" useSystemProxy="0">
+  <proxyserver useSystemProxy="0" enabled="0">
    <type>0</type>
    <host></host>
    <port>3128</port>
@@ -146,7 +129,7 @@
  <helpSplitterState>AAAA/wAAAAEAAAACAAABBAAABAAB/////wEAAAABAA==</helpSplitterState>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry></inspectorGeometry>
- <timeForNewReleaseCheck>2016-09-10T16:27:35</timeForNewReleaseCheck>
+ <timeForNewReleaseCheck>2016-09-12T16:27:35</timeForNewReleaseCheck>
  <skippedRelease></skippedRelease>
  <showingDictBarNames>0</showingDictBarNames>
  <usingSmallIconsInToolbars>0</usingSmallIconsInToolbars>
