@@ -177,6 +177,8 @@ bindsym $nmod+f exec nautilus
 bindsym $nmod+v exec code
 bindsym $nmod+a exec atom
 bindsym $nmod+m exec vlc
+bindsym $nmod+w workspace --no-auto-back-and-forth win10, exec VirtualBox -startvm "Windows 10" &
+bindsym $nmod+p workspace --no-auto-back-and-forth xp, exec VirtualBox -startvm "xp-1" &
 
 # copy from https://wiki.archlinux.org/index.php/i3#Shutdown.2C_reboot.2C_lock_screen
 set $Locker i3lock -c 000000 && sleep 1
