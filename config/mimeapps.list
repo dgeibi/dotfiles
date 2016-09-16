@@ -7,7 +7,7 @@ application/xml=visual-studio-code.desktop;mousepad.desktop;
 text/markdown=mousepad.desktop;atom.desktop;visual-studio-code.desktop;google-chrome-unstable.desktop;
 application/x-theme=visual-studio-code.desktop;atom.desktop;panel-desktop-handler.desktop;
 application/x-tar=squeeze.desktop;
-text/html=visual-studio-code.desktop;atom.desktop;mousepad.desktop;google-chrome.desktop;
+text/html=visual-studio-code.desktop;mousepad.desktop;atom.desktop;google-chrome.desktop;
 text/css=visual-studio-code.desktop;mousepad.desktop;
 image/jpeg=pinta.desktop;ristretto.desktop;gpicview.desktop;
 application/x-compressed-tar=org.gnome.FileRoller.desktop;xarchiver.desktop;squeeze.desktop;
@@ -50,7 +50,7 @@ video/x-matroska=io.github.GnomeMpv.desktop;vlc.desktop;
 application/x-subrip=atom.desktop;
 application/x-ms-dos-executable=org.gnome.FileRoller.desktop;
 text/csv=libreoffice-calc.desktop;visual-studio-code.desktop;atom.desktop;
-image/svg+xml=google-chrome-unstable.desktop;gpicview.desktop;
+image/svg+xml=visual-studio-code.desktop;google-chrome-unstable.desktop;gpicview.desktop;
 application/epub+zip=calibre-ebook-viewer.desktop;
 text/x-java=visual-studio-code.desktop;
 
