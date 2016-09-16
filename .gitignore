@@ -20,6 +20,7 @@ config/fcitx/*
 !config/fcitx/conf/
 !config/fcitx/config
 !config/fcitx/data/
+!config/fcitx/profile
 config/xfce4/*
 !config/xfce4/terminal/
 config/nvim/autoload/*
