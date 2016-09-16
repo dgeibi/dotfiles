@@ -3,7 +3,7 @@
   <path recursive="0">/home/dgeibi/code/.content</path>
  </paths>
  <sounddirs/>
- <dictionaryOrder id="0" name="">
+ <dictionaryOrder name="" id="0">
   <dictionary name="牛津高阶英汉双解7th (测试)">e878336c488c953f737a080dd6a541a3</dictionary>
   <dictionary name="Longman DOCE 5th Ed. (En-En)">2add51a8616a995e98bfa38598f4bba2</dictionary>
   <dictionary name="Longman Activator 2nd Ed. (En-En)">32dd0bc6a03eaf31312496a3f44149ad</dictionary>
@@ -12,7 +12,7 @@
   <dictionary name="English Wikipedia">ae6f89aac7151829681b85f035d54e48</dictionary>
   <mutedDictionaries/>
  </dictionaryOrder>
- <inactiveDictionaries id="0" name="">
+ <inactiveDictionaries name="" id="0">
   <mutedDictionaries/>
  </inactiveDictionaries>
  <groups nextId="1"/>
@@ -84,7 +84,7 @@
   <alwaysOnTop>0</alwaysOnTop>
   <searchInDock>0</searchInDock>
   <historyStoreInterval>0</historyStoreInterval>
-  <proxyserver useSystemProxy="0" enabled="0">
+  <proxyserver enabled="0" useSystemProxy="0">
    <type>0</type>
    <host></host>
    <port>3128</port>
@@ -124,12 +124,12 @@
  <popupWindowGeometry>AdnQywACAAAAAAM8AAABXgAABWgAAALwAAADPAAAAV4AAAVoAAAC8AAAAAAAAAAAB4A=</popupWindowGeometry>
  <pinPopupWindow>0</pinPopupWindow>
  <mainWindowState>AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACeAP///wAAAAEAAAC4AAADuPwCAAAAAvsAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAEUAAAHZAAAAbgD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAACJAAAAdkAAABuAP///wAABr4AAAO4AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAJQ/////wAAAAAAAAAA</mainWindowState>
- <mainWindowGeometry>AdnQywACAAAAAAAAAAAAHAAAB3sAAAQYAAAAAAAAABwAAAd7AAAEGAAAAAAAAAAAB4A=</mainWindowGeometry>
+ <mainWindowGeometry>AdnQywACAAAAAAAAAAAAOQAAB38AAAQ3AAAAAgAAADkAAAd9AAAENQAAAAAAAAAAB4A=</mainWindowGeometry>
  <helpWindowGeometry>AdnQywACAAAAAAEgAAABTQAABLcAAAOuAAABIgAAAU0AAAS1AAADrAAAAAAAAAAAB4A=</helpWindowGeometry>
  <helpSplitterState>AAAA/wAAAAEAAAACAAABBAAABAAB/////wEAAAABAA==</helpSplitterState>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry></inspectorGeometry>
- <timeForNewReleaseCheck>2016-09-12T16:27:35</timeForNewReleaseCheck>
+ <timeForNewReleaseCheck>2016-09-18T21:08:32</timeForNewReleaseCheck>
  <skippedRelease></skippedRelease>
  <showingDictBarNames>0</showingDictBarNames>
  <usingSmallIconsInToolbars>0</usingSmallIconsInToolbars>
