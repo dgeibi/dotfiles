@@ -84,7 +84,7 @@
   <alwaysOnTop>0</alwaysOnTop>
   <searchInDock>0</searchInDock>
   <historyStoreInterval>0</historyStoreInterval>
-  <proxyserver enabled="0" useSystemProxy="0">
+  <proxyserver useSystemProxy="0" enabled="0">
    <type>0</type>
    <host></host>
    <port>3128</port>
@@ -124,12 +124,12 @@
  <popupWindowGeometry>AdnQywACAAAAAAM8AAABXgAABWgAAALwAAADPAAAAV4AAAVoAAAC8AAAAAAAAAAAB4A=</popupWindowGeometry>
  <pinPopupWindow>0</pinPopupWindow>
  <mainWindowState>AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACeAP///wAAAAEAAAC4AAADuPwCAAAAAvsAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAEUAAAHZAAAAbgD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAACJAAAAdkAAABuAP///wAABr4AAAO4AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAJQ/////wAAAAAAAAAA</mainWindowState>
- <mainWindowGeometry>AdnQywACAAAAAAAAAAAAOQAAB38AAAQ3AAAAAgAAADkAAAd9AAAENQAAAAAAAAAAB4A=</mainWindowGeometry>
+ <mainWindowGeometry>AdnQywACAAAAAAAAAAAAOQAAB3sAAAQ1AAAAAAAAADkAAAd7AAAENQAAAAAAAAAAB4A=</mainWindowGeometry>
  <helpWindowGeometry>AdnQywACAAAAAAEgAAABTQAABLcAAAOuAAABIgAAAU0AAAS1AAADrAAAAAAAAAAAB4A=</helpWindowGeometry>
  <helpSplitterState>AAAA/wAAAAEAAAACAAABBAAABAAB/////wEAAAABAA==</helpSplitterState>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry></inspectorGeometry>
- <timeForNewReleaseCheck>2016-09-18T21:08:32</timeForNewReleaseCheck>
+ <timeForNewReleaseCheck>2016-09-22T22:33:51</timeForNewReleaseCheck>
  <skippedRelease></skippedRelease>
  <showingDictBarNames>0</showingDictBarNames>
  <usingSmallIconsInToolbars>0</usingSmallIconsInToolbars>
