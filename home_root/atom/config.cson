@@ -48,7 +48,8 @@
   "terminal-plus":
     core:
       mapTerminalsTo: "Folder"
-      workingDirectory: "Active File"
     style: {}
+    toggles:
+      autoClose: true
   welcome:
     showOnStartup: false
