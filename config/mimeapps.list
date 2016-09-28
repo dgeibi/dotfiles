@@ -53,6 +53,8 @@ text/csv=libreoffice-calc.desktop;visual-studio-code.desktop;atom.desktop;
 image/svg+xml=visual-studio-code.desktop;google-chrome-unstable.desktop;gpicview.desktop;
 application/epub+zip=calibre-ebook-viewer.desktop;
 text/x-java=visual-studio-code.desktop;
+text/x-chdr=visual-studio-code.desktop;
+text/x-c++src=visual-studio-code.desktop;
 
 [Default Applications]
 inode/directory=org.gnome.Nautilus.desktop
