@@ -18,7 +18,9 @@ update() {
 nodeupdate() {
     lastline="$(nvm ls-remote | tail -1)"
     if ! echo "$lastline" | grep -e '->' > /dev/null; then
-        nvm install "$(echo "$lastline" | tr -d ' ')"
+        ver="$(echo "$lastline" | tr -d ' ')"
+        nvm install "$ver"
+        nvm alias default "${ver/v}"
     else
         echo "${lastline/->       /}" is latest version.
     fi
