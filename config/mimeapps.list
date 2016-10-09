@@ -41,7 +41,7 @@ x-scheme-handler/trash=exo-file-manager.desktop;
 video/mp4=vlc.desktop;mpv.desktop;gnome-mplayer.desktop;mplayer.desktop;io.github.GnomeMpv.desktop;
 application/pdf=google-chrome-unstable.desktop;evince.desktop;
 application/x-wine-extension-ini=mousepad.desktop;
-image/png=pinta.desktop;feh.desktop;gpicview.desktop;
+image/png=gpicview.desktop;pinta.desktop;feh.desktop;
 video/x-msvideo=vlc.desktop;
 application/wps-office.docx=wps-office-wps.desktop;
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
@@ -55,6 +55,7 @@ application/epub+zip=calibre-ebook-viewer.desktop;
 text/x-java=visual-studio-code.desktop;
 text/x-chdr=visual-studio-code.desktop;
 text/x-c++src=visual-studio-code.desktop;
+text/calendar=visual-studio-code.desktop;
 
 [Default Applications]
 inode/directory=org.gnome.Nautilus.desktop
