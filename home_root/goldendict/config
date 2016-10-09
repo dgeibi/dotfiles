@@ -84,7 +84,7 @@
   <alwaysOnTop>0</alwaysOnTop>
   <searchInDock>0</searchInDock>
   <historyStoreInterval>0</historyStoreInterval>
-  <proxyserver useSystemProxy="0" enabled="0">
+  <proxyserver enabled="0" useSystemProxy="0">
    <type>0</type>
    <host></host>
    <port>3128</port>
@@ -129,7 +129,7 @@
  <helpSplitterState>AAAA/wAAAAEAAAACAAABBAAABAAB/////wEAAAABAA==</helpSplitterState>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry></inspectorGeometry>
- <timeForNewReleaseCheck>2016-10-04T13:05:25</timeForNewReleaseCheck>
+ <timeForNewReleaseCheck>2016-10-11T11:50:16</timeForNewReleaseCheck>
  <skippedRelease></skippedRelease>
  <showingDictBarNames>0</showingDictBarNames>
  <usingSmallIconsInToolbars>0</usingSmallIconsInToolbars>
