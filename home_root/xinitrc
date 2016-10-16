@@ -76,6 +76,11 @@ extra() {
         fcitx
     fi
 
+    # run compton
+    if type compton > /dev/null; then
+        compton &
+    fi
+
     # lock and turn off monitor when idle
     if type xautolock > /dev/null && type i3lock > /dev/null; then
         DPMS_StandbyTime=600
