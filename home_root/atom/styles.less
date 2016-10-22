@@ -8,19 +8,27 @@
  * If you are unfamiliar with Less, you can read more about it here:
  * http://lesscss.org
  */
-
-
-
-@font-size: 1rem;
-
-.settings-view { font-size: @font-size; }
+@font-size: 20px;
+@linter-bg-color: #eee;
 
 linter-message {
-  font-size: @font-size;
+    font-size: @font-size;
+}
+#linter-inline {
+    background-color: @linter-bg-color;
+    color: #424243;
+    &::before {
+        border-color: transparent transparent @linter-bg-color @linter-bg-color;
+    }
 }
 
-.theme-one-light-ui {
-  .tab-bar { font-size: 18px; }
-  .tree-view { font-size: 16px; }
-  .status-bar { font-size: 16px; }
-}
+
+// .settings-view {
+//   font-size: @font-size;
+// }
+// .tree-view,
+// .tab-bar .title,
+// .btn,select.form-control,div.lines span {
+//     font-size: @font-size;
+//     height: auto;
+// }
