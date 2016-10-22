@@ -15,15 +15,16 @@
       "language-clojure"
       "spell-check"
       "markdown-preview"
+      "atom-package-manager"
     ]
     projectHome: "/home/dgeibi/code/"
     themes: [
       "one-light-ui"
-      "atom-light-syntax"
+      "one-light-syntax"
     ]
   editor:
     fontFamily: "Iosevka Slab"
-    fontSize: 23
+    fontSize: 25
     invisibles: {}
     tabLength: 4
   "exception-reporting":
@@ -42,9 +43,13 @@
     enablePandoc: true
     useLazyHeaders: false
   "one-dark-ui":
-    fontSize: 16
+    fontSize: 18
   "one-light-ui":
-    fontSize: 16
+    fontSize: 18
+  pangu:
+    autoPanguEnabled: true
+    ignoredPattern: "\\\\*\\\\*[^\\\\*\\\\*]+\\\\*\\\\*, <.*>(.*?)</.*>"
+    skipNoCJKLine: true
   "terminal-plus":
     core:
       mapTerminalsTo: "Folder"
