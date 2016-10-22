@@ -3,7 +3,7 @@
   <path recursive="0">/home/dgeibi/code/.content</path>
  </paths>
  <sounddirs/>
- <dictionaryOrder id="0" name="">
+ <dictionaryOrder name="" id="0">
   <dictionary name="牛津高阶英汉双解7th (测试)">e878336c488c953f737a080dd6a541a3</dictionary>
   <dictionary name="Longman DOCE 5th Ed. (En-En)">2add51a8616a995e98bfa38598f4bba2</dictionary>
   <dictionary name="Longman Activator 2nd Ed. (En-En)">32dd0bc6a03eaf31312496a3f44149ad</dictionary>
@@ -12,7 +12,7 @@
   <dictionary name="English Wikipedia">ae6f89aac7151829681b85f035d54e48</dictionary>
   <mutedDictionaries/>
  </dictionaryOrder>
- <inactiveDictionaries id="0" name="">
+ <inactiveDictionaries name="" id="0">
   <mutedDictionaries/>
  </inactiveDictionaries>
  <groups nextId="1"/>
@@ -121,15 +121,15 @@
  <lastMainGroupId>0</lastMainGroupId>
  <lastPopupGroupId>0</lastPopupGroupId>
  <popupWindowState>AAAA/wAAAAH9AAAAAAAAAg8AAAGTAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAQAAAAEAAAAaAGQAaQBjAHQAaQBvAG4AYQByAHkAQgBhAHIDAAAAAP////8AAAAAAAAAAA==</popupWindowState>
- <popupWindowGeometry>AdnQywACAAAAAAM8AAABXgAABWgAAALwAAADPAAAAV4AAAVoAAAC8AAAAAAAAAAAB4A=</popupWindowGeometry>
+ <popupWindowGeometry>AdnQywACAAAAAABVAAACEgAAAoEAAAOkAAAAVQAAAhIAAAKBAAADpAAAAAAAAAAAB4A=</popupWindowGeometry>
  <pinPopupWindow>0</pinPopupWindow>
- <mainWindowState>AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACeAP///wAAAAEAAAC4AAADuPwCAAAAAvsAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAEUAAAHZAAAAbgD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAACJAAAAdkAAABuAP///wAABr4AAAO4AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAJQ/////wAAAAAAAAAA</mainWindowState>
- <mainWindowGeometry>AdnQywACAAAAAAAAAAAAOQAAB3sAAAQ1AAAAAAAAADkAAAd7AAAENQAAAAAAAAAAB4A=</mainWindowGeometry>
+ <mainWindowState>AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAfsAAAAUAHMAZQBhAHIAYwBoAFAAYQBuAGUAAAAAAP////8AAACeAP///wAAAAEAAAC4AAADuPwCAAAAAvsAAAASAGQAaQBjAHQAcwBQAGEAbgBlAQAAAEUAAAHZAAAAbgD////7AAAAFgBoAGkAcwB0AG8AcgB5AFAAYQBuAGUBAAACJAAAAdkAAABuAP///wAAAv4AAAO4AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAUAG4AYQB2AFQAbwBvAGwAYgBhAHIBAAAAAP////8AAAAAAAAAAAAAABoAZABpAGMAdABpAG8AbgBhAHIAeQBCAGEAcgEAAAJQ/////wAAAAAAAAAA</mainWindowState>
+ <mainWindowGeometry>AdnQywACAAAAAAPAAAAAOQAAB38AAAQ3AAADwgAAADkAAAd9AAAENQAAAAAAAAAAB4A=</mainWindowGeometry>
  <helpWindowGeometry>AdnQywACAAAAAAEgAAABTQAABLcAAAOuAAABIgAAAU0AAAS1AAADrAAAAAAAAAAAB4A=</helpWindowGeometry>
  <helpSplitterState>AAAA/wAAAAEAAAACAAABBAAABAAB/////wEAAAABAA==</helpSplitterState>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry></inspectorGeometry>
- <timeForNewReleaseCheck>2016-10-17T21:13:24</timeForNewReleaseCheck>
+ <timeForNewReleaseCheck>2016-10-23T21:45:14</timeForNewReleaseCheck>
  <skippedRelease></skippedRelease>
  <showingDictBarNames>0</showingDictBarNames>
  <usingSmallIconsInToolbars>0</usingSmallIconsInToolbars>
