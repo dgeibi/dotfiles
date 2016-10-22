@@ -210,8 +210,8 @@ for_window [class="Evince"] border pixel 2
 # Assign
 
 assign [class="Google-chrome-unstable"] → 2
-assign [class="Atom"] → atom
-assign [class="Code"] → vscode
+assign [class="Atom"] → 5
+assign [class="Code"] → 6
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
