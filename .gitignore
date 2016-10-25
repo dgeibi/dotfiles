@@ -8,6 +8,7 @@ config/nvim/plugged/*
 home_root/vim/plugged/*
 home_root/goldendict/index/*
 home_root/goldendict/history
+home_root/goldendict/config
 home_root/atom/*
 !config.cson
 !keymap.cson
