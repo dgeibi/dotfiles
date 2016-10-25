@@ -7,7 +7,7 @@ application/xml=visual-studio-code.desktop;mousepad.desktop;
 text/markdown=mousepad.desktop;atom.desktop;visual-studio-code.desktop;google-chrome-unstable.desktop;
 application/x-theme=visual-studio-code.desktop;atom.desktop;panel-desktop-handler.desktop;
 application/x-tar=squeeze.desktop;
-text/html=mousepad.desktop;visual-studio-code.desktop;atom.desktop;google-chrome.desktop;
+text/html=atom.desktop;mousepad.desktop;visual-studio-code.desktop;google-chrome.desktop;chromium.desktop;google-chrome-unstable.desktop;
 text/css=visual-studio-code.desktop;mousepad.desktop;
 image/jpeg=pinta.desktop;ristretto.desktop;gpicview.desktop;
 application/x-compressed-tar=org.gnome.FileRoller.desktop;xarchiver.desktop;squeeze.desktop;
@@ -57,6 +57,7 @@ text/x-chdr=visual-studio-code.desktop;
 text/x-c++src=visual-studio-code.desktop;
 text/calendar=visual-studio-code.desktop;
 audio/vnd.dts=mousepad.desktop;
+application/x-mimearchive=google-chrome-unstable.desktop;
 
 [Default Applications]
 inode/directory=org.gnome.Nautilus.desktop
@@ -70,3 +71,4 @@ application/pdf=evince.desktop
 image/png=gpicview.desktop
 application/wps-office.docx=wps-office-wps.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
+text/html=google-chrome-unstable.desktop
