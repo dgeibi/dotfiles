@@ -16,8 +16,10 @@
       "spell-check"
       "markdown-preview"
       "atom-package-manager"
+      "pangu"
     ]
     projectHome: "/home/dgeibi/code/"
+    telemetryConsent: "limited"
     themes: [
       "one-light-ui"
       "one-light-syntax"
@@ -30,7 +32,7 @@
   "exception-reporting":
     userId: "ce4311fa-4e2b-5d6c-c1e9-21d1e3274e0f"
   linter:
-    errorPanelHeight: 32
+    errorPanelHeight: 40
   "linter-clang": {}
   "linter-eslint":
     disableWhenNoEslintConfig: false
