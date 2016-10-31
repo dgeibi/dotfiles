@@ -60,3 +60,9 @@
       autoClose: true
   welcome:
     showOnStartup: false
+".source.yaml":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: false
+    softWrap: false
+    softWrapHangingIndent: 2
