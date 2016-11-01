@@ -13,9 +13,7 @@
       "language-objective-c"
       "language-perl"
       "language-clojure"
-      "spell-check"
       "markdown-preview"
-      "atom-package-manager"
       "pangu"
     ]
     projectHome: "/home/dgeibi/code/"
@@ -52,6 +50,11 @@
     autoPanguEnabled: true
     ignoredPattern: "\\\\*\\\\*[^\\\\*\\\\*]+\\\\*\\\\*, <.*>(.*?)</.*>"
     skipNoCJKLine: true
+  "spell-check":
+    addKnownWords: true
+    locales: [
+      "en-US"
+    ]
   "terminal-plus":
     core:
       mapTerminalsTo: "Folder"
