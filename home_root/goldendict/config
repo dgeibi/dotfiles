@@ -3,7 +3,7 @@
   <path recursive="0">/home/dgeibi/code/.content</path>
  </paths>
  <sounddirs/>
- <dictionaryOrder name="" id="0">
+ <dictionaryOrder id="0" name="">
   <dictionary name="牛津高阶英汉双解7th (测试)">e878336c488c953f737a080dd6a541a3</dictionary>
   <dictionary name="Longman DOCE 5th Ed. (En-En)">2add51a8616a995e98bfa38598f4bba2</dictionary>
   <dictionary name="Longman Activator 2nd Ed. (En-En)">32dd0bc6a03eaf31312496a3f44149ad</dictionary>
@@ -12,7 +12,7 @@
   <dictionary name="English Wikipedia">ae6f89aac7151829681b85f035d54e48</dictionary>
   <mutedDictionaries/>
  </dictionaryOrder>
- <inactiveDictionaries name="" id="0">
+ <inactiveDictionaries id="0" name="">
   <mutedDictionaries/>
  </inactiveDictionaries>
  <groups nextId="1"/>
@@ -84,7 +84,7 @@
   <alwaysOnTop>0</alwaysOnTop>
   <searchInDock>0</searchInDock>
   <historyStoreInterval>0</historyStoreInterval>
-  <proxyserver useSystemProxy="0" enabled="0">
+  <proxyserver enabled="0" useSystemProxy="0">
    <type>0</type>
    <host></host>
    <port>3128</port>
@@ -129,7 +129,7 @@
  <helpSplitterState>AAAA/wAAAAEAAAACAAABBAAABAAB/////wEAAAABAA==</helpSplitterState>
  <dictInfoGeometry></dictInfoGeometry>
  <inspectorGeometry></inspectorGeometry>
- <timeForNewReleaseCheck>2016-10-31T21:45:15</timeForNewReleaseCheck>
+ <timeForNewReleaseCheck>2016-11-02T21:45:15</timeForNewReleaseCheck>
  <skippedRelease></skippedRelease>
  <showingDictBarNames>0</showingDictBarNames>
  <usingSmallIconsInToolbars>0</usingSmallIconsInToolbars>
