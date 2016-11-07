@@ -36,9 +36,9 @@ export FZF_DEFAULT_OPTS='
 '
 
 #PATH
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 PATH="/usr/local/heroku/bin:$PATH"
 PATH="$HOME/Dropbox/bin:$PATH"
+PATH="/home/dgeibi/.rvm/gems/ruby-2.3.1/bin:$PATH"
 
 #thefuck
 eval "$(thefuck --alias)"
@@ -63,3 +63,5 @@ done
 #sbp
 sbp_path=$HOME/code/sbp
 source $HOME/code/sbp/sbp.bash
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
