@@ -2,8 +2,13 @@
 # ~/.bash_profile
 #
 
+source ~/.profile
+
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+
 
 systemctl --user import-environment PATH
 
 [[ -z $DISPLAY ]] && command -v i3 >/dev/null 2>&1 && [[ $(tty) = /dev/tty1 ]] && startx
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
