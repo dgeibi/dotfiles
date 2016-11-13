@@ -1,5 +1,11 @@
 "*":
   "atom-beautify":
+    c:
+      beautify_on_save: true
+      configPath: "/home/dgeibi/code/Practice/data-structures/uncrustify.cfg"
+    cpp:
+      beautify_on_save: true
+      configPath: "/home/dgeibi/code/Practice/data-structures/uncrustify.cfg"
     general:
       _analyticsUserId: "f5d47d11-68c3-4459-bf68-0aa4fa32285f"
     js: {}
@@ -20,11 +26,11 @@
     telemetryConsent: "limited"
     themes: [
       "one-light-ui"
-      "base16-tomorrow-dark-theme"
+      "one-light-syntax"
     ]
   editor:
     fontFamily: "Iosevka Slab"
-    fontSize: 25
+    fontSize: 24
     invisibles: {}
     tabLength: 4
   "exception-reporting":
