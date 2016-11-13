@@ -173,7 +173,8 @@ bindsym $nmod+n exec light -U 5
 bindsym Shift+Print exec xfce4-screenshooter
 
 # etc
-bindsym $nmod+x exec google-chrome-unstable
+#bindsym $nmod+x exec google-chrome-unstable
+bindsym $nmod+x exec chromium
 bindsym $nmod+f exec nautilus
 bindsym $nmod+v exec code
 bindsym $nmod+a exec atom
@@ -200,7 +201,7 @@ bindsym $mod+Shift+e mode "$mode_system"
 # window
 
 for_window [class="Vlc"] floating enable, focus
-for_window [class="Google-chrome-unstable"] border pixel 2, focus
+for_window [class="Chromium"] border pixel 2, focus
 for_window [class="netease-cloud-music"] floating enable
 for_window [class="Code"] focus
 for_window [class="Atom"] focus
@@ -210,6 +211,7 @@ for_window [class="Evince"] border pixel 2
 # Assign
 
 assign [class="Google-chrome-unstable"] → 2
+assign [class="Chromium"] → 2
 assign [class="Atom"] → 5
 assign [class="Code"] → 6
 assign [class="Vmplayer"] → 7
