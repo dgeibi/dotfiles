@@ -69,17 +69,17 @@ extra() {
     fi
 
     # set fcitx as default input method
-    if type fcitx > /dev/null; then
-        export GTK_IM_MODULE=fcitx
-        export QT_IM_MODULE=fcitx
-        export XMODIFIERS="@im=fcitx"
-        fcitx
-    fi
+    #if type fcitx > /dev/null; then
+    #    export GTK_IM_MODULE=fcitx
+    #    export QT_IM_MODULE=fcitx
+    #    export XMODIFIERS="@im=fcitx"
+    #    fcitx
+    #fi
 
     # run compton
-    if type compton > /dev/null; then
-        compton &
-    fi
+    #if type compton > /dev/null; then
+    #    compton &
+    #fi
 
     # lock and turn off monitor when idle
     if type xautolock > /dev/null && type i3lock > /dev/null; then
