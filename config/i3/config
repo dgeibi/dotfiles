@@ -7,7 +7,7 @@
 # i3 config file (v4)
 
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
-
+exec ibus-daemon -xdr
 set $mod Mod4
 set $nmod Mod1
 # Font for window titles. Will also be used by the bar unless a different font
@@ -173,8 +173,8 @@ bindsym $nmod+n exec light -U 5
 bindsym Shift+Print exec xfce4-screenshooter
 
 # etc
-#bindsym $nmod+x exec google-chrome-unstable
-bindsym $nmod+x exec chromium
+bindsym $nmod+x exec google-chrome-unstable
+#bindsym $nmod+x exec chromium
 bindsym $nmod+f exec nautilus
 bindsym $nmod+v exec code
 bindsym $nmod+a exec atom
@@ -202,7 +202,9 @@ bindsym $mod+Shift+e mode "$mode_system"
 
 for_window [class="Vlc"] floating enable, focus
 for_window [class="Chromium"] border pixel 2, focus
+for_window [class="Google-chrome-unstable"] border pixel 2, focus
 for_window [class="netease-cloud-music"] floating enable
+for_window [class="SWT"] floating enable
 for_window [class="Code"] focus
 for_window [class="Atom"] focus
 for_window [class="Nautilus"] border pixel 2, focus
