@@ -75,6 +75,9 @@ extra() {
     #    export XMODIFIERS="@im=fcitx"
     #    fcitx
     #fi
+    export GTK_IM_MODULE=ibus
+    export XMODIFIERS=@im=ibus
+    export QT_IM_MODULE=ibus
 
     # run compton
     #if type compton > /dev/null; then
