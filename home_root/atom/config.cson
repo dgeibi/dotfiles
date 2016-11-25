@@ -24,11 +24,11 @@
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "ariake-dark-syntax"
+      "atom-dark-syntax"
     ]
   editor:
     fontFamily: "Iosevka Slab"
-    fontSize: 24
+    fontSize: 25
     invisibles: {}
     tabLength: 4
   "exception-reporting":
