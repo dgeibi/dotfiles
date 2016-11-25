@@ -2,7 +2,7 @@
 {
     "editor.fontFamily": "Iosevka Slab, monospace",
 
-    "editor.fontSize": 18,
+    "editor.fontSize": 17,
 
     "git.enabled": true,
 
@@ -15,7 +15,7 @@
         "*.ss": "clojure"
     },
 
-    "window.zoomLevel": 1.5,
+    "window.zoomLevel": 2.0,
 
     "editor.cursorStyle": "line",
 
@@ -23,6 +23,8 @@
 
     "externalTerminal.linuxExec": "xfce4-terminal",
 
-    "editor.tabCompletion": true
+    "editor.tabCompletion": true,
+
+    "editor.insertSpaces": false
 
 }
