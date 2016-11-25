@@ -1,43 +1,77 @@
 patch:
   "switches/@0/reset": 1
-  "translator/dictionary": luna_pinyin.extended
+
+  "schema/dependencies/@next": easy_en
+  
+  "engine/translators":
+    - punct_translator
+    - reverse_lookup_translator
+    - script_translator
+    - table_translator@custom_phrase
+    - table_translator@english
+  
+  english:
+    dictionary: easy_en
+    spelling_hints: 9
+    enable_completion: true
+    enable_sentence: false
+    initial_quality: -1
+
+  custom_phrase:
+    dictionary: ""
+    user_dict: custom_phrase
+    db_class: stabledb
+    enable_completion: false
+    enable_sentence: false
+    initial_quality: 1
+
+  translator:
+    dictionary: luna_pinyin.extended
+    prism: double_pinyin_flypy
+  
+  punctuator:
+    import_preset: symbols
+
+  "recognizer/patterns/punct": "^/[a-z0-9]+$"
+
   "key_binder/bindings":
     - { when: paging, accept: bracketleft, send: Page_Up }
     - { when: has_menu, accept: bracketright, send: Page_Down }
+
   "speller/algebra":
-      - "erase/^xx$/"
-      - "derive/^([jqxy])u$/$1v/"
-      - "derive/^([aoe])([ioun])$/$1$1$2/"
-      - derive/^([zcs])h/$1/
-      - derive/^([zcs])([^h])/$1h$2/
-      - derive/^n/l/
-      - derive/^l/n/
-      - derive/([ei])n$/$1ng/
-      - derive/([ei])ng$/$1n/
-      - "xform/^([aoe])(ng)?$/$1$1$2/"
-      - "xform/iu$/Q/"
-      - "xform/(.)ei$/$1W/"
-      - "xform/uan$/R/"
-      - "xform/[uv]e$/T/"
-      - "xform/un$/Y/"
-      - "xform/^sh/U/"
-      - "xform/^ch/I/"
-      - "xform/^zh/V/"
-      - "xform/uo$/O/"
-      - "xform/ie$/P/"
-      - "xform/i?ong$/S/"
-      - "xform/ing$|uai$/K/"
-      - "xform/(.)ai$/$1D/"
-      - "xform/(.)en$/$1F/"
-      - "xform/(.)eng$/$1G/"
-      - "xform/[iu]ang$/L/"
-      - "xform/(.)ang$/$1H/"
-      - "xform/ian$/M/"
-      - "xform/(.)an$/$1J/"
-      - "xform/(.)ou$/$1Z/"
-      - "xform/[iu]a$/X/"
-      - "xform/iao$/N/"
-      - "xform/(.)ao$/$1C/"
-      - "xform/ui$/V/"
-      - "xform/in$/B/"
-      - "xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/"
+    - "erase/^xx$/"
+    - "derive/^([zcs])h/$1/"
+    - "derive/^([zcs])([^h])/$1h$2/"
+    - "derive/^n/l/"
+    - "derive/^l/n/"
+    - "derive/([ei])n$/$1ng/"
+    - "derive/([ei])ng$/$1n/"
+    - "derive/^([jqxy])u$/$1v/"
+    - "derive/^([aoe])([ioun])$/$1$1$2/"
+    - "xform/^([aoe])(ng)?$/$1$1$2/"
+    - "xform/iu$/Q/"
+    - "xform/(.)ei$/$1W/"
+    - "xform/uan$/R/"
+    - "xform/[uv]e$/T/"
+    - "xform/un$/Y/"
+    - "xform/^sh/U/"
+    - "xform/^ch/I/"
+    - "xform/^zh/V/"
+    - "xform/uo$/O/"
+    - "xform/ie$/P/"
+    - "xform/i?ong$/S/"
+    - "xform/ing$|uai$/K/"
+    - "xform/(.)ai$/$1D/"
+    - "xform/(.)en$/$1F/"
+    - "xform/(.)eng$/$1G/"
+    - "xform/[iu]ang$/L/"
+    - "xform/(.)ang$/$1H/"
+    - "xform/ian$/M/"
+    - "xform/(.)an$/$1J/"
+    - "xform/(.)ou$/$1Z/"
+    - "xform/[iu]a$/X/"
+    - "xform/iao$/N/"
+    - "xform/(.)ao$/$1C/"
+    - "xform/ui$/V/"
+    - "xform/in$/B/"
+    - "xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/"
