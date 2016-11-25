@@ -1,5 +1,43 @@
 patch:
-    switches:
-        - name: ascii_mode
-          reset: 1
-          states: [ 中文, 西文 ]
+  "switches/@0/reset": 1
+  "translator/dictionary": luna_pinyin.extended
+  "key_binder/bindings":
+    - { when: paging, accept: bracketleft, send: Page_Up }
+    - { when: has_menu, accept: bracketright, send: Page_Down }
+  "speller/algebra":
+      - "erase/^xx$/"
+      - "derive/^([jqxy])u$/$1v/"
+      - "derive/^([aoe])([ioun])$/$1$1$2/"
+      - derive/^([zcs])h/$1/
+      - derive/^([zcs])([^h])/$1h$2/
+      - derive/^n/l/
+      - derive/^l/n/
+      - derive/([ei])n$/$1ng/
+      - derive/([ei])ng$/$1n/
+      - "xform/^([aoe])(ng)?$/$1$1$2/"
+      - "xform/iu$/Q/"
+      - "xform/(.)ei$/$1W/"
+      - "xform/uan$/R/"
+      - "xform/[uv]e$/T/"
+      - "xform/un$/Y/"
+      - "xform/^sh/U/"
+      - "xform/^ch/I/"
+      - "xform/^zh/V/"
+      - "xform/uo$/O/"
+      - "xform/ie$/P/"
+      - "xform/i?ong$/S/"
+      - "xform/ing$|uai$/K/"
+      - "xform/(.)ai$/$1D/"
+      - "xform/(.)en$/$1F/"
+      - "xform/(.)eng$/$1G/"
+      - "xform/[iu]ang$/L/"
+      - "xform/(.)ang$/$1H/"
+      - "xform/ian$/M/"
+      - "xform/(.)an$/$1J/"
+      - "xform/(.)ou$/$1Z/"
+      - "xform/[iu]a$/X/"
+      - "xform/iao$/N/"
+      - "xform/(.)ao$/$1C/"
+      - "xform/ui$/V/"
+      - "xform/in$/B/"
+      - "xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/"
