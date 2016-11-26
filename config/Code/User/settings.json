@@ -25,6 +25,6 @@
 
     "editor.tabCompletion": true,
 
-    "editor.insertSpaces": false
+    "editor.tabSize": 4
 
 }

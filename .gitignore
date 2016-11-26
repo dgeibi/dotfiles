@@ -28,6 +28,3 @@ home_root/vim/autoload/*
 config/copyq/*
 !config/copyq/copyq.conf
 !config/copyq/copyq-bak.conf
-!config/copyq/copyq-filter.ini
-!config/copyq/copyq_tabs.ini
-!config/copyq/copyq_geometry.ini
