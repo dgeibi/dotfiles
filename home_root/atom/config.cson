@@ -28,7 +28,7 @@
     ]
   editor:
     fontFamily: "Iosevka Slab"
-    fontSize: 25
+    fontSize: 24
     invisibles: {}
     tabLength: 4
   "exception-reporting":
