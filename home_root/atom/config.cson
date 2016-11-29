@@ -23,8 +23,8 @@
     projectHome: "/home/dgeibi/code/"
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "atom-dark-syntax"
+      "one-light-ui"
+      "solarized-light-syntax"
     ]
   editor:
     fontFamily: "Iosevka Slab"
