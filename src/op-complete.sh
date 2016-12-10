@@ -16,8 +16,8 @@ _op()
         so*) use="softup";;
         d*) use="dns";;
         r*) use="reboot";;
-        u*) use="upup";;
-        *) use="conf cleanbin format files bfiles sysup ss softup dns reboot upup";;
+        u*) use="upup upscript";;
+        *) use="conf cleanbin format files bfiles sysup ss softup dns reboot upup upscript";;
     esac
     COMPREPLY=( $( compgen -W "$use" -- $cur ) )
 }
