@@ -4,6 +4,8 @@
 vlc-qt-interface.conf
 bookmarks
 .netrwhist
+aria2.log
+aria2.session
 config/nvim/plugged/*
 home_root/vim/plugged/*
 home_root/goldendict/index/*
