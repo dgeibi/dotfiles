@@ -1,6 +1,11 @@
 continue
 daemon=true
 dir=/home/dgeibi/Downloads
+log=/home/dgeibi/.config/aria2/aria2.log
+input-file=/home/dgeibi/.config/aria2/aria2.session
+save-session=/home/dgeibi/.config/aria2/aria2.session
+save-session-interval=60
+force-save=true
 file-allocation=falloc
 log-level=warn
 max-connection-per-server=4
@@ -10,4 +15,5 @@ min-split-size=5M
 enable-http-pipelining=true
 
 enable-rpc=true
-rpc-listen-all=true
+rpc-listen-all=false
+rpc-allow-origin-all=true
