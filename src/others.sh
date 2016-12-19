@@ -7,11 +7,10 @@ checknet() {
 }
 
 update() {
-    sudo -v
-    pacaur -u --noconfirm
     sudo pacman -Syu
     vim +PlugUpgrade +PlugUpdate +qa
     cd "$NVM_DIR" || return && git fetch origin && git checkout "$(git describe --abbrev=0 --tags)" && cd - > /dev/null || return
+    pacaur -u --noconfirm
     uctpkg
 }
 
