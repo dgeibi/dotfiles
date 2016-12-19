@@ -5,15 +5,13 @@ log=/home/dgeibi/.config/aria2/aria2.log
 input-file=/home/dgeibi/.config/aria2/aria2.session
 save-session=/home/dgeibi/.config/aria2/aria2.session
 save-session-interval=60
-force-save=true
 file-allocation=falloc
-log-level=warn
-max-connection-per-server=4
+log-level=error
+max-connection-per-server=5
 max-concurrent-downloads=3
 max-overall-download-limit=0
 min-split-size=5M
 enable-http-pipelining=true
-
 enable-rpc=true
 rpc-listen-all=false
 rpc-allow-origin-all=true
