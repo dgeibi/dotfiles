@@ -16,8 +16,8 @@ export FT2_SUBPIXEL_HINTING=1
 stty -ixon
 
 #nvm
-export NVM_DIR="${HOME}/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+#export NVM_DIR="${HOME}/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 shopt -s autocd
 shopt -s globstar
@@ -36,9 +36,11 @@ export FZF_DEFAULT_OPTS='
 '
 
 #PATH
-PATH="/usr/local/heroku/bin:$PATH"
+PATH="$HOME/.npm/bin:$PATH"
 PATH="$HOME/Dropbox/bin:$PATH"
-PATH="/home/dgeibi/.rvm/gems/ruby-2.3.1/bin:$PATH"
+PATH="$HOME/.rvm/gems/ruby-2.3.1/bin:$PATH"
+PATH="$HOME/.rvm/bin:$PATH"
+#PATH="/usr/local/heroku/bin:$PATH"
 
 #thefuck
 eval "$(thefuck --alias)"
@@ -64,4 +66,3 @@ done
 sbp_path=$HOME/code/sbp
 source $HOME/code/sbp/sbp.bash
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
