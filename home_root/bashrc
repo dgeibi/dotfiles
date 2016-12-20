@@ -38,8 +38,8 @@ export FZF_DEFAULT_OPTS='
 #PATH
 PATH="$HOME/.npm/bin:$PATH"
 PATH="$HOME/Dropbox/bin:$PATH"
-PATH="$HOME/.rvm/gems/ruby-2.3.1/bin:$PATH"
 PATH="$HOME/.rvm/bin:$PATH"
+PATH="$HOME/.rvm/gems/ruby-2.3.1/bin:$PATH"
 #PATH="/usr/local/heroku/bin:$PATH"
 
 #thefuck
