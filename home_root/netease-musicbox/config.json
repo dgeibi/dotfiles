@@ -1,0 +1,97 @@
+{
+  "global_previous": {
+    "default": "<ctrl><alt>k", 
+    "describe": "Global keybind for previous song.Uses gtk notation for keybinds.", 
+    "value": "<ctrl><alt>k"
+  }, 
+  "osdlyrics_transparent": {
+    "default": false, 
+    "describe": "Desktop lyrics transparent bg.", 
+    "value": false
+  }, 
+  "global_play_pause": {
+    "default": "<ctrl><alt>p", 
+    "describe": "Global keybind for play/pause.Uses gtk notation for keybinds.", 
+    "value": "<ctrl><alt>p"
+  }, 
+  "curses_transparency": {
+    "default": false, 
+    "describe": "Set true to make curses transparency.", 
+    "value": false
+  }, 
+  "osdlyrics": {
+    "default": false, 
+    "describe": "Desktop lyrics for musicbox.", 
+    "value": false
+  }, 
+  "osdlyrics_background": {
+    "default": "rgba(100, 100, 100, 120)", 
+    "describe": "Desktop lyrics background color.", 
+    "value": "rgba(100, 100, 100, 120)"
+  }, 
+  "global_next": {
+    "default": "<ctrl><alt>j", 
+    "describe": "Global keybind for next song.Uses gtk notation for keybinds.", 
+    "value": "<ctrl><alt>j"
+  }, 
+  "osdlyrics_color": {
+    "default": [
+      225, 
+      248, 
+      113
+    ], 
+    "describe": "Desktop lyrics RGB Color.", 
+    "value": [
+      225, 
+      248, 
+      113
+    ]
+  }, 
+  "cache": {
+    "default": false, 
+    "describe": "A toggle to enable cache function or not. Set value to true to enable it.", 
+    "value": true
+  }, 
+  "aria2c_parameters": {
+    "default": [], 
+    "describe": "The additional parameters when aria2c start to download something.", 
+    "value": []
+  }, 
+  "osdlyrics_on_top": {
+    "default": true, 
+    "describe": "Desktop lyrics OnTopHint.", 
+    "value": true
+  }, 
+  "version": 7, 
+  "mpg123_parameters": {
+    "default": [], 
+    "describe": "The additional parameters when mpg123 start.", 
+    "value": []
+  }, 
+  "music_quality": {
+    "default": 0, 
+    "describe": "Select the quality of the music. May be useful when network is terrible. 0 for high quality, 1 for medium and 2 for low.", 
+    "value": 1
+  }, 
+  "translation": {
+    "default": true, 
+    "describe": "Foreign language lyrics translation.", 
+    "value": true
+  }, 
+  "notifier": {
+    "default": true, 
+    "describe": "Notifier when switching songs.", 
+    "value": true
+  }, 
+  "osdlyrics_font": {
+    "default": [
+      "Decorative", 
+      16
+    ], 
+    "describe": "Desktop lyrics font-family and font-size.", 
+    "value": [
+      "Decorative", 
+      16
+    ]
+  }
+}
