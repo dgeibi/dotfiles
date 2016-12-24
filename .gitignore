@@ -11,6 +11,8 @@ home_root/vim/plugged/*
 home_root/goldendict/index/*
 home_root/goldendict/history
 home_root/atom/*
+home_root/netease-musicbox/*
+!home_root/netease-musicbox/config.json
 !config.cson
 !keymap.cson
 !snippets.cson
