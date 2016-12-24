@@ -52,6 +52,7 @@ alias lm='ls -al'
 alias ls='ls --color=auto -h --group-directories-first'
 alias grep='grep --color=auto'
 alias vi=vim
+alias pacmanR='sudo pacman -R $(pacman -Qdtq)'
 
 export PROMPT_COMMAND="history -a"
 
