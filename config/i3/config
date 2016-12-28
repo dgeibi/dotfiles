@@ -28,7 +28,7 @@ font pango:Iosevka Slab 14
 #focus_follows_mouse no
 
 # Automatic back-and-forth when switching to the current workspace
-workspace_auto_back_and_forth yes
+#workspace_auto_back_and_forth yes
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
