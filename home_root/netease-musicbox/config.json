@@ -71,7 +71,7 @@
   "music_quality": {
     "default": 0, 
     "describe": "Select the quality of the music. May be useful when network is terrible. 0 for high quality, 1 for medium and 2 for low.", 
-    "value": 1
+    "value": 0
   }, 
   "translation": {
     "default": true, 
