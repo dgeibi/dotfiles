@@ -7,7 +7,7 @@
 
 HISTSIZE=2000
 export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
-PS1='[\u@\h \W]\$ '
+#PS1='[\u@\h \W]\$ '
 
 export HISTCONTROL=ignoreboth
 export XDG_CONFIG_HOME=${HOME}/.config
@@ -62,8 +62,4 @@ source /etc/profile.d/autojump.bash
 for SCRIPTS in ${HOME}/code/dotfiles/src/*; do
     source $SCRIPTS
 done
-
-#sbp
-sbp_path=$HOME/code/sbp
-source $HOME/code/sbp/sbp.bash
 
