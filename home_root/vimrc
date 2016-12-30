@@ -1,5 +1,10 @@
-syntax on
-colorscheme Tomorrow-Night-Eighties
+"------------------------
+"" Syntax: highlighting
+"------------------------
+if has('syntax')
+    syntax enable             " Turn on syntax highlighting
+    silent! colorscheme eldar " Custom color scheme
+endif
 
 set nobackup
 set clipboard=unnamedplus
@@ -29,6 +34,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --key-bindings --comple
 Plug 'junegunn/fzf.vim'
 Plug 'benekastah/neomake'
 Plug 'Shougo/neocomplete.vim'
+Plug 'agude/vim-eldar'
 call plug#end()
 
 let g:airline_powerline_fonts = 1
