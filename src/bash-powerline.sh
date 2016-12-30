@@ -35,19 +35,19 @@ __powerline() {
     readonly FG_RED="\[$(tput setaf 1)\]"
     readonly FG_MAGENTA="\[$(tput setaf 5)\]"
     readonly FG_VIOLET="\[$(tput setaf 13)\]"
-    readonly FG_BLUE="\[$(tput setaf 4)\]"
+    readonly FG_BLUE="\[$(tput setaf 24)\]"
     readonly FG_CYAN="\[$(tput setaf 6)\]"
-    readonly FG_GREEN="\[$(tput setaf 2)\]"
+    readonly FG_GREEN="\[$(tput setaf 148)\]"
     readonly FG_GREY="\[$(tput setaf 238)\]"
 
-    readonly BG_YELLOW="\[$(tput setab 190)\]"
+    readonly BG_YELLOW="\[$(tput setab 3)\]"
     readonly BG_ORANGE="\[$(tput setab 9)\]"
     readonly BG_RED="\[$(tput setab 1)\]"
     readonly BG_MAGENTA="\[$(tput setab 5)\]"
     readonly BG_VIOLET="\[$(tput setab 13)\]"
     readonly BG_BLUE="\[$(tput setab 24)\]"
     readonly BG_CYAN="\[$(tput setab 6)\]"
-    readonly BG_GREEN="\[$(tput setab 2)\]"
+    readonly BG_GREEN="\[$(tput setab 148)\]"
     readonly BG_GREY="\[$(tput setab 238)\]"
 
     readonly DIM="\[$(tput dim)\]"
@@ -101,7 +101,7 @@ __powerline() {
         fi
 
         PS1="\n$BG_BLUE$FG_BASE3 \w $RESET"
-        PS1+="$BG_YELLOW$FG_GREY$(__git_info)$RESET"
+        PS1+="$BG_GREEN$FG_GREY$(__git_info)$RESET"
         PS1+="$BG_EXIT$FG_BASE3 $PS_SYMBOL $RESET "
     }
 
