@@ -1,13 +1,9 @@
 [user]
 	email = png.inside@gmail.com
 	name = dgeibi
-	signingkey = ED4E2697
 [push]
 	default = simple
 [core]
 	editor = vim
-
-[commit]
-	gpgsign = true
 [http]
 	postBuffer = 524288000
