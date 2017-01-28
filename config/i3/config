@@ -173,8 +173,8 @@ bindsym $nmod+n exec light -U 5
 bindsym Shift+Print exec xfce4-screenshooter
 
 # etc
-bindsym $nmod+x exec google-chrome-unstable
-#bindsym $nmod+x exec chromium
+#bindsym $nmod+x exec google-chrome-unstable
+bindsym $nmod+x exec chromium
 bindsym $nmod+f exec nautilus
 bindsym $nmod+v exec code
 bindsym $nmod+a exec atom
