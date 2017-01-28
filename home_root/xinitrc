@@ -97,11 +97,6 @@ extra() {
 
     # set primary monitor
     xrandr --output "$(xrandr | grep -m 1 "\bconnected" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/")" --primary
-
-    # launch xflux
-    if type xflux > /dev/null; then
-        xflux -l 23.1 -g 113.4 > /dev/null
-    fi
 }
 
 session=${1:-i3}
