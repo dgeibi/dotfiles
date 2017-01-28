@@ -6,7 +6,10 @@
       configPath: "/home/dgeibi/code/Practice/data-structures/uncrustify.cfg"
     general:
       _analyticsUserId: "f5d47d11-68c3-4459-bf68-0aa4fa32285f"
-    js: {}
+    js:
+      default_beautifier: "JSCS Fixer"
+    jsx:
+      default_beautifier: "JS Beautify"
     xml:
       default_beautifier: "JS Beautify"
   "autocomplete-clang": {}
@@ -19,26 +22,35 @@
       "language-clojure"
       "markdown-preview"
       "pangu"
+      "markdown-preview-plus"
+      "language-javascript-jsx"
     ]
     projectHome: "/home/dgeibi/code/"
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "base16-tomorrow-dark-theme"
+      "one-light-ui"
+      "solarized-dark-syntax"
     ]
   editor:
     fontFamily: "Iosevka Slab"
     fontSize: 24
     invisibles: {}
     tabLength: 4
+  esformatter: {}
   "exception-reporting":
     userId: "ce4311fa-4e2b-5d6c-c1e9-21d1e3274e0f"
+  "formatter-jsbeautify":
+    a: {}
+    html: {}
+    js: {}
   linter:
-    errorPanelHeight: 36
+    errorPanelHeight: 163
   "linter-clang": {}
   "linter-eslint":
     disableWhenNoEslintConfig: false
     eslintrcPath: "~/.eslintrc"
+    globalNodePath: "/home/dgeibi/.npm"
+    useGlobalEslint: true
   "linter-js-standard":
     style: "semi-standard"
   "linter-shellcheck": {}
