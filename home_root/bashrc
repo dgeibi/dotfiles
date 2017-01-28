@@ -38,9 +38,7 @@ export FZF_DEFAULT_OPTS='
 #PATH
 PATH="$HOME/.npm/bin:$PATH"
 PATH="$HOME/Dropbox/bin:$PATH"
-PATH="$HOME/.rvm/bin:$PATH"
-PATH="$HOME/.rvm/gems/ruby-2.3.1/bin:$PATH"
-#PATH="/usr/local/heroku/bin:$PATH"
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 #thefuck
 eval "$(thefuck --alias)"
@@ -53,8 +51,9 @@ alias ls='ls --color=auto -h --group-directories-first'
 alias grep='grep --color=auto'
 alias vi=vim
 alias pacmanR='sudo pacman -R $(pacman -Qdtq)'
-
 export PROMPT_COMMAND="history -a"
+alias npm-exec='PATH=$(npm bin):$PATH'
+complete -c npm-exec
 
 #source
 [ -f ~/.git-completion.bash ] && . ~/.git-completion.bash
@@ -63,3 +62,7 @@ for SCRIPTS in ${HOME}/code/dotfiles/src/*; do
     source $SCRIPTS
 done
 
+
+ # added for npm-completion https://github.com/Jephuff/npm-bash-completion
+PATH_TO_NPM_COMPLETION="/home/dgeibi/.npm/lib/node_modules/npm-completion"
+source $PATH_TO_NPM_COMPLETION/npm-completion.sh
