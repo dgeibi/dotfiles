@@ -103,8 +103,8 @@ __powerline() {
         PS1="\n$BG_BLUE$FG_BASE3 \w $RESET"
         PS1+="$BG_GREEN$FG_GREY$(__git_info)$RESET"
         PS1+="$BG_EXIT$FG_BASE3 $PS_SYMBOL $RESET "
-    }
 
+    }
     PROMPT_COMMAND=ps1
 }
 
