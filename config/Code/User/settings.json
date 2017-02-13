@@ -1,30 +1,23 @@
 // Place your settings in this file to overwrite the default settings
 {
     "editor.fontFamily": "Iosevka Slab, monospace",
-
     "editor.fontSize": 17,
-
     "git.enabled": true,
-
     "git.autofetch": true,
-
     "eslint.enable": true,
-
     "files.associations": {
         "*.pac": "javascript",
-        "*.ss": "clojure"
+        "*.ss": "clojure",
+        "*.css": "postcss"
     },
-
     "window.zoomLevel": 2.0,
-
     "editor.cursorStyle": "line",
-
     "editor.wrappingColumn": 0,
-
-    "externalTerminal.linuxExec": "xfce4-terminal",
-
     "editor.tabCompletion": true,
-
-    "editor.tabSize": 4
-
+    "editor.tabSize": 4,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "stylelint.enable": true,
+    "css.validate": false
 }
