@@ -21,7 +21,6 @@
       "language-perl"
       "language-clojure"
       "markdown-preview"
-      "pangu"
       "markdown-preview-plus"
       "language-javascript-jsx"
     ]
@@ -29,11 +28,11 @@
     telemetryConsent: "limited"
     themes: [
       "one-light-ui"
-      "solarized-dark-syntax"
+      "atom-light-syntax"
     ]
   editor:
     fontFamily: "Iosevka Slab"
-    fontSize: 24
+    fontSize: 23
     invisibles: {}
     tabLength: 4
   esformatter: {}
