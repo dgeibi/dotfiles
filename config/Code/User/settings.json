@@ -2,22 +2,36 @@
 {
     "editor.fontFamily": "Iosevka Slab, monospace",
     "editor.fontSize": 17,
-    "git.enabled": true,
-    "git.autofetch": true,
-    "eslint.enable": true,
     "files.associations": {
         "*.pac": "javascript",
-        "*.ss": "clojure",
-        "*.css": "postcss"
+        "*.ss": "clojure"
     },
     "window.zoomLevel": 2.0,
     "editor.cursorStyle": "line",
-    "editor.wrappingColumn": 0,
-    "editor.tabCompletion": true,
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
+    "editor.formatOnPaste": true,
+    "editor.acceptSuggestionOnEnter": false,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
     "[javascript]": {
         "editor.formatOnSave": true
     },
-    "stylelint.enable": true,
-    "css.validate": false
+    "[json]": {
+        "editor.formatOnSave": true
+    },
+    "css.validate": false,
+    "terminal.external.linuxExec": "gnome-terminal",
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "terminal.integrated.shellArgs.linux": [
+        "-l"
+    ],
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.fontSize": 15,
+    "workbench.colorTheme": "Default Light+",
+    "workbench.iconTheme": "vs-seti",
+    "workbench.welcome.enabled": true,
+    "workbench.quickOpen.closeOnFocusLost": false,
+    "[javascriptreact]": {
+        "editor.formatOnSave": true
+    }
 }
