@@ -38,7 +38,9 @@ export FZF_DEFAULT_OPTS='
 #PATH
 PATH="$HOME/.npm/bin:$PATH"
 PATH="$HOME/Dropbox/bin:$PATH"
+PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+PATH="$HOME/.local/bin:$PATH"
 
 #thefuck
 eval "$(thefuck --alias)"
