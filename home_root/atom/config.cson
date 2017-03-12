@@ -20,9 +20,9 @@
       "language-objective-c"
       "language-perl"
       "language-clojure"
-      "markdown-preview"
-      "markdown-preview-plus"
       "language-javascript-jsx"
+      "markdown-preview-plus"
+      "react"
     ]
     projectHome: "/home/dgeibi/code/"
     telemetryConsent: "limited"
