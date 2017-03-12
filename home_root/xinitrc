@@ -80,9 +80,9 @@ extra() {
     #export QT_IM_MODULE=ibus
 
     # run compton
-    #if type compton > /dev/null; then
-    #    compton &
-    #fi
+    if type compton > /dev/null; then
+        compton -b
+    fi
 
     # lock and turn off monitor when idle
     if type xautolock > /dev/null && type i3lock > /dev/null; then
