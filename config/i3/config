@@ -201,6 +201,7 @@ bindsym $mod+Shift+e mode "$mode_system"
 # window
 
 for_window [class="Vlc"] floating enable, focus
+for_window [class="Wine"] floating enable
 for_window [class="Chromium"] border pixel 2, focus
 for_window [class="Google-chrome-unstable"] border pixel 2, focus
 for_window [class="netease-cloud-music"] floating enable, focus
