@@ -9,21 +9,9 @@ checknet() {
 update() {
     sudo pacman -Syu
     vim +PlugUpgrade +PlugUpdate +qa
-    #cd "$NVM_DIR" || return && git fetch origin && git checkout "$(git describe --abbrev=0 --tags)" && cd - > /dev/null || return
     pacaur -u --noconfirm
     uctpkg
 }
-
-#nodeupdate() {
-#    lastline="$(nvm ls-remote | tail -1)"
-#    if ! echo "$lastline" | grep -e '->' > /dev/null; then
-#        ver="$(echo "$lastline" | tr -d ' ')"
-#        nvm install "$ver"
-#        nvm alias default "${ver/v}"
-#    else
-#        echo "${lastline/->       /}" is latest version.
-#    fi
-#}
 
 syscheck() {
     systemd-analyze
