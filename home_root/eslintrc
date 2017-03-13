@@ -1,54 +1,31 @@
 {
+  "extends": [
+    "airbnb-base"
+  ],
   "env": {
     "browser": true,
     "commonjs": true,
     "es6": true,
-    "node": true,
-    "amd": true
-  },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "sourceType": "module"
-  },
-  "rules": {
-    "no-const-assign": 1,
-    "no-extra-semi": 1,
-    "semi": 0,
-    "no-fallthrough": 0,
-    "no-empty": 0,
-    "no-mixed-spaces-and-tabs": 0,
-    "no-redeclare": 0,
-    "no-this-before-super": 1,
-    "no-undef": 1,
-    "no-unreachable": 1,
-    "no-unused-vars": 1,
-    "no-use-before-define": 0,
-    "constructor-super": 1,
-    "curly": 0,
-    "eqeqeq": 0,
-    "func-names": 0,
-    "react/jsx-key": 1,
-    "react/prefer-stateless-function": 1,
-    "react/prop-types": 0,
-    "valid-typeof": 1
+    "node": true
   },
   "plugins": [
-    "react"
+    "no-async-without-await"
   ],
-  "extends": [
-    "plugin:react/recommended"
-  ],
-  "settings": {
-    "react": {
-      "createClass": "createClass",
-      "pragma": "React",
-      "version": "15.0"
-    },
-    "import/resolver": "webpack"
-  },
-  "globals": {
-    "config": true
+  "rule": {
+    "semi": [
+      "error",
+      "never"
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "no-async-without-await/no-async-without-await": 1
   }
 }
