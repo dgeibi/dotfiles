@@ -201,7 +201,7 @@ bindsym $mod+Shift+e mode "$mode_system"
 # window
 
 for_window [class="Vlc"] floating enable, focus
-for_window [class="Wine"] floating enable
+for_window [instance="QQ.exe"] floating enable, focus
 for_window [class="Chromium"] border pixel 2, focus
 for_window [class="Google-chrome-unstable"] border pixel 2, focus
 for_window [class="netease-cloud-music"] floating enable, focus
@@ -213,13 +213,14 @@ for_window [class="Evince"] border pixel 2
 
 # Assign
 
-assign [class="Google-chrome-unstable"] 2
-assign [class="Chromium"] 2
+assign [class="Google-chrome-unstable"] 1
+assign [class="Chromium"] 1
 assign [class="Atom"] 5
-assign [class="Code"] 6
+assign [class="Code"] 2
 assign [class="Vmplayer"] 7
-assign [class="SWT"] 5
+assign [class="SWT"] swt
 assign [class="netease-cloud-music"] music
+assign [instance="QQ.exe"] qq
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
