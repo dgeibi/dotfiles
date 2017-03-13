@@ -64,7 +64,6 @@ for SCRIPTS in ${HOME}/code/dotfiles/src/*; do
     source $SCRIPTS
 done
 
-
- # added for npm-completion https://github.com/Jephuff/npm-bash-completion
-PATH_TO_NPM_COMPLETION="/home/dgeibi/.npm/lib/node_modules/npm-completion"
+# added for npm-completion https://github.com/Jephuff/npm-bash-completion
+PATH_TO_NPM_COMPLETION="/home/dgeibi/.config/yarn/global/node_modules/npm-completion"
 source $PATH_TO_NPM_COMPLETION/npm-completion.sh
