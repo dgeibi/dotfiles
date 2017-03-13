@@ -11,7 +11,7 @@
   "plugins": [
     "no-async-without-await"
   ],
-  "rule": {
+  "rules": {
     "semi": [
       "error",
       "never"
