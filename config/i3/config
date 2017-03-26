@@ -12,7 +12,7 @@ set $mod Mod4
 set $nmod Mod1
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Iosevka Slab 14
+font pango:Iosevka Slab 12
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -201,7 +201,7 @@ bindsym $mod+Shift+e mode "$mode_system"
 # window
 
 for_window [class="Vlc"] floating enable, focus
-for_window [instance="QQ.exe"] floating enable, focus
+for_window [instance="QQ.exe"] floating enable, focus, border none
 for_window [class="Chromium"] border pixel 2, focus
 for_window [class="Google-chrome-unstable"] border pixel 2, focus
 for_window [class="netease-cloud-music"] floating enable, focus
@@ -213,14 +213,14 @@ for_window [class="Evince"] border pixel 2
 
 # Assign
 
-assign [class="Google-chrome-unstable"] 1
-assign [class="Chromium"] 1
-assign [class="Atom"] 5
-assign [class="Code"] 2
-assign [class="Vmplayer"] 7
-assign [class="SWT"] swt
-assign [class="netease-cloud-music"] music
+assign [class="Google-chrome-unstable"] 1:chrome
+assign [class="Chromium"] 1:chromium
+assign [class="Atom"] 2:atom
+assign [class="Code"] 2:code
+assign [class="SWT"] 5:swt
+assign [class="netease-cloud-music"] 4:music
 assign [instance="QQ.exe"] qq
+assign [instance="nautilus"] 3:nautilus
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
