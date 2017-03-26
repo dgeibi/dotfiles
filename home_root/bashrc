@@ -67,3 +67,7 @@ done
 # added for npm-completion https://github.com/Jephuff/npm-bash-completion
 PATH_TO_NPM_COMPLETION="/home/dgeibi/.config/yarn/global/node_modules/npm-completion"
 source $PATH_TO_NPM_COMPLETION/npm-completion.sh
+
+ # added for npm-completion https://github.com/Jephuff/npm-bash-completion
+# added by travis gem
+[ -f /home/dgeibi/.travis/travis.sh ] && source /home/dgeibi/.travis/travis.sh
