@@ -1,6 +1,6 @@
 {
   "extends": [
-    "airbnb-base"
+    "dgeibi"
   ],
   "env": {
     "browser": true,
@@ -8,24 +8,7 @@
     "es6": true,
     "node": true
   },
-  "plugins": [
-    "no-async-without-await"
-  ],
   "rules": {
-    "semi": [
-      "error",
-      "never"
-    ],
-    "comma-dangle": [
-      "error",
-      {
-        "arrays": "always-multiline",
-        "objects": "always-multiline",
-        "imports": "always-multiline",
-        "exports": "always-multiline",
-        "functions": "never"
-      }
-    ],
-    "no-async-without-await/no-async-without-await": 1
+    "no-console": 0
   }
 }
