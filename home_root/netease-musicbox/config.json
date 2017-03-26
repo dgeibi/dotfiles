@@ -19,11 +19,6 @@
     "describe": "Set true to make curses transparency.", 
     "value": false
   }, 
-  "osdlyrics": {
-    "default": false, 
-    "describe": "Desktop lyrics for musicbox.", 
-    "value": false
-  }, 
   "osdlyrics_background": {
     "default": "rgba(100, 100, 100, 120)", 
     "describe": "Desktop lyrics background color.", 
@@ -62,12 +57,28 @@
     "describe": "Desktop lyrics OnTopHint.", 
     "value": true
   }, 
-  "version": 7, 
+  "osdlyrics_size": {
+    "default": [
+      600, 
+      60
+    ], 
+    "describe": "Desktop lyrics area size.", 
+    "value": [
+      600, 
+      60
+    ]
+  }, 
+  "osdlyrics": {
+    "default": false, 
+    "describe": "Desktop lyrics for musicbox.", 
+    "value": false
+  }, 
   "mpg123_parameters": {
     "default": [], 
     "describe": "The additional parameters when mpg123 start.", 
     "value": []
   }, 
+  "version": 8, 
   "music_quality": {
     "default": 0, 
     "describe": "Select the quality of the music. May be useful when network is terrible. 0 for high quality, 1 for medium and 2 for low.", 
