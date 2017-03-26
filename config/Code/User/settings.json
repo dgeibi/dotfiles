@@ -1,12 +1,12 @@
 // Place your settings in this file to overwrite the default settings
 {
   "editor.fontFamily": "Iosevka Slab, monospace",
-  "editor.fontSize": 17,
+  "editor.fontSize": 15,
   "files.associations": {
     "*.pac": "javascript",
     "*.ss": "clojure"
   },
-  "window.zoomLevel": 2,
+  "window.zoomLevel": 3,
   "editor.cursorStyle": "line",
   "editor.tabSize": 2,
   "editor.formatOnPaste": true,
@@ -27,11 +27,18 @@
   ],
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 15,
-  "workbench.colorTheme": "peel",
   "workbench.iconTheme": "vs-seti",
   "workbench.welcome.enabled": true,
   "workbench.quickOpen.closeOnFocusLost": false,
   "[javascriptreact]": {
     "editor.formatOnSave": true
-  }
+  },
+  "files.autoSave": "off",
+  "[cpp]": {
+    "editor.quickSuggestions": false
+  },
+  "[c]": {
+    "editor.quickSuggestions": false
+  },
+  "workbench.colorTheme": "vs-theme-be5invis-railgun-alternate"
 }
