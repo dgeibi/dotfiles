@@ -2,6 +2,7 @@
 Xcursor.theme: Chameleon-DarkSkyBlue-Regular
 
 ! Xft
+Xft.dpi: 120
 Xft.antialias:              true
 Xft.rgba:                   rgb
 Xft.hinting:                true
