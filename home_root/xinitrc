@@ -93,6 +93,7 @@ extra() {
         xautolock -time 10 -locker "i3lock -c 000000" &
         xset dpms $DPMS_StandbyTime $DPMS_SuspendTime $DPMS_OffTime
         xset s $X11ScreenSaver_Timeout
+        lightsOn.sh &
     fi
 
     # set primary monitor
