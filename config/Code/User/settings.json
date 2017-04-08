@@ -13,12 +13,6 @@
   "editor.acceptSuggestionOnEnter": false,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  "[javascript]": {
-    "editor.formatOnSave": true
-  },
-  "[json]": {
-    "editor.formatOnSave": false
-  },
   "css.validate": false,
   "terminal.external.linuxExec": "gnome-terminal",
   "terminal.integrated.shell.linux": "/bin/bash",
@@ -41,6 +35,5 @@
     "editor.quickSuggestions": false
   },
   "workbench.colorTheme": "Railgun",
-  "editor.fontLigatures": true,
-  "prettier.trailingComma": "es5"
+  "editor.fontLigatures": true
 }
