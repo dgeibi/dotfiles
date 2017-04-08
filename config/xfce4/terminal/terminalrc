@@ -2,7 +2,7 @@
 ColorCursor=#7f8b7f8b7f8b
 ColorForeground=#ffffffffffff
 ColorPalette=#000000000000;#fbfb01012020;#a1a1c6c65959;#fdfda3a33131;#0000672e9638;#d3d38181c3c3;#7676c7c7b7b7;#e0e0e0e0e0e0;#b0b0b0b0b0b0;#fbfb01012020;#a1a1c6c65959;#fdfda3a33131;#6f6fb3b3d2d2;#d3d38181c3c3;#7676c7c7b7b7;#ffffffffffff
-FontName=Iosevka Term Slab 15
+FontName=Iosevka Term Slab 13
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=TRUE
@@ -26,4 +26,12 @@ ColorBold=#9973d0c5ed2b
 ScrollingOnOutput=FALSE
 ColorBackground=#000000000000
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
+MiscBellUrgent=FALSE
+MiscMouseWheelZoom=TRUE
+MiscMiddleClickOpensUri=FALSE
+MiscCopyOnSelect=FALSE
+MiscDefaultWorkingDir=
+MiscRewrapOnResize=TRUE
+MiscUseShiftArrowsToScroll=FALSE
+MiscSlimTabs=FALSE
 
