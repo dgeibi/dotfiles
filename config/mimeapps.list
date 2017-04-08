@@ -1,6 +1,6 @@
 [Added Associations]
-x-scheme-handler/http=exo-web-browser.desktop;
-x-scheme-handler/https=exo-web-browser.desktop;
+x-scheme-handler/http=exo-web-browser.desktop
+x-scheme-handler/https=exo-web-browser.desktop
 text/plain=mousepad.desktop;visual-studio-code.desktop;atom.desktop;
 text/x-matlab=visual-studio-code.desktop;mousepad.desktop;
 application/xml=visual-studio-code.desktop;mousepad.desktop;
