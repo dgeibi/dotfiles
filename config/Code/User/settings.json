@@ -40,5 +40,7 @@
   "[c]": {
     "editor.quickSuggestions": false
   },
-  "workbench.colorTheme": "vs-theme-be5invis-railgun-alternate"
+  "workbench.colorTheme": "Railgun",
+  "editor.fontLigatures": true,
+  "prettier.trailingComma": "es5"
 }
