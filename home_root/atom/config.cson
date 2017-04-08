@@ -23,6 +23,7 @@
       "language-javascript-jsx"
       "markdown-preview-plus"
       "react"
+      "atom-beautify"
     ]
     projectHome: "/home/dgeibi/code/"
     telemetryConsent: "limited"
@@ -42,8 +43,7 @@
     a: {}
     html: {}
     js: {}
-  linter:
-    errorPanelHeight: 163
+  linter: {}
   "linter-clang": {}
   "linter-eslint":
     disableWhenNoEslintConfig: false
@@ -53,6 +53,8 @@
   "linter-js-standard":
     style: "semi-standard"
   "linter-shellcheck": {}
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
     enablePandoc: true
