@@ -90,7 +90,7 @@ extra() {
         DPMS_SuspendTime=600
         DPMS_OffTime=600
         X11ScreenSaver_Timeout=600
-        xautolock -time 10 -locker "i3lock -c 000000" &
+        xautolock &
         xset dpms $DPMS_StandbyTime $DPMS_SuspendTime $DPMS_OffTime
         xset s $X11ScreenSaver_Timeout
         lightsOn.sh &
