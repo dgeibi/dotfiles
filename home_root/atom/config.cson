@@ -33,7 +33,7 @@
     ]
   editor:
     fontFamily: "Iosevka Slab"
-    fontSize: 23
+    fontSize: 26
     invisibles: {}
     tabLength: 4
   esformatter: {}
@@ -53,14 +53,13 @@
   "linter-js-standard":
     style: "semi-standard"
   "linter-shellcheck": {}
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
     enablePandoc: true
     useLazyHeaders: false
   "one-dark-ui":
-    fontSize: 18
+    fontSize: 20
   "one-light-ui":
     fontSize: 18
   pangu:
