@@ -69,15 +69,15 @@ extra() {
     fi
 
     # set fcitx as default input method
-    if type fcitx > /dev/null; then
-        export GTK_IM_MODULE=fcitx
-        export QT_IM_MODULE=fcitx
-        export XMODIFIERS="@im=fcitx"
-        fcitx
-    fi
-    #export GTK_IM_MODULE=ibus
-    #export XMODIFIERS=@im=ibus
-    #export QT_IM_MODULE=ibus
+    #if type fcitx > /dev/null; then
+    #    export GTK_IM_MODULE=fcitx
+    #    export QT_IM_MODULE=fcitx
+    #    export XMODIFIERS="@im=fcitx"
+    #    fcitx
+    #fi
+    export GTK_IM_MODULE=ibus
+    export XMODIFIERS=@im=ibus
+    export QT_IM_MODULE=ibus
 
     # run compton
     if type compton > /dev/null; then
