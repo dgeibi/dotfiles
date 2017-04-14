@@ -23,14 +23,11 @@
       "language-javascript-jsx"
       "markdown-preview-plus"
       "react"
-      "atom-beautify"
+      "advanced-open-file"
+      "formatter"
     ]
     projectHome: "/home/dgeibi/code/"
     telemetryConsent: "limited"
-    themes: [
-      "one-dark-ui"
-      "atom-dark-syntax"
-    ]
   editor:
     fontFamily: "Iosevka Slab"
     fontSize: 26
@@ -53,7 +50,8 @@
   "linter-js-standard":
     style: "semi-standard"
   "linter-shellcheck": {}
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
     enablePandoc: true
