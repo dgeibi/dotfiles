@@ -7,7 +7,10 @@
 # i3 config file (v4)
 
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
-#exec ibus-daemon -xdr
+exec ibus-daemon -xdr
+exec --no-startup-id blueman-applet
+exec --no-startup-id redshift-gtk
+
 set $mod Mod4
 set $nmod Mod1
 # Font for window titles. Will also be used by the bar unless a different font
@@ -213,14 +216,12 @@ for_window [class="Evince"] border pixel 2
 
 # Assign
 
-assign [class="Google-chrome-unstable"] 1:chrome
-assign [class="Chromium"] 1:chromium
-assign [class="Atom"] 2:atom
-assign [class="Code"] 2:code
-assign [class="SWT"] 5:swt
+assign [class="Google-chrome-unstable"] 1
+assign [class="Chromium"] 1
+assign [class="Atom"] 2
+assign [class="Code"] 2
 assign [class="netease-cloud-music"] 4:music
-assign [instance="QQ.exe"] qq
-assign [instance="nautilus"] 3:nautilus
+assign [instance="QQ.exe"] 5:qq
 assign [instance="lepton"] 4:lepton
 
 # Start i3bar to display a workspace bar (plus the system information i3status
