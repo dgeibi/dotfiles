@@ -25,12 +25,21 @@
       "react"
       "advanced-open-file"
       "formatter"
+      "busy-signal"
+      "intentions"
+      "linter"
+      "linter-eslint"
+      "linter-ui-default"
     ]
     projectHome: "/home/dgeibi/code/"
     telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
   editor:
     fontFamily: "Iosevka Slab"
-    fontSize: 26
+    fontSize: 27
     invisibles: {}
     tabLength: 4
   esformatter: {}
@@ -51,15 +60,15 @@
     style: "semi-standard"
   "linter-shellcheck": {}
   "linter-ui-default":
+    panelHeight: 184
     showPanel: true
   "markdown-preview-plus":
     enableLatexRenderingByDefault: true
     enablePandoc: true
     useLazyHeaders: false
-  "one-dark-ui":
-    fontSize: 20
+  "one-dark-ui": {}
   "one-light-ui":
-    fontSize: 18
+    fontSize: 19
   pangu:
     autoPanguEnabled: true
     ignoredPattern: "\\\\*\\\\*[^\\\\*\\\\*]+\\\\*\\\\*, <.*>(.*?)</.*>"
