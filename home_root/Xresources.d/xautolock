@@ -22,3 +22,5 @@ Xautolock.cornerdelay: 5
 ! Specifies the number of seconds to wait before reacting again if the current locker exits while the mouse is sitting in a '+' corner
 ! (The default is for altsecs to equal secs)
 Xautolock.cornerredelay: 10
+
+Xautolock.notifier: notify-send 'Hello world!' 'This is an example notification.' --icon=dialog-information
