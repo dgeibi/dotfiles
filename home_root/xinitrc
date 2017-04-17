@@ -100,6 +100,9 @@ extra() {
     xrandr --output "$(xrandr | grep -m 1 "\bconnected" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/")" --primary
     # set dpi
     xrandr --dpi 120
+
+    # turnoff touchpad
+    togglepad off
 }
 
 session=${1:-i3}
