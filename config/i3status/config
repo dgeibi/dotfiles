@@ -9,6 +9,8 @@
 general {
         colors = true
         interval = 5
+        color_good = "#5FFFAF"
+        color_bad = "#E8413C"
 }
 
 order += "wireless _first_"
@@ -38,9 +40,9 @@ ethernet _first_ {
 
 battery 0 {
         format = "%status %percentage %remaining"
-        status_bat = "BAT"
-        status_full = "FULL"
-        status_chr = "CHR"
+        status_bat = "🔋"
+        status_full = "☻"
+        status_chr = "⚡"
         last_full_capacity = true
 }
 
@@ -53,7 +55,7 @@ run_watch VPN {
 }
 
 tztime local {
-        format = "%m/%d %a %H:%M"
+        format = "🕒 %a %m-%d %H:%M"
 }
 
 load {
@@ -78,8 +80,8 @@ cpu_temperature 0 {
 }
 
 volume master {
-        format = "♪: %volume"
-        format_muted = "♪: muted (%volume)"
+        format = "📢 %volume"
+        format_muted = "🔇 muted (%volume)"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
