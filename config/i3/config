@@ -8,8 +8,9 @@
 
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 exec ibus-daemon -xdr
-exec --no-startup-id blueman-applet
-exec --no-startup-id redshift-gtk
+#exec --no-startup-id blueman-applet
+exec redshift-gtk
+exec xfce4-power-manager
 
 set $mod Mod4
 set $nmod Mod1
@@ -216,10 +217,10 @@ for_window [class="Evince"] border pixel 2
 
 # Assign
 
-assign [class="Google-chrome-unstable"] 1
-assign [class="Chromium"] 1
-assign [class="Atom"] 2
-assign [class="Code"] 2
+#assign [class="Google-chrome-unstable"] 1
+#assign [class="Chromium"] 1
+#assign [class="Atom"] 2
+#assign [class="Code"] 2
 assign [class="netease-cloud-music"] 4:music
 assign [instance="QQ.exe"] 5:qq
 assign [instance="lepton"] 4:lepton
