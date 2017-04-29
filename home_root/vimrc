@@ -3,7 +3,7 @@
 "------------------------
 if has('syntax')
     syntax enable             " Turn on syntax highlighting
-    silent! colorscheme eldar " Custom color scheme
+    silent! colorscheme newproggie " Custom color scheme
 endif
 
 set nobackup
