@@ -25,7 +25,6 @@
       "react"
       "advanced-open-file"
       "formatter"
-      "busy-signal"
       "intentions"
       "linter"
       "linter-eslint"
