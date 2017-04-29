@@ -4,7 +4,8 @@
   "editor.fontSize": 15,
   "files.associations": {
     "*.pac": "javascript",
-    "*.ss": "clojure"
+    "*.ss": "clojure",
+    "*.html": "html"
   },
   "window.zoomLevel": 3,
   "editor.cursorStyle": "line",
@@ -34,6 +35,18 @@
   "[c]": {
     "editor.quickSuggestions": false
   },
-  "workbench.colorTheme": "Railgun",
-  "editor.fontLigatures": true
+  "editor.fontLigatures": true,
+  "cSpell.userWords": [
+    "wikic",
+    "justjavac"
+  ],
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "html",
+    "typescript": "html",
+    "javascriptreact": "jsx",
+    "typescriptreact": "jsx"
+  }
 }
