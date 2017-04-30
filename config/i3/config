@@ -10,7 +10,7 @@
 exec ibus-daemon -xdr
 #exec --no-startup-id blueman-applet
 exec redshift-gtk
-#exec xfce4-power-manager
+exec xfce4-power-manager
 
 set $mod Mod4
 set $nmod Mod1
