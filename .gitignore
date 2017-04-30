@@ -26,6 +26,7 @@ config/fcitx/*
 !config/fcitx/data/
 !config/fcitx/profile
 config/xfce4/*
+!config/xfce4/xfconf/
 !config/xfce4/terminal/
 config/nvim/autoload/*
 home_root/vim/autoload/*
