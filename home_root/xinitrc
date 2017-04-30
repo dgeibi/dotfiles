@@ -47,6 +47,8 @@ export QT_STYLE_OVERRIDE='gtk2'
 
 
 extra() {
+    SET_DPMS=false
+
     # set background
     bgdir="$HOME"/Pictures/bg/
     if type feh > /dev/null && [ -d "$bgdir" ]; then
@@ -75,25 +77,31 @@ extra() {
     #    export XMODIFIERS="@im=fcitx"
     #    fcitx
     #fi
-    export GTK_IM_MODULE=ibus
-    export XMODIFIERS=@im=ibus
-    export QT_IM_MODULE=ibus
+
+    if type ibus > /dev/null; then
+        export GTK_IM_MODULE=ibus
+        export XMODIFIERS=@im=ibus
+        export QT_IM_MODULE=ibus
+    fi
 
     # run compton
     if type compton > /dev/null; then
         compton -b
     fi
 
-    # lock and turn off monitor when idle
-    if type xautolock > /dev/null && type i3lock > /dev/null; then
+    if $SET_DPMS; then
         DPMS_StandbyTime=600
         DPMS_SuspendTime=600
         DPMS_OffTime=600
         X11ScreenSaver_Timeout=600
-        xautolock &
+
         xset dpms $DPMS_StandbyTime $DPMS_SuspendTime $DPMS_OffTime
         xset s $X11ScreenSaver_Timeout
-        lightsOn.sh &
+    fi
+
+    # lock and turn off monitor when idle
+    if type xautolock > /dev/null && type i3lock > /dev/null; then
+        xautolock &
     fi
 
     # set primary monitor
