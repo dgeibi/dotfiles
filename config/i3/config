@@ -214,6 +214,8 @@ for_window [class="Code"] focus
 for_window [class="Atom"] focus
 for_window [class="Nautilus"] border pixel 2, focus
 for_window [class="Evince"] border pixel 2
+for_window [class="Firefox"] border pixel 2
+for_window [class="brave"] border pixel 2
 
 # Assign
 
