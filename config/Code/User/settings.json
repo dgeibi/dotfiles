@@ -5,9 +5,10 @@
   "files.associations": {
     "*.pac": "javascript",
     "*.ss": "clojure",
-    "*.html": "html"
+    "*.html": "html",
+    "*.mjs": "javascript"
   },
-  "window.zoomLevel": 3,
+  "window.zoomLevel": 2,
   "editor.cursorStyle": "line",
   "editor.tabSize": 2,
   "editor.formatOnPaste": true,
@@ -22,27 +23,11 @@
   ],
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 15,
-  "workbench.iconTheme": "vs-seti",
+  "workbench.iconTheme": "vs-nomo-dark",
   "workbench.welcome.enabled": true,
   "workbench.quickOpen.closeOnFocusLost": false,
-  "[javascriptreact]": {
-    "editor.formatOnSave": true
-  },
   "files.autoSave": "off",
-  "[cpp]": {
-    "editor.quickSuggestions": false
-  },
-  "[c]": {
-    "editor.quickSuggestions": false
-  },
   "editor.fontLigatures": true,
-  "cSpell.userWords": [
-    "wikic",
-    "justjavac"
-  ],
-  "[javascript]": {
-    "editor.formatOnSave": true
-  },
   "emmet.syntaxProfiles": {
     "javascript": "html",
     "typescript": "html",
