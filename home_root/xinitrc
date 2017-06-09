@@ -36,7 +36,8 @@ fi
 
 export GTK2_RC_FILES="$HOME"/.gtkrc-2.0
 export QT_SELECT=5
-export QT_STYLE_OVERRIDE='gtk2'
+export QT_STYLE_OVERRIDE=gtk2
+export QT_QPA_PLATFORMTHEME=gtk2
 
 # set language
 
@@ -44,9 +45,17 @@ export QT_STYLE_OVERRIDE='gtk2'
 #export LANGUAGE=zh_CN:en_US
 #export LC_CTYPE=en_US.UTF-8
 
-
+if type ibus > /dev/null; then
+    export GTK_IM_MODULE=ibus
+    export XMODIFIERS=@im=ibus
+    export QT_IM_MODULE=ibus
+fi
 
 extra() {
+    dbus-update-activation-environment --systemd :0
+    eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+    export SSH_AUTH_SOCK
+
     SET_DPMS=false
 
     # set background
@@ -78,12 +87,6 @@ extra() {
     #    fcitx
     #fi
 
-    if type ibus > /dev/null; then
-        export GTK_IM_MODULE=ibus
-        export XMODIFIERS=@im=ibus
-        export QT_IM_MODULE=ibus
-    fi
-
     # run compton
     if type compton > /dev/null; then
         compton -b
@@ -108,14 +111,15 @@ extra() {
     xrandr --output "$(xrandr | grep -m 1 "\bconnected" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/")" --primary
     # set dpi
     xrandr --dpi 120
-
-    # turnoff touchpad
-    togglepad off
 }
 
-session=${1:-i3}
+# turnoff touchpad
+togglepad off
+
+session=${1:-mate}
 case $session in
     i3|i3wm           ) extra; exec i3;;
+    mate              ) exec mate-session;;
     xp1                ) exec VirtualBox -startvm "xp-1";;
     xp2                ) exec VirtualBox -startvm "xp-2";;
     xp0                ) exec VirtualBox -startvm "xp-0";;
