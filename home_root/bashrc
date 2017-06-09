@@ -56,6 +56,9 @@ alias vi=vim
 alias pacmanR='sudo pacman -R $(pacman -Qdtq)'
 export PROMPT_COMMAND="history -a"
 alias npm-exec='PATH=$(npm bin):$PATH'
+alias npmr='npm run'
+alias npmi='npm i -S'
+alias ter='gnome-terminal'
 complete -c npm-exec
 
 #source
