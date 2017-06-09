@@ -27,19 +27,19 @@
       "formatter"
       "intentions"
       "linter"
-      "linter-eslint"
-      "linter-ui-default"
     ]
     projectHome: "/home/dgeibi/code/"
     telemetryConsent: "limited"
     themes: [
       "one-light-ui"
-      "one-light-syntax"
+      "solarized-light-syntax"
     ]
   editor:
+    autoIndent: false
     fontFamily: "Iosevka Slab"
-    fontSize: 27
+    fontSize: 26
     invisibles: {}
+    lineHeight: 1.4
     tabLength: 4
   esformatter: {}
   "exception-reporting":
@@ -65,7 +65,8 @@
     enableLatexRenderingByDefault: true
     enablePandoc: true
     useLazyHeaders: false
-  "one-dark-ui": {}
+  "one-dark-ui":
+    fontSize: 20
   "one-light-ui":
     fontSize: 19
   pangu:
