@@ -11,8 +11,7 @@
   "window.zoomLevel": 2,
   "editor.cursorStyle": "line",
   "editor.tabSize": 2,
-  "editor.formatOnPaste": true,
-  "editor.acceptSuggestionOnEnter": false,
+  "editor.formatOnPaste": false,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "css.validate": false,
@@ -23,7 +22,6 @@
   ],
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 15,
-  "workbench.iconTheme": "vs-nomo-dark",
   "workbench.welcome.enabled": true,
   "workbench.quickOpen.closeOnFocusLost": false,
   "files.autoSave": "off",
@@ -33,5 +31,10 @@
     "typescript": "html",
     "javascriptreact": "jsx",
     "typescriptreact": "jsx"
-  }
+  },
+  "workbench.colorTheme": "Verdandi",
+  "workbench.iconTheme": "verdandi",
+  "update.channel": "none",
+  "editor.dragAndDrop": false,
+  "editor.minimap.enabled": false
 }
