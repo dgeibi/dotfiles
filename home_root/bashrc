@@ -39,7 +39,6 @@ export FZF_DEFAULT_OPTS='
 #PATH
 PATH="$HOME/.npm/bin:$PATH"
 PATH="$HOME/Dropbox/bin:$PATH"
-PATH="$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 PATH="$HOME/.local/bin:$PATH"
 
@@ -57,9 +56,8 @@ alias pacmanR='sudo pacman -R $(pacman -Qdtq)'
 export PROMPT_COMMAND="history -a"
 alias npm-exec='PATH=$(npm bin):$PATH'
 alias npmr='npm run'
-alias npmi='npm i -S'
+alias npmi='npm i'
 alias ter='gnome-terminal'
-complete -c npm-exec
 
 #source
 [ -f ~/.git-completion.bash ] && . ~/.git-completion.bash
@@ -68,10 +66,5 @@ for SCRIPTS in ${HOME}/code/dotfiles/src/*; do
     source $SCRIPTS
 done
 
-# added for npm-completion https://github.com/Jephuff/npm-bash-completion
-PATH_TO_NPM_COMPLETION="/home/dgeibi/.config/yarn/global/node_modules/npm-completion"
-source $PATH_TO_NPM_COMPLETION/npm-completion.sh
-
- # added for npm-completion https://github.com/Jephuff/npm-bash-completion
 # added by travis gem
 [ -f /home/dgeibi/.travis/travis.sh ] && source /home/dgeibi/.travis/travis.sh
