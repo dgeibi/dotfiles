@@ -3,9 +3,8 @@
 "------------------------
 if has('syntax')
     syntax enable             " Turn on syntax highlighting
-    silent! colorscheme newproggie " Custom color scheme
+    silent! colorscheme Tomorrow-Night " Custom color scheme
 endif
-
 set nobackup
 set clipboard=unnamedplus
 set fileencodings=utf8,cp936,gb18030,big5
@@ -14,7 +13,7 @@ set relativenumber
 set laststatus=2
 set mouse=a
 set hlsearch
-
+set guifont=Monospace\ 15
 set autoindent
 set smartindent
 set smarttab
@@ -29,7 +28,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
-" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --key-bindings --completion --no-update-rc' }
 Plug 'junegunn/fzf.vim'
 Plug 'benekastah/neomake'
@@ -59,3 +57,27 @@ nnoremap <C-a> ggVG<cr>
 " save
 inoremap <C-s> <esc>:w<cr>a
 nnoremap <C-s> :w<cr>
+
+"##### auto fcitx  ###########
+let g:input_toggle = 1
+function! Fcitx2en()
+   let s:input_status = system("fcitx-remote")
+   if s:input_status == 2
+      let g:input_toggle = 1
+      let l:a = system("fcitx-remote -c")
+   endif
+endfunction
+
+function! Fcitx2zh()
+   let s:input_status = system("fcitx-remote")
+   if s:input_status != 2 && g:input_toggle == 1
+      let l:a = system("fcitx-remote -o")
+      let g:input_toggle = 0
+   endif
+endfunction
+
+set ttimeoutlen=150
+"退出插入模式
+autocmd InsertLeave * call Fcitx2en()
+"进入插入模式
+"autocmd InsertEnter * call Fcitx2zh()
