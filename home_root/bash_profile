@@ -4,11 +4,11 @@
 
 source ~/.profile
 
-[[ -f ~/.bashrc ]] && . ~/.bashrc
+[[ -f ~/.bashrc ]] && source ~/.bashrc
 
 systemctl --user import-environment PATH
 
-if [[ -z $DISPLAY ]] && command -v mate-session && [[ $(tty) = /dev/tty1 ]]; then
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]] && command -v mate-session &> /dev/null
+then
     startx
 fi
-
