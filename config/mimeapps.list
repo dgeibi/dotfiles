@@ -60,6 +60,7 @@ application/oxps=mupdf.desktop;evince.desktop;wps-office-wps.desktop;
 application/wps-office.ppt=libreoffice-impress.desktop;
 application/wps-office.doc=libreoffice-writer.desktop;
 application/x-font-otf=visual-studio-code.desktop;org.gnome.font-viewer.desktop;
+application/x-iso9660-appimage=nautilus-autorun-software.desktop;
 
 [Default Applications]
 inode/directory=caja-folder-handler.desktop
@@ -103,3 +104,4 @@ application/msword=libreoffice-writer.desktop
 application/vnd.oasis.opendocument.spreadsheet=libreoffice-calc.desktop
 application/vnd.ms-excel=libreoffice-calc.desktop
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop
+application/x-iso9660-appimage=nautilus-autorun-software.desktop
