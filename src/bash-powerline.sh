@@ -4,7 +4,7 @@ __powerline() {
 
     # Unicode symbols
     readonly PS_SYMBOL_DARWIN=''
-    readonly PS_SYMBOL_LINUX='>'
+    readonly PS_SYMBOL_LINUX='$'
     readonly PS_SYMBOL_OTHER='%'
     readonly GIT_BRANCH_SYMBOL=' '
     readonly GIT_BRANCH_CHANGED_SYMBOL='+'
@@ -95,15 +95,15 @@ __powerline() {
         # Check the exit code of the previous command and display different
         # colors in the prompt accordingly.
         if [ $? -eq 0 ]; then
-            local BG_EXIT="$BG_GREY"
+            local FG_EXIT="$FG_BASE3"
         else
-            local BG_EXIT="$BG_RED"
+            local FG_EXIT="$FG_RED"
         fi
 
-        PS1="\n$BG_BLUE$FG_BASE3 \w $RESET"
+        PS1="\n$BG_GREY$FG_BASE3 $(hostname) $RESET"
+        PS1+="$BG_BLUE$FG_BASE3 \w $RESET"
         PS1+="$BG_GREEN$FG_GREY$(__git_info)$RESET"
-        PS1+="$BG_EXIT$FG_BASE3 $PS_SYMBOL $RESET "
-
+        PS1+="\n$FG_EXIT $PS_SYMBOL $RESET"
     }
     PROMPT_COMMAND=ps1
 }
