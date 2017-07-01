@@ -45,11 +45,23 @@ export QT_QPA_PLATFORMTHEME=gtk2
 #export LANGUAGE=zh_CN:en_US
 #export LC_CTYPE=en_US.UTF-8
 
-if type ibus > /dev/null; then
-    export GTK_IM_MODULE=ibus
-    export XMODIFIERS=@im=ibus
-    export QT_IM_MODULE=ibus
-fi
+useibus() {
+    if type ibus > /dev/null; then
+        export GTK_IM_MODULE=ibus
+        export XMODIFIERS=@im=ibus
+        export QT_IM_MODULE=ibus
+    fi
+}
+
+usefcitx() {
+    if type fcitx > /dev/null; then
+        export GTK_IM_MODULE=fcitx
+        export QT_IM_MODULE=fcitx
+        export XMODIFIERS="@im=fcitx"
+    fi
+}
+
+usefcitx
 
 extra() {
     dbus-update-activation-environment --systemd :0
@@ -79,14 +91,6 @@ extra() {
         goldendict &
     fi
 
-    # set fcitx as default input method
-    #if type fcitx > /dev/null; then
-    #    export GTK_IM_MODULE=fcitx
-    #    export QT_IM_MODULE=fcitx
-    #    export XMODIFIERS="@im=fcitx"
-    #    fcitx
-    #fi
-
     # run compton
     if type compton > /dev/null; then
         compton -b
@@ -114,7 +118,7 @@ extra() {
 }
 
 # turnoff touchpad
-togglepad off
+# togglepad off
 
 session=${1:-mate}
 case $session in
