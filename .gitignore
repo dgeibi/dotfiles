@@ -25,6 +25,7 @@ config/fcitx/*
 !config/fcitx/config
 !config/fcitx/data/
 !config/fcitx/profile
+!config/fcitx/lua/
 config/xfce4/*
 !config/xfce4/xfconf/
 !config/xfce4/terminal/
