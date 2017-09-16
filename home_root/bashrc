@@ -42,6 +42,8 @@ PATH="$HOME/Dropbox/bin:$PATH"
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 PATH="$HOME/.local/bin:$PATH"
 
+export NODE_PATH="$HOME/.npm/lib/node_modules"
+
 #thefuck
 eval "$(thefuck --alias)"
 
