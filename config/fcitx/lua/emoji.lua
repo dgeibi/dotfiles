@@ -182,6 +182,7 @@ local PINYIN_EMOJI = {
   ["fodejiao"] = {'🇨🇻'},
   ["shiyanse"] = {'😜', '😉'},
   ["laixin"] = {'📨'},
+  ["lazhu"] = {'🕯️'},
   ["bianbian"] = {'💩'},
   ["bianlishangdian"] = {'🏪'},
   ["bianlidian"] = {'🏪'},
