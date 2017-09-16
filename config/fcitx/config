@@ -1,6 +1,6 @@
 [Hotkey]
 # Trigger Input Method
-TriggerKey=CTRL_LCTRL
+TriggerKey=CTRL_SHIFT_LSHIFT
 # Use extra trigger key only after using it to inactivate
 # Available Value:
 # True False
@@ -75,6 +75,8 @@ NextPageKey== .
 #PrevWord=SHIFT_TAB
 # Next Candidate Word
 #NextWord=TAB
+# Toggle if hide the input window more often
+#HideMoreKey=
 
 [Program]
 # Seconds sleep before fcitx really start
