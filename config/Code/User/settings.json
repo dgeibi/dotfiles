@@ -8,10 +8,20 @@
     "*.html": "html",
     "*.mjs": "javascript"
   },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.idea": true,
+    "**/.vscode": false,
+    "**/yarn.lock": true,
+    "**/tmp": true
+  },
   "window.zoomLevel": 2,
   "editor.cursorStyle": "line",
   "editor.tabSize": 2,
-  "editor.formatOnPaste": false,
+  "editor.formatOnPaste": true,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "css.validate": false,
@@ -22,7 +32,6 @@
   ],
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 15,
-  "workbench.welcome.enabled": true,
   "workbench.quickOpen.closeOnFocusLost": false,
   "files.autoSave": "off",
   "editor.fontLigatures": true,
@@ -32,9 +41,12 @@
     "javascriptreact": "jsx",
     "typescriptreact": "jsx"
   },
-  "workbench.colorTheme": "Verdandi",
-  "workbench.iconTheme": "verdandi",
+  "scss.validate": false,
   "update.channel": "none",
   "editor.dragAndDrop": false,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "verdandi",
+  "workbench.colorTheme": "Verdandi",
+  "javascript.format.enable": false,
+  "javascript.validate.enable": false
 }
