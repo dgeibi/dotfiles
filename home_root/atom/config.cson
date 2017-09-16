@@ -20,27 +20,19 @@
       "language-objective-c"
       "language-perl"
       "language-clojure"
-      "language-javascript-jsx"
-      "markdown-preview-plus"
-      "react"
-      "advanced-open-file"
-      "formatter"
-      "intentions"
-      "linter"
     ]
     projectHome: "/home/dgeibi/code/"
     telemetryConsent: "limited"
     themes: [
       "one-light-ui"
-      "solarized-light-syntax"
+      "one-light-syntax"
     ]
   editor:
     autoIndent: false
     fontFamily: "Iosevka Slab"
-    fontSize: 26
+    fontSize: 20
     invisibles: {}
     lineHeight: 1.4
-    tabLength: 4
   esformatter: {}
   "exception-reporting":
     userId: "ce4311fa-4e2b-5d6c-c1e9-21d1e3274e0f"
@@ -68,7 +60,7 @@
   "one-dark-ui":
     fontSize: 20
   "one-light-ui":
-    fontSize: 19
+    fontSize: 16
   pangu:
     autoPanguEnabled: true
     ignoredPattern: "\\\\*\\\\*[^\\\\*\\\\*]+\\\\*\\\\*, <.*>(.*?)</.*>"
@@ -86,6 +78,9 @@
       autoClose: true
   welcome:
     showOnStartup: false
+".js.source":
+  editor:
+    autoIndent: true
 ".source.yaml":
   editor:
     autoIndent: true
