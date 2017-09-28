@@ -120,7 +120,7 @@ extra() {
 # turnoff touchpad
 # togglepad off
 
-session=${1:-mate}
+session=${1:-i3}
 case $session in
     i3|i3wm           ) extra; exec i3;;
     mate              ) exec mate-session;;
