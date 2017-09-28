@@ -8,7 +8,7 @@ source ~/.profile
 
 systemctl --user import-environment PATH
 
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]] && command -v mate-session &> /dev/null
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]] && command -v i3 &> /dev/null
 then
     startx
 fi
