@@ -1,5 +1,5 @@
 ﻿###
-###  vlc 2.2.4
+###  vlc 2.2.6
 ###
 
 ###
@@ -1526,7 +1526,7 @@
 #sout-avi-subject=
 
 # Encoder (string)
-#sout-avi-encoder=VLC Media Player - 2.2.4 Weatherwax
+#sout-avi-encoder=VLC Media Player - 2.2.6 Umbrella
 
 # Keywords (string)
 #sout-avi-keywords=
@@ -4060,7 +4060,7 @@ vod-server=any
 #inhibit=1
 
 # Play files randomly forever (boolean)
-random=1
+#random=0
 
 # Repeat all (boolean)
 #loop=0
@@ -4069,7 +4069,7 @@ random=1
 #repeat=0
 
 # Play and exit (boolean)
-play-and-exit=1
+#play-and-exit=0
 
 # Play and stop (boolean)
 #play-and-stop=0
