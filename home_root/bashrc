@@ -41,6 +41,9 @@ PATH="$HOME/.npm/bin:$PATH"
 PATH="$HOME/Dropbox/bin:$PATH"
 PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 PATH="$HOME/.local/bin:$PATH"
+PATH=/usr/local/texlive/2017/bin/x86_64-linux:$PATH
+MANPATH=/usr/local/texlive/2017/texmf-dist/doc/man:$MANPATH; export MANPATH
+INFOPATH=/usr/local/texlive/2017/texmf-dist/doc/info:$INFOPATH; export INFOPATH
 
 export NODE_PATH="$HOME/.npm/lib/node_modules"
 
