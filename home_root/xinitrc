@@ -114,11 +114,9 @@ extra() {
     # set primary monitor
     xrandr --output "$(xrandr | grep -m 1 "\bconnected" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/")" --primary
     # set dpi
-    xrandr --dpi 120
+    xrandr --dpi 130
+    togglepad off
 }
-
-# turnoff touchpad
-# togglepad off
 
 session=${1:-i3}
 case $session in
