@@ -8,7 +8,7 @@ checknet() {
 
 update() {
     sudo pacman -Syu
-    vim +PlugUpgrade +PlugUpdate +qa
+    #vim +PlugUpgrade +PlugUpdate +qa
     pacaur -u --noconfirm
     uctpkg
 }
