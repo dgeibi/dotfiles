@@ -1,5 +1,8 @@
 // Place your settings in this file to overwrite the default settings
 {
+  "editor.cursorStyle": "line",
+  "editor.tabSize": 2,
+  "editor.formatOnPaste": false,
   "editor.fontFamily": "Iosevka Slab, monospace",
   "editor.fontSize": 14,
   "files.associations": {
@@ -9,17 +12,7 @@
     "*.ss": "scheme",
     ".roadhogrc": "json"
   },
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.DS_Store": true,
-    "**/.idea": true,
-    "**/tmp": true
-  },
-  "window.zoomLevel": 2,
-  "editor.cursorStyle": "line",
-  "editor.tabSize": 2,
-  "editor.formatOnPaste": true,
+  "window.zoomLevel": 1.5,
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "css.validate": false,
@@ -29,7 +22,7 @@
     "-l"
   ],
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontSize": 16,
   "workbench.quickOpen.closeOnFocusLost": false,
   "files.autoSave": "off",
   "editor.fontLigatures": true,
@@ -88,6 +81,9 @@
     "nim": "nim compile --verbosity:0 --hints:off --run"
   },
   "workbench.panel.location": "bottom",
+  "workbench.colorTheme": "Railgun",
+  "prettier.semi": false,
   "prettier.eslintIntegration": true,
+  "prettier.singleQuote": true,
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly"
 }
