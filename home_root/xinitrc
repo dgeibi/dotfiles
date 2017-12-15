@@ -107,9 +107,9 @@ extra() {
     fi
 
     # lock and turn off monitor when idle
-    if type xautolock > /dev/null && type i3lock > /dev/null; then
-        xautolock &
-    fi
+    #if type xautolock > /dev/null && type i3lock > /dev/null; then
+       # xautolock &
+    #fi
 
     # set primary monitor
     xrandr --output "$(xrandr | grep -m 1 "\bconnected" | sed -e "s/\([A-Z0-9]\+\) connected.*/\1/")" --primary
