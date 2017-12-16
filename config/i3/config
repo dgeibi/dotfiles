@@ -181,7 +181,7 @@ bindsym $nmod+b exec light -A 5
 bindsym $nmod+n exec light -U 5
 
 # Screenshot
-bindsym Shift+Print exec xfce4-screenshooter
+bindsym Shift+Print exec deepin-screenshot
 
 # etc
 #bindsym $nmod+x exec google-chrome-unstable
