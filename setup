@@ -111,5 +111,5 @@ linkroot
 linkconfig
 installmimeappslist
 vim-plug
-installnvm
+# installnvm
 installgitcompletion
