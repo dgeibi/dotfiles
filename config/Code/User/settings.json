@@ -33,7 +33,7 @@
   "update.channel": "none",
   "editor.dragAndDrop": false,
   "editor.minimap.enabled": false,
-  "workbench.iconTheme": "verdandi",
+  "workbench.iconTheme": "vs-nomo-dark",
   "javascript.format.enable": false,
   "javascript.validate.enable": true,
   "C_Cpp.intelliSenseEngine": "Default",
@@ -81,9 +81,9 @@
     "nim": "nim compile --verbosity:0 --hints:off --run"
   },
   "workbench.panel.location": "bottom",
-  "workbench.colorTheme": "Railgun",
   "prettier.semi": false,
   "prettier.eslintIntegration": true,
   "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly"
 }
