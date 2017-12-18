@@ -80,10 +80,10 @@
     "haskell": "runhaskell",
     "nim": "nim compile --verbosity:0 --hints:off --run"
   },
-  "workbench.panel.location": "bottom",
   "prettier.semi": false,
   "prettier.eslintIntegration": true,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
-  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly"
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+  "git.autofetch": true
 }
