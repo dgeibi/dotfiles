@@ -71,9 +71,8 @@ extra() {
     SET_DPMS=false
 
     # set background
-    bgdir="$HOME"/Pictures/bg/
-    if type feh > /dev/null && [ -d "$bgdir" ]; then
-        feh --recursive --randomize --bg-fill "$bgdir"
+    if type feh > /dev/null && [ -f ~/.fehbg ]; then
+        ~/.fehbg &
     fi
 
     # launch copyq
