@@ -10,7 +10,9 @@
 exec fcitx
 #exec --no-startup-id blueman-applet
 exec redshift-gtk
+exec copyq
 exec xfce4-power-manager
+exec /usr/bin/OneClickBingWallpaper/OneClickBingWallpaper
 
 set $mod Mod4
 set $nmod Mod1
