@@ -3,8 +3,8 @@
   "editor.cursorStyle": "line",
   "editor.tabSize": 2,
   "editor.formatOnPaste": false,
-  "editor.fontFamily": "Iosevka Slab, monospace",
-  "editor.fontSize": 14,
+  "editor.fontFamily": "Iosevka, monospace",
+  "editor.fontSize": 15,
   "files.associations": {
     "*.pac": "javascript",
     "*.html": "html",
@@ -85,5 +85,6 @@
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
-  "git.autofetch": true
+  "git.autofetch": true,
+  "workbench.colorTheme": "Railgun Pale"
 }
