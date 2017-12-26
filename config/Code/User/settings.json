@@ -85,6 +85,5 @@
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
-  "git.autofetch": true,
-  "workbench.colorTheme": "Railgun Pale"
+  "git.autofetch": true
 }
