@@ -7,7 +7,7 @@ application/xml=visual-studio-code.desktop;mousepad.desktop;
 text/markdown=visual-studio-code.desktop;typora.desktop;atom.desktop;mousepad.desktop;google-chrome-unstable.desktop;
 application/x-theme=visual-studio-code.desktop;atom.desktop;panel-desktop-handler.desktop;
 application/x-tar=squeeze.desktop;
-text/html=visual-studio-code.desktop;firefox.desktop;atom.desktop;mousepad.desktop;google-chrome.desktop;chromium.desktop;google-chrome-unstable.desktop;
+text/html=chromium.desktop;visual-studio-code.desktop;firefox.desktop;atom.desktop;mousepad.desktop;google-chrome.desktop;google-chrome-unstable.desktop;
 text/css=visual-studio-code.desktop;mousepad.desktop;
 image/jpeg=gpicview.desktop;pinta.desktop;ristretto.desktop;
 application/x-compressed-tar=org.gnome.FileRoller.desktop;xarchiver.desktop;squeeze.desktop;
@@ -63,6 +63,8 @@ application/x-font-otf=visual-studio-code.desktop;org.gnome.font-viewer.desktop;
 application/x-iso9660-appimage=nautilus-autorun-software.desktop;
 application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop;
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
+application/zip=org.gnome.FileRoller.desktop;org.gnome.Nautilus.desktop;
+application/vnd.rar=engrampa.desktop;
 
 [Default Applications]
 inode/directory=caja-folder-handler.desktop
