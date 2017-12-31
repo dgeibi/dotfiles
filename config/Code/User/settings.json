@@ -81,7 +81,7 @@
     "nim": "nim compile --verbosity:0 --hints:off --run"
   },
   "prettier.semi": false,
-  "prettier.eslintIntegration": true,
+  "prettier.eslintIntegration": false,
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
