@@ -17,24 +17,33 @@ exec /usr/bin/OneClickBingWallpaper/OneClickBingWallpaper
 set $mod Mod4
 set $nmod Mod1
 set $TERMINAL gnome-terminal
+
+set_from_resource $darkred     color1  #000000
+set_from_resource $red         color9  #ff0000
+set_from_resource $darkgreen   color2  #00ff00
+set_from_resource $green       color10 #00ff00
+set_from_resource $darkyellow  color3  #ffff00
+set_from_resource $yellow      color11 #ffff00
+set_from_resource $darkblue    color4  #0000ff
+set_from_resource $blue        color12 #0000ff
+set_from_resource $darkmagenta color5  #0000ff
+set_from_resource $magenta     color13 #0000ff
+set_from_resource $darkcyan    color6  #0000ff
+set_from_resource $cyan        color14 #0000ff
+set_from_resource $white       color15 #ffffff
+
+set $brand       #005F87
+set $black       #282828
+set $darkblack   #1d2021
+set $grey        #898a8c
+set $darkwhite   #e4ebf1
+set $brown       #707272
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:Monaco 13
 hide_edge_borders smart
 new_float normal
-
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
-
-# Before i3 v4.8, we used to recommend this one as the default:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, its unicode glyph coverage is limited, the old
-# X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
-
-#focus_follows_mouse no
 
 # Automatic back-and-forth when switching to the current workspace
 #workspace_auto_back_and_forth yes
@@ -214,10 +223,12 @@ bindsym $mod+Shift+e mode "$mode_system"
 # window
 
 #for_window [class="Vlc"] floating enable, focus
+for_window [class="ieaseMusic"] floating enable, focus
 for_window [instance="tim.exe"] floating enable, focus, border none
 for_window [class="Chromium"] border pixel 2, focus
 for_window [class="Google-chrome-unstable"] border pixel 2, focus
 for_window [class="netease-cloud-music"] floating enable, focus
+for_window [class="Gucharmap"] floating enable
 for_window [class="SWT"] floating enable
 for_window [class="Code"] focus
 for_window [class="Atom"] focus
@@ -229,15 +240,22 @@ for_window [class="brave"] border pixel 2
 # Assign
 
 assign [class="netease-cloud-music"] 4:music
-assign [instance="QQ.exe"] 5:qq
-assign [instance="tim.exe"] 5:qq
+# assign [instance="QQ.exe"] 5:qq
+# assign [instance="tim.exe"] 5:qq
 assign [instance="lepton"] 4:lepton
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
 bar {
-     colors {
-         background #161616
+    colors {
+        statusline         $white
+        background         $darkblack
+        separator          $grey
+
+#                          BORDER       BACKGROUND   TEXT
+        focused_workspace  $darkblack   $brand       $darkwhite
+        inactive_workspace $darkblack   $darkblack   $white
+        active_workspace   $darkblack   $darkblack   $white
+        urgent_workspace   $darkred     $darkred     $darkblack
+        binding_mode       $darkred     $darkred     $darkblack
     }
 
     position bottom
@@ -245,5 +263,8 @@ bar {
     status_command i3status
 }
 
-client.focused #4c7899 #204A87 #ffffff #2e9ef4   #285577
-client.unfocused #707272 #707272 #EEEEEC #222222
+# class           border      background  text        indicator   child_border
+client.focused    $brand      $brand      $white      $darkblack  $brand
+client.unfocused  $darkblack  $brown      $darkwhite  $darkblack  $brown
+
+client.background $darkblack
