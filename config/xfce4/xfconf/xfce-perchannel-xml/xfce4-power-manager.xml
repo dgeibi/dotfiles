@@ -14,7 +14,7 @@
     <property name="lid-action-on-ac" type="uint" value="1"/>
     <property name="power-button-action" type="uint" value="0"/>
     <property name="handle-brightness-keys" type="bool" value="true"/>
-    <property name="presentation-mode" type="bool" value="false"/>
+    <property name="presentation-mode" type="bool" value="true"/>
     <property name="brightness-level-on-ac" type="uint" value="40"/>
     <property name="general-notification" type="bool" value="true"/>
     <property name="brightness-on-battery" type="uint" value="9"/>
