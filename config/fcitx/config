@@ -58,7 +58,7 @@ IMSwitchIncludeInactive=True
 # Switching Remind Mode
 #RemindSwitchKey=
 # Switching Full Width Character Mode
-FullWidthSwitchKey=SHIFT_SPACE SHIFT_SPACE
+#FullWidthSwitchKey=
 # Switch Full Width Punc Mode
 PuncSwitchKey=CTRL_. CTRL_.
 # Prev Page
@@ -69,14 +69,12 @@ NextPageKey== .
 #SecondThirdCandWordKey=
 # Saving All Config and Input History
 #SaveAllKey=CTRL_ALT_S
-# Switch Embeded Preedit
+# Switch Embedded Preedit
 #SwitchPreedit=CTRL_ALT_P
 # Previous Candidate Word
 #PrevWord=SHIFT_TAB
 # Next Candidate Word
 #NextWord=TAB
-# Toggle if hide the input window more often
-#HideMoreKey=
 
 [Program]
 # Seconds sleep before fcitx really start
