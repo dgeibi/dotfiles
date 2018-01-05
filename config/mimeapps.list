@@ -65,6 +65,7 @@ application/vnd.openxmlformats-officedocument.presentationml.presentation=libreo
 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet=libreoffice-calc.desktop;
 application/zip=org.gnome.FileRoller.desktop;org.gnome.Nautilus.desktop;
 application/vnd.rar=engrampa.desktop;
+application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop;
 
 [Default Applications]
 inode/directory=caja-folder-handler.desktop
